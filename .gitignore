@@ -1,0 +1,10 @@
+.DS_Store
+.deploy*/
+Thumbs.db
+db.json
+*.log
+_config.yml
+node_modules/
+public/
+scaffolds/
+themes/
