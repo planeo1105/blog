@@ -36,7 +36,7 @@ categories:
 * 板载网卡：Intel I219V2 PCI Express Gigabit Ethernet
 * USB蓝牙：绿联 CSR8891 USB蓝牙 4.0
 
-## 软件驱动
+## 文件
 
 本博文使用的一些软件工具驱动，下文则不赘述。
 
@@ -44,6 +44,8 @@ categories:
 * [带 Clover 镜像](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
     * 10.13.6(17G2112) 镜像：[macOS High Sierra 10.13.6(17G2112) Installer with Clover 4606.dmg](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS%20High%20Sierra%2010.13.6%2817G2112%29%20Installer%20with%20Clover%204606.dmg)
     * 10.13.5(17F77)镜像：[macOS High Sierra 10.13.5(17F77) Installer with Clover 4512.dmg](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS%20High%20Sierra%2010.13.5%2817F77%29%20Installer%20with%20Clover%204512.dmg)
+* EFI 分区
+    * [huihut . Hackintosh-Z370/EFI](https://github.com/huihut/Hackintosh-Z370/tree/master/EFI)
 * 工具
     * U盘刻录工具 Etcher：[官网](https://etcher.io/) | [百度网盘](https://pan.baidu.com/s/1EAarG7mLxhI0xwQEXerUEg)
     * Clover 配置工具 Clover Configurator：[官网](https://www.tonymacx86.com/resources/clover-configurator.335/) | [百度网盘](https://pan.baidu.com/s/1adKnfyIT0MVwHGl_Lke_Fg)
@@ -279,7 +281,7 @@ Clover主题可以到官方仓库下载：
 
 * [Clover Theme Repository](https://clover-wiki.zetam.org/theme-database)
 
-也可以使用第三方的，比如我使用这个简洁风格的：
+也可以使用其他的，比如我使用这个简洁风格的：
 
 * [Clover Minimal - A clean theme for the Clover UEFI bootloader](https://github.com/al3xtjames/clover-theme-minimal)
 

@@ -4,6 +4,7 @@ Thumbs.db
 db.json
 *.log
 _config.yml
+Commit.bat
 node_modules/
 public/
 scaffolds/
