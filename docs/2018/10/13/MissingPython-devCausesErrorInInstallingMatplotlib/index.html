@@ -69,7 +69,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="链接装载库,ZeroC-Ice," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -87,18 +87,18 @@
 
 
 
-<meta name="description" content="缺失 mcpp 库报错/usr/bin/ld: cannot find -lmcpp 解决 下载最新的 nux-dextop-release*rpm 包  http://li.nux.ro/download/nux/dextop/el7/x86_64/  安装 nux-dextop-release 包 sudo rpm -Uvh nux-dextop-release*rpm  安装 mcpp su">
-<meta name="keywords" content="链接装载库,ZeroC-Ice">
+<meta name="description" content="表现1sudo pip install matplotlib 安装 matplotlib 时出现以下错误">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题">
-<meta property="og:url" content="https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/index.html">
+<meta property="og:title" content="python-dev 库缺失导致安装 matplotlib 出错">
+<meta property="og:url" content="https://blog.huihut.com/2018/10/13/MissingPython-devCausesErrorInInstallingMatplotlib/index.html">
 <meta property="og:site_name" content="HuiHut">
-<meta property="og:description" content="缺失 mcpp 库报错/usr/bin/ld: cannot find -lmcpp 解决 下载最新的 nux-dextop-release*rpm 包  http://li.nux.ro/download/nux/dextop/el7/x86_64/  安装 nux-dextop-release 包 sudo rpm -Uvh nux-dextop-release*rpm  安装 mcpp su">
+<meta property="og:description" content="表现1sudo pip install matplotlib 安装 matplotlib 时出现以下错误">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-13T06:37:22.182Z">
+<meta property="og:updated_time" content="2018-10-14T06:44:27.620Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题">
-<meta name="twitter:description" content="缺失 mcpp 库报错/usr/bin/ld: cannot find -lmcpp 解决 下载最新的 nux-dextop-release*rpm 包  http://li.nux.ro/download/nux/dextop/el7/x86_64/  安装 nux-dextop-release 包 sudo rpm -Uvh nux-dextop-release*rpm  安装 mcpp su">
+<meta name="twitter:title" content="python-dev 库缺失导致安装 matplotlib 出错">
+<meta name="twitter:description" content="表现1sudo pip install matplotlib 安装 matplotlib 时出现以下错误">
 
 
 
@@ -126,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/"/>
+  <link rel="canonical" href="https://blog.huihut.com/2018/10/13/MissingPython-devCausesErrorInInstallingMatplotlib/"/>
 
 
 
 
 
-  <title> 解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题 | HuiHut </title>
+  <title> python-dev 库缺失导致安装 matplotlib 出错 | HuiHut </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -310,7 +310,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/">
+    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2018/10/13/MissingPython-devCausesErrorInInstallingMatplotlib/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="修电脑的裁缝酱">
@@ -331,7 +331,7 @@
             
             
               
-                解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题
+                python-dev 库缺失导致安装 matplotlib 出错
               
             
           </h1>
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T23:50:18+08:00">
-                2017-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-13T11:00:00+08:00">
+                2018-10-13
               </time>
             
 
@@ -404,32 +404,28 @@
       
 
       
-        <h2 id="缺失-mcpp-库"><a href="#缺失-mcpp-库" class="headerlink" title="缺失 mcpp 库"></a>缺失 mcpp 库</h2><h3 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h3><pre><code>/usr/bin/ld: cannot find -lmcpp
-</code></pre><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><ol>
-<li><p>下载最新的 nux-dextop-release*rpm 包</p>
-<p> <a href="http://li.nux.ro/download/nux/dextop/el7/x86_64/" target="_blank" rel="noopener">http://li.nux.ro/download/nux/dextop/el7/x86_64/</a></p>
-</li>
-<li><p>安装 nux-dextop-release 包</p>
-<pre><code>sudo rpm -Uvh nux-dextop-release*rpm
-</code></pre></li>
-<li><p>安装 mcpp</p>
-<pre><code>sudo yum install libmcpp-devel
-</code></pre></li>
-</ol>
+        <h2 id="表现"><a href="#表现" class="headerlink" title="表现"></a>表现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install matplotlib</span><br></pre></td></tr></table></figure>
+<p>安装 matplotlib 时出现以下错误</p>
 <a id="more"></a>
-<h2 id="缺失-bzip2-库"><a href="#缺失-bzip2-库" class="headerlink" title="缺失 bzip2 库"></a>缺失 bzip2 库</h2><h3 id="报错-1"><a href="#报错-1" class="headerlink" title="报错"></a>报错</h3><pre><code>src/Ice/ConnectionI.cpp:32:21: fatal error: bzlib.h: No such file or directory
-#  include &lt;bzlib.h&gt;
-             ^
-compilation terminated.
-make: *** [src/Ice/build/x64/shared/pic/ConnectionI.o] Error 1
-</code></pre><h3 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h3><pre><code>sudo yum install bzip2-devel
-</code></pre><h2 id="缺失-expat-库"><a href="#缺失-expat-库" class="headerlink" title="缺失 expat 库"></a>缺失 expat 库</h2><h3 id="报错-2"><a href="#报错-2" class="headerlink" title="报错"></a>报错</h3><pre><code>src/IceXML/Parser.cpp:12:19: fatal error: expat.h: No such file or directory
-#include &lt;expat.h&gt;
-               ^
-compilation terminated.
-make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
-</code></pre><h3 id="解决-2"><a href="#解决-2" class="headerlink" title="解决"></a>解决</h3><pre><code>sudo yum install expat-devel
-</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">Installing collected packages: subprocess32, cycler, backports.functools-lru-cache, pyparsing, kiwisolver, matplotlib</span><br><span class="line">  Running setup.py install for subprocess32 ... error</span><br><span class="line">    Complete output from command /usr/bin/python2 -u -c &quot;import setuptools, tokenize;__file__=&apos;/tmp/pip-install-azXKeu/subprocess32/setup.py&apos;;f=getattr(tokenize, &apos;open&apos;, open)(__file__);code=f.read().replace(&apos;\r\n&apos;, &apos;\n&apos;);f.close();exec(compile(code, __file__, &apos;exec&apos;))&quot; install --record /tmp/pip-record-5SM9_6/install-record.txt --single-version-externally-managed --compile:</span><br><span class="line">    /usr/lib64/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: &apos;python_requires&apos;</span><br><span class="line">      warnings.warn(msg)</span><br><span class="line">    running install</span><br><span class="line">    running build</span><br><span class="line">    running build_py</span><br><span class="line">    creating build</span><br><span class="line">    creating build/lib.linux-x86_64-2.7</span><br><span class="line">    copying subprocess32.py -&gt; build/lib.linux-x86_64-2.7</span><br><span class="line">    running build_ext</span><br><span class="line">    running build_configure</span><br><span class="line">    checking for gcc... gcc</span><br><span class="line">    checking whether the C compiler works... yes</span><br><span class="line">    checking for C compiler default output file name... a.out</span><br><span class="line">    checking for suffix of executables...</span><br><span class="line">    checking whether we are cross compiling... no</span><br><span class="line">    checking for suffix of object files... o</span><br><span class="line">    checking whether we are using the GNU C compiler... yes</span><br><span class="line">    checking whether gcc accepts -g... yes</span><br><span class="line">    checking for gcc option to accept ISO C89... none needed</span><br><span class="line">    checking how to run the C preprocessor... gcc -E</span><br><span class="line">    checking for grep that handles long lines and -e... /bin/grep</span><br><span class="line">    checking for egrep... /bin/grep -E</span><br><span class="line">    checking for ANSI C header files... yes</span><br><span class="line">    checking for sys/types.h... yes</span><br><span class="line">    checking for sys/stat.h... yes</span><br><span class="line">    checking for stdlib.h... yes</span><br><span class="line">    checking for string.h... yes</span><br><span class="line">    checking for memory.h... yes</span><br><span class="line">    checking for strings.h... yes</span><br><span class="line">    checking for inttypes.h... yes</span><br><span class="line">    checking for stdint.h... yes</span><br><span class="line">    checking for unistd.h... yes</span><br><span class="line">    checking for unistd.h... (cached) yes</span><br><span class="line">    checking fcntl.h usability... yes</span><br><span class="line">    checking fcntl.h presence... yes</span><br><span class="line">    checking for fcntl.h... yes</span><br><span class="line">    checking signal.h usability... yes</span><br><span class="line">    checking signal.h presence... yes</span><br><span class="line">    checking for signal.h... yes</span><br><span class="line">    checking sys/cdefs.h usability... yes</span><br><span class="line">    checking sys/cdefs.h presence... yes</span><br><span class="line">    checking for sys/cdefs.h... yes</span><br><span class="line">    checking for sys/types.h... (cached) yes</span><br><span class="line">    checking for sys/stat.h... (cached) yes</span><br><span class="line">    checking sys/syscall.h usability... yes</span><br><span class="line">    checking sys/syscall.h presence... yes</span><br><span class="line">    checking for sys/syscall.h... yes</span><br><span class="line">    checking for dirent.h that defines DIR... yes</span><br><span class="line">    checking for library containing opendir... none required</span><br><span class="line">    checking for pipe2... yes</span><br><span class="line">    checking for setsid... yes</span><br><span class="line">    checking whether dirfd is declared... yes</span><br><span class="line">    configure: creating ./config.status</span><br><span class="line">    config.status: creating _posixsubprocess_config.h</span><br><span class="line">    building &apos;_posixsubprocess32&apos; extension</span><br><span class="line">    creating build/temp.linux-x86_64-2.7</span><br><span class="line">    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/python2.7 -c _posixsubprocess.c -o build/temp.linux-x86_64-2.7/_posixsubprocess.o</span><br><span class="line">    _posixsubprocess.c:16:20: fatal error: Python.h: No such file or directory</span><br><span class="line">     #include &quot;Python.h&quot;</span><br><span class="line">                        ^</span><br><span class="line">    compilation terminated.</span><br><span class="line">    error: command &apos;gcc&apos; failed with exit status 1</span><br></pre></td></tr></table></figure>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>无法找到 python 库，<code>#include &quot;Python.h&quot;</code> 出错</p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ul>
+<li><p>使用 apt (Ubuntu, Debian…) 安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-dev   # for python2.x installs</span><br><span class="line">sudo apt-get install python3-dev  # for python3.x installs</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 yum (CentOS, RHEL…) 安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install python-devel   # for python2.x installs</span><br><span class="line">sudo yum install python34-devel   # for python3.4 installs</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 dnf (Fedora…) 安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install python2-devel  # for python2.x installs</span><br><span class="line">sudo dnf install python3-devel  # for python3.x installs</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 zypper (openSUSE…) 安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo zypper in python-devel   # for python2.x installs</span><br><span class="line">sudo zypper in python3-devel  # for python3.x installs</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 apk (Alpine…) 安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apk add python2-dev  # for python2.x installs</span><br><span class="line">sudo apk add python3-dev  # for python3.x installs</span><br></pre></td></tr></table></figure></li>
+</ul>
+
       
     </div>
 
@@ -462,7 +458,7 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/" title="解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题">https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/</a>
+      <a href="https://blog.huihut.com/2018/10/13/MissingPython-devCausesErrorInInstallingMatplotlib/" title="python-dev 库缺失导致安装 matplotlib 出错">https://blog.huihut.com/2018/10/13/MissingPython-devCausesErrorInInstallingMatplotlib/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -478,9 +474,7 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
       
         <div class="post-tags">
           
-            <a href="/tags/链接装载库/" rel="tag"># 链接装载库</a>
-          
-            <a href="/tags/ZeroC-Ice/" rel="tag"># ZeroC-Ice</a>
+            <a href="/tags/Python/" rel="tag"># Python</a>
           
         </div>
       
@@ -493,8 +487,8 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/27/Oneplus3TBrushAndPlay/" rel="next" title="一加3T的刷机流程及玩机一些事">
-                <i class="fa fa-chevron-left"></i> 一加3T的刷机流程及玩机一些事
+              <a href="/2018/08/23/UTF8ToStdStrAndUTF8ToManagedStr/" rel="next" title="WinRT(C++/CX) UTF8类型转换为std::string和Platform::String^的Unicode字符串">
+                <i class="fa fa-chevron-left"></i> WinRT(C++/CX) UTF8类型转换为std::string和Platform::String^的Unicode字符串
               </a>
             
           </div>
@@ -503,8 +497,8 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/13/GraphicsExercise2D/" rel="prev" title="使用MFC的CDC类绘制二维坐标系及正余弦函数">
-                使用MFC的CDC类绘制二维坐标系及正余弦函数 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/13/PyparsingFailsToUninstallCausingErrorInInstallingMatplotlib/" rel="prev" title="pyparsing 无法卸载导致安装 matplotlib 出错">
+                pyparsing 无法卸载导致安装 matplotlib 出错 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -690,7 +684,7 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失-mcpp-库"><span class="nav-number">1.</span> <span class="nav-text">缺失 mcpp 库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#报错"><span class="nav-number">1.1.</span> <span class="nav-text">报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决"><span class="nav-number">1.2.</span> <span class="nav-text">解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失-bzip2-库"><span class="nav-number">2.</span> <span class="nav-text">缺失 bzip2 库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#报错-1"><span class="nav-number">2.1.</span> <span class="nav-text">报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决-1"><span class="nav-number">2.2.</span> <span class="nav-text">解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失-expat-库"><span class="nav-number">3.</span> <span class="nav-text">缺失 expat 库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#报错-2"><span class="nav-number">3.1.</span> <span class="nav-text">报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决-2"><span class="nav-number">3.2.</span> <span class="nav-text">解决</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#表现"><span class="nav-number">1.</span> <span class="nav-text">表现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原因"><span class="nav-number">2.</span> <span class="nav-text">原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决"><span class="nav-number">3.</span> <span class="nav-text">解决</span></a></li></ol></div>
             
 
           </div>

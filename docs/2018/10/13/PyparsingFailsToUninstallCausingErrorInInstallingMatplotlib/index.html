@@ -69,7 +69,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="链接装载库,ZeroC-Ice," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -87,18 +87,18 @@
 
 
 
-<meta name="description" content="缺失 mcpp 库报错/usr/bin/ld: cannot find -lmcpp 解决 下载最新的 nux-dextop-release*rpm 包  http://li.nux.ro/download/nux/dextop/el7/x86_64/  安装 nux-dextop-release 包 sudo rpm -Uvh nux-dextop-release*rpm  安装 mcpp su">
-<meta name="keywords" content="链接装载库,ZeroC-Ice">
+<meta name="description" content="表现1sudo pip install matplotlib 安装 matplotlib 时出现以下错误 12 Found existing installation: pyparsing 1.5.6Cannot uninstall &amp;apos;pyparsing&amp;apos;. It is a distutils installed project and thus we cannot accur">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题">
-<meta property="og:url" content="https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/index.html">
+<meta property="og:title" content="pyparsing 无法卸载导致安装 matplotlib 出错">
+<meta property="og:url" content="https://blog.huihut.com/2018/10/13/PyparsingFailsToUninstallCausingErrorInInstallingMatplotlib/index.html">
 <meta property="og:site_name" content="HuiHut">
-<meta property="og:description" content="缺失 mcpp 库报错/usr/bin/ld: cannot find -lmcpp 解决 下载最新的 nux-dextop-release*rpm 包  http://li.nux.ro/download/nux/dextop/el7/x86_64/  安装 nux-dextop-release 包 sudo rpm -Uvh nux-dextop-release*rpm  安装 mcpp su">
+<meta property="og:description" content="表现1sudo pip install matplotlib 安装 matplotlib 时出现以下错误 12 Found existing installation: pyparsing 1.5.6Cannot uninstall &amp;apos;pyparsing&amp;apos;. It is a distutils installed project and thus we cannot accur">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-13T06:37:22.182Z">
+<meta property="og:updated_time" content="2018-10-14T06:43:50.366Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题">
-<meta name="twitter:description" content="缺失 mcpp 库报错/usr/bin/ld: cannot find -lmcpp 解决 下载最新的 nux-dextop-release*rpm 包  http://li.nux.ro/download/nux/dextop/el7/x86_64/  安装 nux-dextop-release 包 sudo rpm -Uvh nux-dextop-release*rpm  安装 mcpp su">
+<meta name="twitter:title" content="pyparsing 无法卸载导致安装 matplotlib 出错">
+<meta name="twitter:description" content="表现1sudo pip install matplotlib 安装 matplotlib 时出现以下错误 12 Found existing installation: pyparsing 1.5.6Cannot uninstall &amp;apos;pyparsing&amp;apos;. It is a distutils installed project and thus we cannot accur">
 
 
 
@@ -126,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/"/>
+  <link rel="canonical" href="https://blog.huihut.com/2018/10/13/PyparsingFailsToUninstallCausingErrorInInstallingMatplotlib/"/>
 
 
 
 
 
-  <title> 解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题 | HuiHut </title>
+  <title> pyparsing 无法卸载导致安装 matplotlib 出错 | HuiHut </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -310,7 +310,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/">
+    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2018/10/13/PyparsingFailsToUninstallCausingErrorInInstallingMatplotlib/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="修电脑的裁缝酱">
@@ -331,7 +331,7 @@
             
             
               
-                解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题
+                pyparsing 无法卸载导致安装 matplotlib 出错
               
             
           </h1>
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T23:50:18+08:00">
-                2017-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-13T11:02:00+08:00">
+                2018-10-13
               </time>
             
 
@@ -404,32 +404,15 @@
       
 
       
-        <h2 id="缺失-mcpp-库"><a href="#缺失-mcpp-库" class="headerlink" title="缺失 mcpp 库"></a>缺失 mcpp 库</h2><h3 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h3><pre><code>/usr/bin/ld: cannot find -lmcpp
-</code></pre><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><ol>
-<li><p>下载最新的 nux-dextop-release*rpm 包</p>
-<p> <a href="http://li.nux.ro/download/nux/dextop/el7/x86_64/" target="_blank" rel="noopener">http://li.nux.ro/download/nux/dextop/el7/x86_64/</a></p>
-</li>
-<li><p>安装 nux-dextop-release 包</p>
-<pre><code>sudo rpm -Uvh nux-dextop-release*rpm
-</code></pre></li>
-<li><p>安装 mcpp</p>
-<pre><code>sudo yum install libmcpp-devel
-</code></pre></li>
-</ol>
+        <h2 id="表现"><a href="#表现" class="headerlink" title="表现"></a>表现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install matplotlib</span><br></pre></td></tr></table></figure>
+<p>安装 matplotlib 时出现以下错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> Found existing installation: pyparsing 1.5.6</span><br><span class="line">Cannot uninstall &apos;pyparsing&apos;. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="缺失-bzip2-库"><a href="#缺失-bzip2-库" class="headerlink" title="缺失 bzip2 库"></a>缺失 bzip2 库</h2><h3 id="报错-1"><a href="#报错-1" class="headerlink" title="报错"></a>报错</h3><pre><code>src/Ice/ConnectionI.cpp:32:21: fatal error: bzlib.h: No such file or directory
-#  include &lt;bzlib.h&gt;
-             ^
-compilation terminated.
-make: *** [src/Ice/build/x64/shared/pic/ConnectionI.o] Error 1
-</code></pre><h3 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h3><pre><code>sudo yum install bzip2-devel
-</code></pre><h2 id="缺失-expat-库"><a href="#缺失-expat-库" class="headerlink" title="缺失 expat 库"></a>缺失 expat 库</h2><h3 id="报错-2"><a href="#报错-2" class="headerlink" title="报错"></a>报错</h3><pre><code>src/IceXML/Parser.cpp:12:19: fatal error: expat.h: No such file or directory
-#include &lt;expat.h&gt;
-               ^
-compilation terminated.
-make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
-</code></pre><h3 id="解决-2"><a href="#解决-2" class="headerlink" title="解决"></a>解决</h3><pre><code>sudo yum install expat-devel
-</code></pre>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>安装 matplotlib 需要卸载我已安装的 1.5.6 版本的 pyparsing，再重新装新版本，但是无法卸载</p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>手动重装最新版 pyparsing</p>
+<p>首先，去官网查看最新版是什么版本：<a href="https://pypi.org/project/pyparsing/" target="_blank" rel="noopener">https://pypi.org/project/pyparsing/</a></p>
+<p>当前最新版是 <code>pyparsing 2.2.0</code>，所以执行如下重新安装最新版：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install -I pyparsing==2.2.0</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -462,7 +445,7 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/" title="解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题">https://blog.huihut.com/2017/09/06/CompileIceMissingLibrary/</a>
+      <a href="https://blog.huihut.com/2018/10/13/PyparsingFailsToUninstallCausingErrorInInstallingMatplotlib/" title="pyparsing 无法卸载导致安装 matplotlib 出错">https://blog.huihut.com/2018/10/13/PyparsingFailsToUninstallCausingErrorInInstallingMatplotlib/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -478,9 +461,7 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
       
         <div class="post-tags">
           
-            <a href="/tags/链接装载库/" rel="tag"># 链接装载库</a>
-          
-            <a href="/tags/ZeroC-Ice/" rel="tag"># ZeroC-Ice</a>
+            <a href="/tags/Python/" rel="tag"># Python</a>
           
         </div>
       
@@ -493,8 +474,8 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/27/Oneplus3TBrushAndPlay/" rel="next" title="一加3T的刷机流程及玩机一些事">
-                <i class="fa fa-chevron-left"></i> 一加3T的刷机流程及玩机一些事
+              <a href="/2018/10/13/MissingPython-devCausesErrorInInstallingMatplotlib/" rel="next" title="python-dev 库缺失导致安装 matplotlib 出错">
+                <i class="fa fa-chevron-left"></i> python-dev 库缺失导致安装 matplotlib 出错
               </a>
             
           </div>
@@ -502,10 +483,6 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/13/GraphicsExercise2D/" rel="prev" title="使用MFC的CDC类绘制二维坐标系及正余弦函数">
-                使用MFC的CDC类绘制二维坐标系及正余弦函数 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -690,7 +667,7 @@ make: *** [src/IceXML/build/x64/shared/pic/Parser.o] Error 1
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失-mcpp-库"><span class="nav-number">1.</span> <span class="nav-text">缺失 mcpp 库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#报错"><span class="nav-number">1.1.</span> <span class="nav-text">报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决"><span class="nav-number">1.2.</span> <span class="nav-text">解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失-bzip2-库"><span class="nav-number">2.</span> <span class="nav-text">缺失 bzip2 库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#报错-1"><span class="nav-number">2.1.</span> <span class="nav-text">报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决-1"><span class="nav-number">2.2.</span> <span class="nav-text">解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失-expat-库"><span class="nav-number">3.</span> <span class="nav-text">缺失 expat 库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#报错-2"><span class="nav-number">3.1.</span> <span class="nav-text">报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决-2"><span class="nav-number">3.2.</span> <span class="nav-text">解决</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#表现"><span class="nav-number">1.</span> <span class="nav-text">表现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原因"><span class="nav-number">2.</span> <span class="nav-text">原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决"><span class="nav-number">3.</span> <span class="nav-text">解决</span></a></li></ol></div>
             
 
           </div>
