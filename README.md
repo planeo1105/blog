@@ -1,8 +1,4 @@
-# HuiHut 的博客
-
-## 地址
-
-* [blog.huihut.com](blog.huihut.com)
+# HuiHut 的博客 - [blog.huihut.com](blog.huihut.com)
 
 ## 博文
 
