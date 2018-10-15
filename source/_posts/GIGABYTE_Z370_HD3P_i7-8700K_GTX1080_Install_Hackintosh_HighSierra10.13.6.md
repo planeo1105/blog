@@ -40,7 +40,6 @@ categories:
 
 本博文使用的一些软件工具驱动，下文则不赘述。
 
-
 * [带 Clover 镜像](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
     * 10.13.6(17G2112) 镜像：[macOS High Sierra 10.13.6(17G2112) Installer with Clover 4606.dmg](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS%20High%20Sierra%2010.13.6%2817G2112%29%20Installer%20with%20Clover%204606.dmg)
     * 10.13.5(17F77)镜像：[macOS High Sierra 10.13.5(17F77) Installer with Clover 4512.dmg](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS%20High%20Sierra%2010.13.5%2817F77%29%20Installer%20with%20Clover%204512.dmg)
