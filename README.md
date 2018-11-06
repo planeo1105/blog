@@ -1,5 +1,6 @@
 # HuiHut 的博客 - [blog.huihut.com](https://blog.huihut.com)
 
+* [C# 解压压缩包及 7z 库缺失导致 Can not load 7-zip library or internal COM error!](source/_posts/CSharpUnzipAnd7zLibraryMissingError.md)
 * [技嘉Z370 HD3P + i7-8700K + GTX1080 装黑苹果 High Sierra 10.13.6](source/_posts/GIGABYTE_Z370_HD3P_i7-8700K_GTX1080_Install_Hackintosh_HighSierra10.13.6.md)
 * [pyparsing 无法卸载导致安装 matplotlib 出错](source/_posts/PyparsingFailsToUninstallCausingErrorInInstallingMatplotlib.md)
 * [python-dev 库缺失导致安装 matplotlib 出错](source/_posts/MissingPython-devCausesErrorInInstallingMatplotlib.md)

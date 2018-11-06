@@ -20,11 +20,11 @@ C# 程序解压 7z 文件的时候抛出异常
 Can not load 7-zip library or internal COM error! Message: DLL file does not exist.
 ```
 
+<!-- more -->
+
 ## 原因
 
 程序无法找到 7z 库，导致无法解压 7z 文件
-
-<!-- more -->
 
 ## 解决
 
