@@ -310,6 +310,176 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2017/03/26/MacQTCompilerOutputPathError/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="修电脑的裁缝酱">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ojlsgreog.bkt.clouddn.com/H_white.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HuiHut">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/26/MacQTCompilerOutputPathError/" itemprop="url">
+                  Mac下QT编译输出路径错误：ld unknown option ...
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-26T02:30:47+08:00">
+                2017-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS/" itemprop="url" rel="index">
+                    <span itemprop="name">CS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="ERROR-ld-unknown-option-rpath"><a href="#ERROR-ld-unknown-option-rpath" class="headerlink" title="ERROR: ld unknown option rpath"></a>ERROR: ld unknown option rpath</h2><p>Mac指定qmake的生成路径时，用 <code>-Wl,-rpath,$$PWD/..</code> 而不是 <code>-Wl,-rpath=$$PWD/..</code> 如下：</p>
+<pre><code>macx{
+# linux only
+
+# 编译时候指定libs查找位置
+QMAKE_LFLAGS_RELEASE += -Wl,-rpath,$$PWD/../../Release/libs -Wl
+QMAKE_LFLAGS_DEBUG += -Wl,-rpath,$$PWD/../../Release/libs -Wl
+
+# 指定生成路径
+DESTDIR = $$PWD/../../Release
+}
+</code></pre><p>Linux则用 <code>-Wl,-rpath=$$PWD/..</code></p>
+<pre><code>unix:!macx{
+# linux only
+
+# 编译时候指定libs查找位置
+QMAKE_LFLAGS_RELEASE += -Wl,-rpath=$$PWD/../../Release/libs -Wl,-Bsymbolic
+QMAKE_LFLAGS_DEBUG += -Wl,-rpath=$$PWD/../../Release/libs -Wl,-Bsymbolic
+
+# 指定生成路径
+DESTDIR = $$PWD/../../Release/libs
+
+}
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/26/MacQTCompilerOutputPathError/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2017/03/25/Shadowsocks-Qt5ForCentos7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1428,7 +1598,7 @@ pip install shadowsocks
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">47</span>
+                <span class="site-state-item-count">48</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1450,7 +1620,7 @@ pip install shadowsocks
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
