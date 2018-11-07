@@ -64,7 +64,7 @@ categories:
 
 如下图：
 
-![](http://ojlsgreog.bkt.clouddn.com/centosNTFSError.jpeg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/centosNTFSError.jpeg)
 
 这样应该需要输入root密码，用root账户登录修复模式，
 
@@ -74,7 +74,7 @@ categories:
 
 所以之前之前忙活的都没用了？
 
-![](http://ojlsgreog.bkt.clouddn.com/biaoqing1.gif)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/biaoqing1.gif)
 
 后来试了下原来
 

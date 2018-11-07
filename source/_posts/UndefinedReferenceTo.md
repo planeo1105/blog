@@ -22,7 +22,7 @@ categories:
 
 <!-- more -->
 
-![](http://ojlsgreog.bkt.clouddn.com/UndefinedReference.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/UndefinedReference.png)
 
 ## 猜想
 
@@ -43,6 +43,6 @@ categories:
 
 	mpicc -c main.c -std=c99 -lcstl -lstdc++ -fopenmp -lm -o main.o
 
-![](http://ojlsgreog.bkt.clouddn.com/UndefinedReferenceMakefile.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/UndefinedReferenceMakefile.png)
 
 如上图，改好之后就解决了！

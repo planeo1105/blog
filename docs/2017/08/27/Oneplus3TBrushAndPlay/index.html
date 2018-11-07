@@ -95,18 +95,18 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="前言本文主要聊聊一加3T卡刷第三方Rom，包括刷 TWRP 的 Recovery，卡刷流程，初始化，安装及使用Xposed框架和Magisk框架。 选择Rom刷机前要选择要刷的系统，即选择Rom。 Rom无非官方Rom或者第三方Rom。 官方Rom有氢OS(H2OS)、氧OS(OxygenOS)。第三方Rom就很多了，如MIUI、Flyme、CM、AICP、LineageOS等等。 官方Rom一般">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/OnePixel.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/15secondsADBInstaller.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/OnePixelInit.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/OnePixelInstalled.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/XposedUnOfficial.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/XposedModuleDownload.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/PixelLauncherTransparentDock.jpg">
-<meta property="og:updated_time" content="2018-10-14T04:32:24.789Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixel.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/15secondsADBInstaller.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixelInit.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixelInstalled.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/XposedUnOfficial.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/XposedModuleDownload.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/PixelLauncherTransparentDock.jpg">
+<meta property="og:updated_time" content="2018-11-07T09:56:47.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一加3T的刷机流程及玩机一些事">
 <meta name="twitter:description" content="前言本文主要聊聊一加3T卡刷第三方Rom，包括刷 TWRP 的 Recovery，卡刷流程，初始化，安装及使用Xposed框架和Magisk框架。 选择Rom刷机前要选择要刷的系统，即选择Rom。 Rom无非官方Rom或者第三方Rom。 官方Rom有氢OS(H2OS)、氧OS(OxygenOS)。第三方Rom就很多了，如MIUI、Flyme、CM、AICP、LineageOS等等。 官方Rom一般">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/OnePixel.png">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixel.png">
 
 
 
@@ -439,7 +439,7 @@
 <p>我选了个<code>OnePixel</code>，这是个基于氧OS的类Pixel版Rom，喜欢原生的朋友可以给你的爱机食用：</p>
 <p><a href="https://forum.xda-developers.com/oneplus-3t/development/onepixel-oos-based-custom-rom-pixel-t3650386" target="_blank" rel="noopener">[ROM][EAS][DEODEXED][OB13] OnePixel, OOS Based Custom Rom with Pixel Experience</a></p>
 <p>效果图</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/OnePixel.png" alt="OnePixel"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixel.png" alt="OnePixel"></p>
 <h2 id="安装-TWRP"><a href="#安装-TWRP" class="headerlink" title="安装 TWRP"></a>安装 TWRP</h2><p>因为一加官方 Recovery 功能较弱，所以先刷个 TWRP Recovery。</p>
 <h3 id="下载-TWRP"><a href="#下载-TWRP" class="headerlink" title="下载 TWRP"></a>下载 TWRP</h3><p>选择自己机型的TWRP下载</p>
 <p><a href="https://twrp.me/Devices/" target="_blank" rel="noopener">https://twrp.me/Devices/</a></p>
@@ -448,7 +448,7 @@
 </code></pre><h3 id="安装-ADB"><a href="#安装-ADB" class="headerlink" title="安装 ADB"></a>安装 ADB</h3><p>安装 ADB 可以使用一些一键安装工具（如：15秒ADB安装器）或者下载官方 Android SDK 的 platform-tools</p>
 <h4 id="启用USB调试"><a href="#启用USB调试" class="headerlink" title="启用USB调试"></a>启用USB调试</h4><p>不管哪种方式都需要首先将手机连上电脑，启用USB调试。</p>
 <p>设置 &gt; 开发人员选项 &gt; USB调试</p>
-<h4 id="使用15秒ADB安装器安装"><a href="#使用15秒ADB安装器安装" class="headerlink" title="使用15秒ADB安装器安装"></a>使用15秒ADB安装器安装</h4><p><img src="http://ojlsgreog.bkt.clouddn.com/15secondsADBInstaller.png" alt="15 seconds ADB Installer"></p>
+<h4 id="使用15秒ADB安装器安装"><a href="#使用15秒ADB安装器安装" class="headerlink" title="使用15秒ADB安装器安装"></a>使用15秒ADB安装器安装</h4><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/15secondsADBInstaller.png" alt="15 seconds ADB Installer"></p>
 <p>作者发的帖子: <a href="https://forum.xda-developers.com/showthread.php?p=48915118#post48915118" target="_blank" rel="noopener">[TOOL] [WINDOWS] ADB, Fastboot and Drivers - 15 seconds ADB Installer v1.4.3</a></p>
 <p>国内百度云盘下载：</p>
 <p>链接：<a href="http://pan.baidu.com/s/1c1FWmTM" target="_blank" rel="noopener">http://pan.baidu.com/s/1c1FWmTM</a> 密码：vg0g</p>
@@ -489,18 +489,18 @@
 <pre><code>OnePixel_OB13_oneplus3t-7.1.1rc.zip
 </code></pre><p>划过<code>Swipe to confirm Flash</code>进行安装，装好后重启进入系统。</p>
 <h2 id="初始化设置"><a href="#初始化设置" class="headerlink" title="初始化设置"></a>初始化设置</h2><p>进入系统后进行初始化设置</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/OnePixelInit.png" alt="OnePixelInit"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixelInit.png" alt="OnePixelInit"></p>
 <p>注意：WiFi/数据连接没代理不要连接，断网设置，不然会一直连接不上Google而卡在那里的。</p>
 <p>初始化好之后设置了些东西就是这样子啦</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/OnePixelInstalled.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixelInstalled.jpg" alt=""></p>
 <h2 id="Xposed框架"><a href="#Xposed框架" class="headerlink" title="Xposed框架"></a>Xposed框架</h2><p>大名鼎鼎的Xposed框架，可以通过添加各种模块实现各种功能，不过官方版现在才更新到适配Android6.0</p>
 <p>官方链接：<a href="http://repo.xposed.info/module/de.robv.android.xposed.installer" target="_blank" rel="noopener">Xposed Installer</a></p>
 <p>好在XDA社区有 Material Design 版的Xposed框架下载器（推荐）</p>
 <p><a href="https://forum.xda-developers.com/devdb/project/?id=13191#downloads" target="_blank" rel="noopener">xda-developers . Material Design Xposed Installer</a></p>
 <p>安装 Material Design Xposed Installer 后在 UnOfficial 这栏选择适合自己手机型号的Xposed框架下载</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/XposedUnOfficial.jpg" alt="XposedUnOfficial"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/XposedUnOfficial.jpg" alt="XposedUnOfficial"></p>
 <p>装好Xposed框架后，下载Xposed模块</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/XposedModuleDownload.jpg" alt="XposedModuleDownload"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/XposedModuleDownload.jpg" alt="XposedModuleDownload"></p>
 <p>知乎上有些好的Xposed模块推荐</p>
 <p><a href="https://www.zhihu.com/question/22063862/answer/95339323" target="_blank" rel="noopener">知乎 . Android 系统上的 Xposed 框架中都有哪些值得推荐的模块？</a></p>
 <h2 id="Magisk框架"><a href="#Magisk框架" class="headerlink" title="Magisk框架"></a>Magisk框架</h2><p>Magisk是类似xposed的第三方应用接口，但是暂时模块较少。</p>
@@ -509,7 +509,7 @@
 <p>下面是安利Magisk的帖子，里面有各种模块介绍：</p>
 <p><a href="http://www.oneplusbbs.com/thread-3302341-1-1.html" target="_blank" rel="noopener">[教程] (搬运XDA)magisk框架教程以及模块-xposed的替代品</a></p>
 <p>我因为OnePixel Rom自带Magisk，也就顺便装了个<code>Pixel Launcher transparent dock</code>，让pixel luncher底栏的颜色变透明。</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/PixelLauncherTransparentDock.jpg" alt="PixelLauncherTransparentDock"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/PixelLauncherTransparentDock.jpg" alt="PixelLauncherTransparentDock"></p>
 <p>效果如上面初始化设置那里的截图。</p>
 
       

@@ -53,4 +53,4 @@ git config --global --add http.sslVersion tlsv1.2
 
 操作如下图：
 
-![](http://ojlsgreog.bkt.clouddn.com/gitconfighttp.sslVersion.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/gitconfighttp.sslVersion.png)

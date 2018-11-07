@@ -95,20 +95,20 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="Flutter 是一个 Google 发布的跨平台移动 UI 框架，使用 Dart 语言开发，可以构建高质量原生 iOS 、Android 以及 Fuchsia OS 应用，并且在排版、图标、滚动、点击等方面实现零差异。 Flutter 官网 鉴于最近出了 beta 版，就来尝鲜一下吧。 本文有 Windows + Android Studio 与 MacOS + VS Code 的体验。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/GitCloneFlutter.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/flutterdoctor.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/AndroidStudioInstallFlutter.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/ASRunFlutterAPP.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/VSCodeInstallDartCode.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/MacFlutterDoctorRequiresXcode.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/FlutterOfficialSiteXcode.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/MacFlutterDoctorRequiresXcode9.0.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/MacFlutterRun.jpg">
-<meta property="og:updated_time" content="2018-10-13T06:37:35.633Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GitCloneFlutter.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/flutterdoctor.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/AndroidStudioInstallFlutter.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/ASRunFlutterAPP.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/VSCodeInstallDartCode.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterDoctorRequiresXcode.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/FlutterOfficialSiteXcode.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterDoctorRequiresXcode9.0.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterRun.jpg">
+<meta property="og:updated_time" content="2018-11-07T09:57:48.416Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter beta 版尝鲜（在 Windows + Android Studio 与 MacOS + VS Code 的安装配置）">
 <meta name="twitter:description" content="Flutter 是一个 Google 发布的跨平台移动 UI 框架，使用 Dart 语言开发，可以构建高质量原生 iOS 、Android 以及 Fuchsia OS 应用，并且在排版、图标、滚动、点击等方面实现零差异。 Flutter 官网 鉴于最近出了 beta 版，就来尝鲜一下吧。 本文有 Windows + Android Studio 与 MacOS + VS Code 的体验。">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/GitCloneFlutter.png">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GitCloneFlutter.png">
 
 
 
@@ -422,14 +422,14 @@
 <h2 id="Windows-Android-Studio"><a href="#Windows-Android-Studio" class="headerlink" title="Windows + Android Studio"></a>Windows + Android Studio</h2><h3 id="获取-Flutter-SDK"><a href="#获取-Flutter-SDK" class="headerlink" title="获取 Flutter SDK"></a>获取 Flutter SDK</h3><p>使用 <a href="https://git-scm.com/" target="_blank" rel="noopener">git</a> 克隆下来 Flutter SDK</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b beta https://github.com/flutter/flutter.git</span><br></pre></td></tr></table></figure>
 <p>也可以使用中国的镜像，使用方法：<a href="https://github.com/flutter/flutter/wiki/Using-Flutter-in-China" target="_blank" rel="noopener">Using Flutter in China</a></p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/GitCloneFlutter.png" alt="GitCloneFlutter"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GitCloneFlutter.png" alt="GitCloneFlutter"></p>
 <h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>添加 <code>flutter\bin</code> 的完整路径到<code>用户变量</code> <code>Path</code>，如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\code\git\flutter\bin</span><br></pre></td></tr></table></figure>
 <h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><p>打开<code>cmd</code>或者<code>PowerShell</code>，安装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
 <p>安装过程可能持续比较久</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/flutterdoctor.png" alt="flutterdoctor"></p>
-<h3 id="为-Android-Studio-安装-Flutter-插件"><a href="#为-Android-Studio-安装-Flutter-插件" class="headerlink" title="为 Android Studio 安装 Flutter 插件"></a>为 Android Studio 安装 Flutter 插件</h3><p><img src="http://ojlsgreog.bkt.clouddn.com/AndroidStudioInstallFlutter.png" alt="AndroidStudioInstallFlutter"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/flutterdoctor.png" alt="flutterdoctor"></p>
+<h3 id="为-Android-Studio-安装-Flutter-插件"><a href="#为-Android-Studio-安装-Flutter-插件" class="headerlink" title="为 Android Studio 安装 Flutter 插件"></a>为 Android Studio 安装 Flutter 插件</h3><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/AndroidStudioInstallFlutter.png" alt="AndroidStudioInstallFlutter"></p>
 <p>装好后重启 Android Studio</p>
 <h3 id="创建-Flutter-APP"><a href="#创建-Flutter-APP" class="headerlink" title="创建 Flutter APP"></a>创建 Flutter APP</h3><ol>
 <li>选择 <code>File</code> &gt; <code>New Flutter Project</code></li>
@@ -443,7 +443,7 @@
 <li>选择设备</li>
 <li><code>Run</code></li>
 </ol>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/ASRunFlutterAPP.png" alt="ASRunFlutterAPP"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/ASRunFlutterAPP.png" alt="ASRunFlutterAPP"></p>
 <h3 id="尝试热重载"><a href="#尝试热重载" class="headerlink" title="尝试热重载"></a>尝试热重载</h3><p>把<code>lib/main.dart</code>里面的字符串</p>
 <p><code>&#39;You have pushed the button this many times:&#39;</code></p>
 <p>改成</p>
@@ -463,7 +463,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $PATH</span><br></pre></td></tr></table></figure>
 <h3 id="安装依赖-1"><a href="#安装依赖-1" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
 <h3 id="为-VS-Code-安装-Flutter-插件"><a href="#为-VS-Code-安装-Flutter-插件" class="headerlink" title="为 VS Code 安装 Flutter 插件"></a>为 VS Code 安装 Flutter 插件</h3><p>在扩展商店中搜索 <code>Dart Code</code> 下载安装</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/VSCodeInstallDartCode.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/VSCodeInstallDartCode.jpg" alt=""></p>
 <p>安装好后重新打开</p>
 <p>点击 <code>查看</code> - <code>命令面板</code>，搜索 <code>Flutter: Run Flutter Doctor</code> </p>
 <p>如果 VS Code 找不到 Flutter SDK 路径，就点击进行配置</p>
@@ -471,12 +471,12 @@
 <h3 id="编译-iOS-需要-Xcode-9-0-0"><a href="#编译-iOS-需要-Xcode-9-0-0" class="headerlink" title="编译 iOS 需要 Xcode 9.0.0+"></a>编译 iOS 需要 Xcode 9.0.0+</h3><p>接下来再检查还需要安装什么</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
 <p>然后突然发现。。。</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/MacFlutterDoctorRequiresXcode.jpg" alt="MacFlutterDoctorRequiresXcode"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterDoctorRequiresXcode.jpg" alt="MacFlutterDoctorRequiresXcode"></p>
 <p>要编译 iOS 应用需要 Xcode 9.0.0+ ！</p>
 <p>可是官网明明说的是 Xcode 7.2+ ？打脸？？</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/FlutterOfficialSiteXcode.jpg" alt="FlutterOfficialSiteXcode"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/FlutterOfficialSiteXcode.jpg" alt="FlutterOfficialSiteXcode"></p>
 <p>对此，我特意把我的 Xcode 从 7.1 更新到 7.2，结果还是说需要 9.0.0+，看来是官网教程没更新了。</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/MacFlutterDoctorRequiresXcode9.0.jpg" alt="MacFlutterDoctorRequiresXcode9"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterDoctorRequiresXcode9.0.jpg" alt="MacFlutterDoctorRequiresXcode9"></p>
 <p>什么？你说为什么不更新到 Xcode 最新版？</p>
 <p>这个……由于博主的是黑苹果，无法升级 MacOS，现在还是 OSX 10.10.5，最高支持的 Xcode 是 7.2.1</p>
 <p>所以只好再编译 Android 应用了，下面也只讲构建 Android 的</p>
@@ -484,7 +484,7 @@
 <h3 id="创建并执行-Flutter-APP"><a href="#创建并执行-Flutter-APP" class="headerlink" title="创建并执行 Flutter APP"></a>创建并执行 Flutter APP</h3><p>在 VS Code 的终端（或其他终端）上跳转到要创建项目的路径，然后创建名为<code>flutter_app</code>的项目</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd ~/code/Android</span><br><span class="line">flutter create flutter_app</span><br><span class="line">cd flutter_app</span><br><span class="line">flutter run</span><br></pre></td></tr></table></figure>
 <p>在 Windows 的时候使用的是模拟器，现在用真机体验一下</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/MacFlutterRun.jpg" alt="MacFlutterRun"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterRun.jpg" alt="MacFlutterRun"></p>
 <p>运行后，试着修改字符串</p>
 <p><code>&#39;You have pushed the button this many times:&#39;</code></p>
 <p>改成</p>

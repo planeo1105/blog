@@ -217,7 +217,7 @@ Makefile:161: recipe for target 'all' failed
 mingw32-make: *** [all] Error 2
 ```
 
-![MinGW-w64_aviriff.h_file_annotation_error](http://ojlsgreog.bkt.clouddn.com/MinGW-w64_aviriff.h_file_annotation_error.png)
+![MinGW-w64_aviriff.h_file_annotation_error](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MinGW-w64_aviriff.h_file_annotation_error.png)
 
 #### 解决
 
@@ -272,7 +272,7 @@ Makefile:161: recipe for target 'all' failed
 mingw32-make: *** [all] Error 2
 ```
 
-![](http://ojlsgreog.bkt.clouddn.com/20180925220634.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/20180925220634.png)
 
 #### 原因
 
@@ -362,7 +362,7 @@ Makefile:161: recipe for target 'all' failed
 mingw32-make: *** [all] Error 2
 ```
 
-![](http://ojlsgreog.bkt.clouddn.com/20180925221908.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/20180925221908.png)
 
 #### 原因
 

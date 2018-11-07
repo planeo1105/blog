@@ -21,7 +21,7 @@ E:\Qt\Qt5.9.3\5.9.3\mingw53_32\include\QtCore\qglobal.h:738: error: static asser
 
 <!-- more -->
 
-![](http://ojlsgreog.bkt.clouddn.com/Q_DECLARE_METATYPE.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Q_DECLARE_METATYPE.png)
 
 ## 报错代码
 ```

@@ -95,14 +95,14 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="前言 Shadowsocks无GUI客户端教程：Linux安装配置Shadowsocks客户端及开机自动启动 Shadowsocks-Qt5客户端教程：Shadowsocks-Qt5 For Centos 7 Shadowsocks服务端教程：搬瓦工Shadowsocks安装及配置多用户(服务端)  安装Debian/Ubuntu:apt-get install python-pip pip in">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/SystemNetworkProxy.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/SwitchyOmegaProxy.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/SwitchyOmegaAutoSwitch.png">
-<meta property="og:updated_time" content="2018-10-13T06:26:47.502Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SystemNetworkProxy.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SwitchyOmegaProxy.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SwitchyOmegaAutoSwitch.png">
+<meta property="og:updated_time" content="2018-11-07T09:57:53.572Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux安装配置Shadowsocks客户端及开机自动启动">
 <meta name="twitter:description" content="前言 Shadowsocks无GUI客户端教程：Linux安装配置Shadowsocks客户端及开机自动启动 Shadowsocks-Qt5客户端教程：Shadowsocks-Qt5 For Centos 7 Shadowsocks服务端教程：搬瓦工Shadowsocks安装及配置多用户(服务端)  安装Debian/Ubuntu:apt-get install python-pip pip in">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/SystemNetworkProxy.png">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SystemNetworkProxy.png">
 
 
 
@@ -489,7 +489,7 @@ sudo pip install shadowsocks
 </table>
 <p>保存退出就配置好啦！</p>
 <h2 id="设置代理"><a href="#设置代理" class="headerlink" title="设置代理"></a>设置代理</h2><h3 id="系统代理"><a href="#系统代理" class="headerlink" title="系统代理"></a>系统代理</h3><p>可以选择系统代理，就如下图配置就好啦：</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/SystemNetworkProxy.png" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SystemNetworkProxy.png" alt=""></p>
 <p>但是系统代理是全局走代理的，访问国内网站一般会有限制（速度较慢、浪费流量、版权受限等）。</p>
 <p>所以推荐下面的用浏览器按照规则选择性代理。</p>
 <h3 id="浏览器代理"><a href="#浏览器代理" class="headerlink" title="浏览器代理"></a>浏览器代理</h3><h4 id="安装-SwitchyOmega-插件"><a href="#安装-SwitchyOmega-插件" class="headerlink" title="安装 SwitchyOmega 插件"></a>安装 SwitchyOmega 插件</h4><p>以 Chrome 为例，安装 SwitchyOmega 插件代理。</p>
@@ -500,7 +500,7 @@ sudo pip install shadowsocks
 <li><code>Port</code>填写<code>shadowsocks.json</code>配置中的<code>local_port</code></li>
 <li>左边<code>Apply changes</code>保存。</li>
 </ul>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/SwitchyOmegaProxy.png" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SwitchyOmegaProxy.png" alt=""></p>
 <h4 id="配置-Auto-Switch"><a href="#配置-Auto-Switch" class="headerlink" title="配置 Auto Switch"></a>配置 Auto Switch</h4><ul>
 <li><code>Rule list rules</code>的<code>Profile</code>填<code>proxy</code></li>
 <li><code>Default</code>的<code>Profile</code>填<code>[Direct]</code></li>
@@ -512,7 +512,7 @@ sudo pip install shadowsocks
 </li>
 <li>左边<code>Apply changes</code>保存</li>
 </ul>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/SwitchyOmegaAutoSwitch.png" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SwitchyOmegaAutoSwitch.png" alt=""></p>
 <h4 id="启用-SwitchyOmega"><a href="#启用-SwitchyOmega" class="headerlink" title="启用 SwitchyOmega"></a>启用 SwitchyOmega</h4><p>启用 SwitchyOmega 插件，选择 Auto Switch 模式就可以了。</p>
 <h2 id="测试启动"><a href="#测试启动" class="headerlink" title="测试启动"></a>测试启动</h2><p>配置文件的路径改成自己的，如：<code>/etc/shadowsocks.json</code></p>
 <ul>

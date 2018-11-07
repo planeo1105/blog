@@ -85,7 +85,7 @@ categories:
 
 可以选择系统代理，就如下图配置就好啦：
 
-![](http://ojlsgreog.bkt.clouddn.com/SystemNetworkProxy.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SystemNetworkProxy.png)
 
 但是系统代理是全局走代理的，访问国内网站一般会有限制（速度较慢、浪费流量、版权受限等）。
 
@@ -107,7 +107,7 @@ Chrome 打开[chrome://extensions/](chrome://extensions/)，把插件托进去�
 * `Port`填写`shadowsocks.json`配置中的`local_port`
 * 左边`Apply changes`保存。
 
-![](http://ojlsgreog.bkt.clouddn.com/SwitchyOmegaProxy.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SwitchyOmegaProxy.png)
 
 #### 配置 Auto Switch
 
@@ -121,7 +121,7 @@ Chrome 打开[chrome://extensions/](chrome://extensions/)，把插件托进去�
 * 下载规则文件` Download Profile Now`
 * 左边`Apply changes`保存
 
-![](http://ojlsgreog.bkt.clouddn.com/SwitchyOmegaAutoSwitch.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SwitchyOmegaAutoSwitch.png)
 
 #### 启用 SwitchyOmega
 

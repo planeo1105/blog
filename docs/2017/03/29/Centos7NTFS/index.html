@@ -95,13 +95,13 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="NTFS-3G安装使用 NTFS-3G 实现，可以挂载 NTFS，还可以挂载 HFS+ 等，以下是在 Centos 7 下安装 NTFS-3G 及挂载 NTFS 分区 wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo  sudo yum update  sudo yum install ntf">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/centosNTFSError.jpeg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/biaoqing1.gif">
-<meta property="og:updated_time" content="2017-07-28T12:19:37.000Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/centosNTFSError.jpeg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/biaoqing1.gif">
+<meta property="og:updated_time" content="2018-11-07T09:57:37.864Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos 7 挂载 NTFS 分区">
 <meta name="twitter:description" content="NTFS-3G安装使用 NTFS-3G 实现，可以挂载 NTFS，还可以挂载 HFS+ 等，以下是在 Centos 7 下安装 NTFS-3G 及挂载 NTFS 分区 wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo  sudo yum update  sudo yum install ntf">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/centosNTFSError.jpeg">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/centosNTFSError.jpeg">
 
 
 
@@ -437,12 +437,12 @@ mount -t ntfs-3g /dev/sdb5 /mnt/windows/f
 </code></pre><h2 id="设置后开机无法启动（无法挂载）"><a href="#设置后开机无法启动（无法挂载）" class="headerlink" title="设置后开机无法启动（无法挂载）"></a>设置后开机无法启动（无法挂载）</h2><p>网上很多教程都是如上几步就好了~</p>
 <p>然而我的无法开机。</p>
 <p>如下图：</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/centosNTFSError.jpeg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/centosNTFSError.jpeg" alt=""></p>
 <p>这样应该需要输入root密码，用root账户登录修复模式，</p>
 <p>然后 <code>vim /etc/fstab</code> 删除刚刚添加的东西，</p>
 <p><code>reboot</code> 就能进入系统了</p>
 <p>所以之前之前忙活的都没用了？</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/biaoqing1.gif" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/biaoqing1.gif" alt=""></p>
 <p>后来试了下原来</p>
 <pre><code>mount -t ntfs-3g /dev/sdb3 /mnt/windows/d
 </code></pre><p>这句本身就无法挂载！</p>

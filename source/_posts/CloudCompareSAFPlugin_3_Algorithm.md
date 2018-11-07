@@ -34,7 +34,7 @@ qSAF源码：[Github . qSAF](https://github.com/huihut/qSAF)
 
 <!-- more -->
 
-![](http://ojlsgreog.bkt.clouddn.com/SAFDlg.ui.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SAFDlg.ui.jpg)
 
 `doubleSpinBox`要设置范围：`0.00`到`90.00`，默认值分别设为`20.00`和`70.00`。
 
@@ -281,7 +281,7 @@ qSAF源码：[Github . qSAF](https://github.com/huihut/qSAF)
   	
 ## 效果
 
-<img src="http://ojlsgreog.bkt.clouddn.com/SAFDemo.jpg" width = "99%" />
+<img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SAFDemo.jpg" width = "99%" />
   	
 ## 结语
 
@@ -295,6 +295,6 @@ qSAF源码：[Github . qSAF](https://github.com/huihut/qSAF)
 
 看代码的过程是非常痛苦的，CC里面大量的模板编程思想，接口设计思想，还有去他继承谁爸爸的爸爸……
 
-![](http://ojlsgreog.bkt.clouddn.com/biaoqing1.gif)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/biaoqing1.gif)
 
 但是期间确实学到很多，以此作为分享，望共勉！

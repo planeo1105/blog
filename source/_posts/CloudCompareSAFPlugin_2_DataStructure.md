@@ -174,7 +174,7 @@ qSAF源码：[Github . qSAF](https://github.com/huihut/qSAF)
 
 看下在QT的调试信息：
 
-![](http://ojlsgreog.bkt.clouddn.com/ccPointCloudDataStructure.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/ccPointCloudDataStructure.jpg)
 
 我们可以发现，其实点云的信息都能在`ccPointCloud`中获取，比如点容量、点数量、点坐标、标量域、颜色值等。
 

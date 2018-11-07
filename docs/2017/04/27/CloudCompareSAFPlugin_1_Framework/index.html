@@ -96,12 +96,12 @@
 <meta property="og:description" content="唠叨本文唠叨了些CloudComapre这个开源软件的插件编写。 虽然这篇是入门教程，但是作为一只有梦想的程序猿，怎能像很多入门教程那样写个残缺的入门教程呢！ 所以这是一个完整插件的入门教程，我们要写的插件是qSAF(Scan Angle Filter)，这是可以过滤给定范围内点的扫描角度的插件。 下面分三篇来介绍，分别是插件框架篇、数据结构篇、算法实现篇。 这是第一篇，插件框架篇，你可以根据本文">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.cloudcompare.org/images/snapshot2_small.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/qSAFFile.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/qSAFFile2.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/QTqSAFPluginsPro.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/qSAFShoudNotBeUsedAsIs.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/qSAFStartFromError.jpg">
-<meta property="og:updated_time" content="2018-05-31T00:50:08.000Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFFile.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFFile2.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QTqSAFPluginsPro.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFShoudNotBeUsedAsIs.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFStartFromError.jpg">
+<meta property="og:updated_time" content="2018-11-07T09:57:40.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CloudCompare插件编写一（插件框架）">
 <meta name="twitter:description" content="唠叨本文唠叨了些CloudComapre这个开源软件的插件编写。 虽然这篇是入门教程，但是作为一只有梦想的程序猿，怎能像很多入门教程那样写个残缺的入门教程呢！ 所以这是一个完整插件的入门教程，我们要写的插件是qSAF(Scan Angle Filter)，这是可以过滤给定范围内点的扫描角度的插件。 下面分三篇来介绍，分别是插件框架篇、数据结构篇、算法实现篇。 这是第一篇，插件框架篇，你可以根据本文">
@@ -433,7 +433,7 @@
 <p>这个<code>qDummyPlugin</code>就是个插件的模板，用它来写自己的插件。</p>
 <p>我们把这个模板插件文件夹拷贝一份，改为自己的插件名<code>qSAF</code>（当然，你也可以改为其他你喜欢的，以下不做累述）</p>
 <p>现在<code>qSAF</code>里面有如下几个文件</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/qSAFFile.jpg" alt="qSAFFile.jpg"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFFile.jpg" alt="qSAFFile.jpg"></p>
 <p>我们需要做的是<strong>把里面的<code>qDummyPlugin</code>及类似的名字改为自己的<code>qSAF</code></strong>。</p>
 <p><strong>注意：文件名和文件里面内容都要修改！</strong></p>
 <p>如：</p>
@@ -476,13 +476,13 @@ if (INSTALL_QSAF_PLUGIN)
 endif()
 </code></pre><p>剩下的<code>qSAF.h</code>、<code>qSAF.cpp</code>和<code>qSAF.qrc</code>就不一一列出了</p>
 <p>修改后变成这样：</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/qSAFFile2.jpg" alt="qSAFFile2"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFFile2.jpg" alt="qSAFFile2"></p>
 <h3 id="使用qmake构建pro文件"><a href="#使用qmake构建pro文件" class="headerlink" title="使用qmake构建pro文件"></a>使用qmake构建pro文件</h3><p>在终端进入到你的插件的<code>qSAF</code>目录，执行：</p>
 <pre><code>qmake -project -r CMakeLists.txt
 </code></pre><p>就会在<code>qSAF</code>目录下构建一个项目的pro文件。</p>
 <h3 id="导入工程到QT"><a href="#导入工程到QT" class="headerlink" title="导入工程到QT"></a>导入工程到QT</h3><p>现在把CloudComapre导入到QT，</p>
 <p>在<code>CloudComapre-plugins-plugins.pro</code>中，加上自己的插件：</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/QTqSAFPluginsPro.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QTqSAFPluginsPro.jpg" alt=""></p>
 <p>保存刷新后就会在项目上看到了。</p>
 <h3 id="pro文件编写"><a href="#pro文件编写" class="headerlink" title="pro文件编写"></a>pro文件编写</h3><p>由于qmake自动生成的pro文件不适合我们要写的插件，所以要自己修改pro文件。</p>
 <p>pro文件的编写可以参考：</p>
@@ -492,7 +492,7 @@ endif()
 <p><strong><em>特别注意：指定生成路径中的libs和plugins要正确</em></strong></p>
 <h3 id="完成模板插件框架"><a href="#完成模板插件框架" class="headerlink" title="完成模板插件框架"></a>完成模板插件框架</h3><p>没错！这就完成了，你的插件已经做出来了！现在可以Run一下或者Debug一下看看啦~</p>
 <p>选中点云，使用<code>qSAF</code>，会这样：</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/qSAFShoudNotBeUsedAsIs.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFShoudNotBeUsedAsIs.jpg" alt=""></p>
 <p>莫慌！这是正常现象，因为你的<code>qSAF</code>具体实现还没有写呢！</p>
 <h3 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h3><h4 id="1-编译出错"><a href="#1-编译出错" class="headerlink" title="1. 编译出错"></a>1. 编译出错</h4><p>可能原因：</p>
 <ul>
@@ -552,7 +552,7 @@ void doAction();
 <p>现在删掉<code>/*** HERE STARTS THE ACTION ***/</code>下面的，改为自己的一句：</p>
 <pre><code>m_app-&gt;dispToConsole(&quot;[qSAF] 程序是从错误开始的！&quot;,ccMainAppInterface::ERR_CONSOLE_MESSAGE);
 </code></pre><p>结果如下：</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/qSAFStartFromError.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFStartFromError.jpg" alt=""></p>
 <h2 id="插件框架完成"><a href="#插件框架完成" class="headerlink" title="插件框架完成"></a>插件框架完成</h2><p>现在已经完成了插件框架的编写啦。</p>
 <p>其实只要使用<code>CloudComapre</code>提供的插件模板<code>qDummyPlugin</code>，改成自己的就可以啦。</p>
 <p>现在可以发挥你的想象力，在<code>doAction()</code>里面随心所欲地做各种事情啦。</p>

@@ -95,15 +95,15 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="qt dyld library not loaded …/libhdf5.100.dylib 分析无法链接动态库，考虑手动添加链接。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/DyldLibraryNotLoaded.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/hdf5-lib-dylib.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/QTRunEnvironment.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/QtDebugEnvironment.jpg">
-<meta property="og:updated_time" content="2017-08-23T02:56:21.000Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/DyldLibraryNotLoaded.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/hdf5-lib-dylib.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QTRunEnvironment.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QtDebugEnvironment.jpg">
+<meta property="og:updated_time" content="2018-11-07T09:56:47.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="QT 无法链接动态库 dyld library not loaded ... libhdf5.100.dylib">
 <meta name="twitter:description" content="qt dyld library not loaded …/libhdf5.100.dylib 分析无法链接动态库，考虑手动添加链接。">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/DyldLibraryNotLoaded.png">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/DyldLibraryNotLoaded.png">
 
 
 
@@ -409,18 +409,18 @@
       
 
       
-        <h2 id="qt-dyld-library-not-loaded-…-libhdf5-100-dylib"><a href="#qt-dyld-library-not-loaded-…-libhdf5-100-dylib" class="headerlink" title="qt dyld library not loaded …/libhdf5.100.dylib"></a>qt dyld library not loaded …/libhdf5.100.dylib</h2><p><img src="http://ojlsgreog.bkt.clouddn.com/DyldLibraryNotLoaded.png" alt="DyldLibraryNotLoaded"></p>
+        <h2 id="qt-dyld-library-not-loaded-…-libhdf5-100-dylib"><a href="#qt-dyld-library-not-loaded-…-libhdf5-100-dylib" class="headerlink" title="qt dyld library not loaded …/libhdf5.100.dylib"></a>qt dyld library not loaded …/libhdf5.100.dylib</h2><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/DyldLibraryNotLoaded.png" alt="DyldLibraryNotLoaded"></p>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>无法链接动态库，考虑手动添加链接。</p>
 <a id="more"></a>
-<h2 id="找到-libhdf5-100-dylib-文件及路径"><a href="#找到-libhdf5-100-dylib-文件及路径" class="headerlink" title="找到 libhdf5.100.dylib 文件及路径"></a>找到 libhdf5.100.dylib 文件及路径</h2><p><img src="http://ojlsgreog.bkt.clouddn.com/hdf5-lib-dylib.jpg" alt=""></p>
+<h2 id="找到-libhdf5-100-dylib-文件及路径"><a href="#找到-libhdf5-100-dylib-文件及路径" class="headerlink" title="找到 libhdf5.100.dylib 文件及路径"></a>找到 libhdf5.100.dylib 文件及路径</h2><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/hdf5-lib-dylib.jpg" alt=""></p>
 <pre><code>/usr/local/opt/hdf5/lib
 </code></pre><h2 id="添加到-QT-Run-Environment"><a href="#添加到-QT-Run-Environment" class="headerlink" title="添加到 QT Run Environment"></a>添加到 QT Run Environment</h2><p>把路径添加到<code>Run Environment</code>中的<code>DYLD_LIBRARY_PATH</code>变量的值中。</p>
 <p>若无此变量则添加，若已有则按编辑并在后面加上路径。</p>
 <p>Run!</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/QTRunEnvironment.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QTRunEnvironment.jpg" alt=""></p>
 <h2 id="补充：添加到构建设置-构建环境中"><a href="#补充：添加到构建设置-构建环境中" class="headerlink" title="补充：添加到构建设置-构建环境中"></a>补充：添加到构建设置-构建环境中</h2><p>如果添加到 <code>Run Environment</code> 中还是不行，可以添加到<code>Build</code>-<code>构建设置</code>-<code>构建环境</code>中。</p>
 <p>Debug!</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/QtDebugEnvironment.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QtDebugEnvironment.jpg" alt=""></p>
 <h2 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h2><p><a href="http://stackoverflow.com/questions/13611740/qt-mac-osx-10-8-dyld-library-not-loaded-image-not-found" target="_blank" rel="noopener">stackoverflow . qt mac osx 10.8 dyld: library not loaded…image not found</a></p>
 
       

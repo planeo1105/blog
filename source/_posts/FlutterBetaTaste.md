@@ -34,7 +34,7 @@ git clone -b beta https://github.com/flutter/flutter.git
 
 也可以使用中国的镜像，使用方法：[Using Flutter in China](https://github.com/flutter/flutter/wiki/Using-Flutter-in-China)
 
-![GitCloneFlutter](http://ojlsgreog.bkt.clouddn.com/GitCloneFlutter.png)
+![GitCloneFlutter](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GitCloneFlutter.png)
 
 ### 配置环境变量
 
@@ -54,11 +54,11 @@ flutter doctor
 
 安装过程可能持续比较久
 
-![flutterdoctor](http://ojlsgreog.bkt.clouddn.com/flutterdoctor.png)
+![flutterdoctor](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/flutterdoctor.png)
 
 ### 为 Android Studio 安装 Flutter 插件
 
-![AndroidStudioInstallFlutter](http://ojlsgreog.bkt.clouddn.com/AndroidStudioInstallFlutter.png)
+![AndroidStudioInstallFlutter](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/AndroidStudioInstallFlutter.png)
 
 装好后重启 Android Studio
 
@@ -77,7 +77,7 @@ flutter doctor
 1. 选择设备
 2. `Run`
 
-![ASRunFlutterAPP](http://ojlsgreog.bkt.clouddn.com/ASRunFlutterAPP.png)
+![ASRunFlutterAPP](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/ASRunFlutterAPP.png)
 
 ### 尝试热重载
 
@@ -142,7 +142,7 @@ flutter doctor
 
 在扩展商店中搜索 `Dart Code` 下载安装
 
-![](http://ojlsgreog.bkt.clouddn.com/VSCodeInstallDartCode.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/VSCodeInstallDartCode.jpg)
 
 安装好后重新打开
 
@@ -162,17 +162,17 @@ flutter doctor
 
 然后突然发现。。。
 
-![MacFlutterDoctorRequiresXcode](http://ojlsgreog.bkt.clouddn.com/MacFlutterDoctorRequiresXcode.jpg)
+![MacFlutterDoctorRequiresXcode](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterDoctorRequiresXcode.jpg)
 
 要编译 iOS 应用需要 Xcode 9.0.0+ ！
 
 可是官网明明说的是 Xcode 7.2+ ？打脸？？
 
-![FlutterOfficialSiteXcode](http://ojlsgreog.bkt.clouddn.com/FlutterOfficialSiteXcode.jpg)
+![FlutterOfficialSiteXcode](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/FlutterOfficialSiteXcode.jpg)
 
 对此，我特意把我的 Xcode 从 7.1 更新到 7.2，结果还是说需要 9.0.0+，看来是官网教程没更新了。
 
-![MacFlutterDoctorRequiresXcode9](http://ojlsgreog.bkt.clouddn.com/MacFlutterDoctorRequiresXcode9.0.jpg)
+![MacFlutterDoctorRequiresXcode9](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterDoctorRequiresXcode9.0.jpg)
 
 什么？你说为什么不更新到 Xcode 最新版？
 
@@ -196,7 +196,7 @@ flutter run
 
 在 Windows 的时候使用的是模拟器，现在用真机体验一下
 
-![MacFlutterRun](http://ojlsgreog.bkt.clouddn.com/MacFlutterRun.jpg)
+![MacFlutterRun](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterRun.jpg)
 
 运行后，试着修改字符串
 

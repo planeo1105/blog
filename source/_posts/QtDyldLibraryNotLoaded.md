@@ -15,7 +15,7 @@ categories:
 ## qt dyld library not loaded .../libhdf5.100.dylib
 
 
-![DyldLibraryNotLoaded](http://ojlsgreog.bkt.clouddn.com/DyldLibraryNotLoaded.png)
+![DyldLibraryNotLoaded](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/DyldLibraryNotLoaded.png)
 
 ## 分析
 
@@ -25,7 +25,7 @@ categories:
 
 ## 找到 libhdf5.100.dylib 文件及路径
 
-![](http://ojlsgreog.bkt.clouddn.com/hdf5-lib-dylib.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/hdf5-lib-dylib.jpg)
 
 	/usr/local/opt/hdf5/lib
 	
@@ -38,7 +38,7 @@ categories:
 
 Run!
 
-![](http://ojlsgreog.bkt.clouddn.com/QTRunEnvironment.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QTRunEnvironment.jpg)
 
 
 ## 补充：添加到构建设置-构建环境中
@@ -47,7 +47,7 @@ Run!
 
 Debug!
 
-![](http://ojlsgreog.bkt.clouddn.com/QtDebugEnvironment.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QtDebugEnvironment.jpg)
 
 ## Thanks
 

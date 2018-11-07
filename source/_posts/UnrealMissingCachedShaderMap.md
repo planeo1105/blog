@@ -21,13 +21,13 @@ Unreal 源码是 Github-release 分支，版本是4.16。
 
 <!-- more -->
 
-![](http://ojlsgreog.bkt.clouddn.com/UnrealLunch45Missing.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/UnrealLunch45Missing.png)
 
 并在调试窗口输出：
 
     Missing cached shader map for material WorldGridMaterial, compiling. Is special engine material.
 
-![](http://ojlsgreog.bkt.clouddn.com/MissingCachedShaderMap.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MissingCachedShaderMap.png)
 
 ### 同类问题
 

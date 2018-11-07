@@ -95,14 +95,14 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="唠叨本文分三篇来介绍一个完整的CloudComapre插件的编写教程，分别是插件框架篇、数据结构篇、算法实现篇。 这是第三篇，算法实现篇，你可以根据本文改成自己的插件，待卿临幸。 特别注意：本文的CloudCompare源码构建的是Qt工程并使用Qt Creator开发，并不是Visual Studio。 qSAF源码：Github . qSAF 前文概要在上回中，我们知道了点云中扫描角度的存储结">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/SAFDlg.ui.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/SAFDemo.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/biaoqing1.gif">
-<meta property="og:updated_time" content="2018-05-31T00:50:50.000Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SAFDlg.ui.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SAFDemo.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/biaoqing1.gif">
+<meta property="og:updated_time" content="2018-11-07T09:57:43.263Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CloudCompare插件编写三（算法实现）">
 <meta name="twitter:description" content="唠叨本文分三篇来介绍一个完整的CloudComapre插件的编写教程，分别是插件框架篇、数据结构篇、算法实现篇。 这是第三篇，算法实现篇，你可以根据本文改成自己的插件，待卿临幸。 特别注意：本文的CloudCompare源码构建的是Qt工程并使用Qt Creator开发，并不是Visual Studio。 qSAF源码：Github . qSAF 前文概要在上回中，我们知道了点云中扫描角度的存储结">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/SAFDlg.ui.jpg">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SAFDlg.ui.jpg">
 
 
 
@@ -416,7 +416,7 @@
 <h2 id="UI界面"><a href="#UI界面" class="headerlink" title="UI界面"></a>UI界面</h2><p>新建QT设计器界面类，命名为<code>ccSAFDlg</code>，在<code>ccSAFDlg.ui</code>文件设计简单的界面。</p>
 <p>因为我们只需要一个范围，一个确认取消键，所以我把它弄成这样子：</p>
 <a id="more"></a>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/SAFDlg.ui.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SAFDlg.ui.jpg" alt=""></p>
 <p><code>doubleSpinBox</code>要设置范围：<code>0.00</code>到<code>90.00</code>，默认值分别设为<code>20.00</code>和<code>70.00</code>。</p>
 <p><code>ccSAFDlg.h</code>：</p>
 <pre><code>#ifndef CCSAFDLG_H
@@ -645,13 +645,13 @@ void ccSAFDlg::saveSettings()
     //刷新
     m_app-&gt;refreshAll();
   }
-</code></pre><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="http://ojlsgreog.bkt.clouddn.com/SAFDemo.jpg" width="99%"></p>
+</code></pre><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/SAFDemo.jpg" width="99%"></p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>经过了三篇的学习，终于实现了个完整的插件。</p>
 <p>回顾我们学习的路线：<strong>插件框架</strong> -&gt; <strong>数据结构</strong> -&gt; <strong>算法实现</strong></p>
 <p>我们不仅从中学会了CC插件的编写，也学到了QT的pro文件编写、QT界面设计、CC运作流程、点云数据结构等。</p>
 <p>而我在学习这个插件编写的过程收获更多，因为我是看代码两个月，写代码两小时，Debug两天（差不多啦~不要纠结为什么222~）</p>
 <p>看代码的过程是非常痛苦的，CC里面大量的模板编程思想，接口设计思想，还有去他继承谁爸爸的爸爸……</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/biaoqing1.gif" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/biaoqing1.gif" alt=""></p>
 <p>但是期间确实学到很多，以此作为分享，望共勉！</p>
 
       

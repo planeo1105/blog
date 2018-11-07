@@ -95,12 +95,12 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="系列链接 使用MFC的CDC类绘制二维坐标系及正余弦函数 / 源码  使用MFC的CDC类绘制三维坐标系及球面函数 / 源码   概述本文使用MFC的CDC类绘制二维坐标系及正余弦函数，可以进行坐标变换、规模变换，可以设置绘制的函数。通过输入自变量的范围及步长，绘制出相应的函数图形。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/GraphicsExercise2DCapture.png">
-<meta property="og:updated_time" content="2018-10-13T06:37:49.812Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GraphicsExercise2DCapture.png">
+<meta property="og:updated_time" content="2018-11-07T09:57:50.073Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用MFC的CDC类绘制二维坐标系及正余弦函数">
 <meta name="twitter:description" content="系列链接 使用MFC的CDC类绘制二维坐标系及正余弦函数 / 源码  使用MFC的CDC类绘制三维坐标系及球面函数 / 源码   概述本文使用MFC的CDC类绘制二维坐标系及正余弦函数，可以进行坐标变换、规模变换，可以设置绘制的函数。通过输入自变量的范围及步长，绘制出相应的函数图形。">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/GraphicsExercise2DCapture.png">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GraphicsExercise2DCapture.png">
 
 
 
@@ -518,7 +518,7 @@ SetPlotSin((float)0.0, (float)6.3, (float)0.01);
 <h2 id="绘制函数-1"><a href="#绘制函数-1" class="headerlink" title="绘制函数"></a>绘制函数</h2><p>x从startX绘制到endX，每间隔step绘制一次。</p>
 <p>也是在<code>OnDraw()</code>函数下面添加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">// -------------------- 绘制函数 -------------------------</span><br><span class="line"></span><br><span class="line">// 不改变坐标和规模的xy</span><br><span class="line">float x, y;</span><br><span class="line"></span><br><span class="line">for (x = startX; x &lt;= endX; x += step)</span><br><span class="line">&#123;</span><br><span class="line">  // 判断调用的函数</span><br><span class="line">  switch (fun)</span><br><span class="line">  &#123;</span><br><span class="line">  case Sin:</span><br><span class="line">    y = (float)sin(x);</span><br><span class="line">    break;</span><br><span class="line">  case Cos:</span><br><span class="line">    y = (float)cos(x);</span><br><span class="line">    break;</span><br><span class="line">  default:</span><br><span class="line">    break;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 对xy改变坐标和规模再显示点</span><br><span class="line">  pDC-&gt;SetPixel((int)TransformCoordinateScaleX(x), (int)TransformCoordinateScaleY(y), 0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="http://ojlsgreog.bkt.clouddn.com/GraphicsExercise2DCapture.png" alt="GraphicsExercise2DCapture"></p>
+<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GraphicsExercise2DCapture.png" alt="GraphicsExercise2DCapture"></p>
 
       
     </div>

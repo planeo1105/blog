@@ -17,14 +17,14 @@ categories:
 
 就是下面这个家伙了👇
 
-![](http://ojlsgreog.bkt.clouddn.com/mac_terminal_white.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/mac_terminal_white.jpg)
 
 本来没觉得什么，直到我看到它👇
 
 <!-- more -->
 
 
-![](http://ojlsgreog.bkt.clouddn.com/iterm2_black.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/iterm2_black.png)
 
 颜值碾压，有木有！
 
@@ -88,7 +88,7 @@ Oh My Zsh 是基于 zsh 的一个扩展工具集，它提供了丰富的扩展�
 
 然后你会惊喜地发现……
 
-![](http://ojlsgreog.bkt.clouddn.com/iTerm2_noPowerline.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/iTerm2_noPowerline.jpg)
 
 和颜值主题并不一样！
 
@@ -96,7 +96,7 @@ Oh My Zsh 是基于 zsh 的一个扩展工具集，它提供了丰富的扩展�
 
 震惊！oh-my-zsh 竟然做出这种事！
 
-![](http://ojlsgreog.bkt.clouddn.com/biaoqing1.gif)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/biaoqing1.gif)
 
 嘛~ 原来少了 Powerline 的字符集
 
@@ -110,11 +110,11 @@ Git 下来安装：
     
 然后到 iterm2 配置，设置字体为`Roboto Mono for Powerline`：
 
-![](http://ojlsgreog.bkt.clouddn.com/powerline.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/powerline.jpg)
 
 这样就可以有颜值图的效果了~
 
-![](http://ojlsgreog.bkt.clouddn.com/iterm2_end.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/iterm2_end.jpg)
 
 然而终端下的 vim 编辑器还是一种颜色~
 
@@ -122,7 +122,7 @@ Git 下来安装：
 
 所以就继续捣鼓 solarized 配色。
 
-![](http://ojlsgreog.bkt.clouddn.com/biaoqing2.gif)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/biaoqing2.gif)
 
 ## solarized
 
@@ -150,7 +150,7 @@ Solarized 是个很牛逼的配色项目，主流OS、IDE、Editor都有它影�
 
 之后打开用 vim 打开文件就是这种效果了：
 
-![](http://ojlsgreog.bkt.clouddn.com/iterm_vim_black.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/iterm_vim_black.jpg)
 
 ## Thanks
 

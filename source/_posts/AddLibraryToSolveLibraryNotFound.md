@@ -23,7 +23,7 @@ categories:
 
 <!-- more -->
 
-![](http://ojlsgreog.bkt.clouddn.com/LibraryNoFoundForIIceUtil.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/LibraryNoFoundForIIceUtil.jpg)
 
 ## 问题分析
 
@@ -142,7 +142,7 @@ export LIBRARY_PATH=$LIBRARY_PATH:/MyLib
 	
 编译好后就能找到这个库了：`cpp/lib/libIceUtil.a`
 
-![](http://ojlsgreog.bkt.clouddn.com/MakeLibIceUtil.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeLibIceUtil.jpg)
 
 其他库请参考官方的编译安装教程
 

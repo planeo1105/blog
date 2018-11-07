@@ -27,7 +27,7 @@ qt not in executable format. file format not recognized
 
 <!-- more -->
 
-![qt-not-in-executable-format-file-format-not-recognized](http://ojlsgreog.bkt.clouddn.com/qt-not-in-executable-format-file-format-not-recognized.PNG)
+![qt-not-in-executable-format-file-format-not-recognized](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qt-not-in-executable-format-file-format-not-recognized.PNG)
 
 ## 原因
 

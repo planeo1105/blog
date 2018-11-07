@@ -95,13 +95,13 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="描述我的代码中使用了libcstl库，在代码中声明： #include &amp;lt;cstl/cmap.h&amp;gt; 可是出现这个问题，无法识别libcstl库里调用的函数，如下图：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/UndefinedReference.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/UndefinedReferenceMakefile.png">
-<meta property="og:updated_time" content="2017-08-23T03:01:38.000Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/UndefinedReference.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/UndefinedReferenceMakefile.png">
+<meta property="og:updated_time" content="2018-11-07T09:56:47.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gcc&#x2F;mpicc 编译器 undefined reference to ... 问题的解决">
 <meta name="twitter:description" content="描述我的代码中使用了libcstl库，在代码中声明： #include &amp;lt;cstl/cmap.h&amp;gt; 可是出现这个问题，无法识别libcstl库里调用的函数，如下图：">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/UndefinedReference.png">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/UndefinedReference.png">
 
 
 
@@ -411,7 +411,7 @@
 <pre><code>#include &lt;cstl/cmap.h&gt;
 </code></pre><p>可是出现这个问题，无法识别<code>libcstl</code>库里调用的函数，如下图：</p>
 <a id="more"></a>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/UndefinedReference.png" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/UndefinedReference.png" alt=""></p>
 <h2 id="猜想"><a href="#猜想" class="headerlink" title="猜想"></a>猜想</h2><ol>
 <li><code>#include &lt;cstl/cmap.h&gt;</code>这句话不报错说明库已经装好，环境变量也没有问题。</li>
 <li>可能是链接时的错误。</li>
@@ -422,7 +422,7 @@
 <pre><code>mpicc -c main.c -std=c99 -lstdc++ -fopenmp -lm -o main.o
 </code></pre><p>应该改为：</p>
 <pre><code>mpicc -c main.c -std=c99 -lcstl -lstdc++ -fopenmp -lm -o main.o
-</code></pre><p><img src="http://ojlsgreog.bkt.clouddn.com/UndefinedReferenceMakefile.png" alt=""></p>
+</code></pre><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/UndefinedReferenceMakefile.png" alt=""></p>
 <p>如上图，改好之后就解决了！</p>
 
       

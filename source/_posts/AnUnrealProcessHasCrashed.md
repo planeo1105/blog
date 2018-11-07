@@ -19,7 +19,7 @@ categories:
 
 <!-- more -->
 
-![](http://ojlsgreog.bkt.clouddn.com/AnUnreal%20ProcessHas%20Crashed.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/AnUnrealProcessHasCrashed.png)
 
 ### 解决
 

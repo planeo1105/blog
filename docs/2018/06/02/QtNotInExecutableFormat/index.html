@@ -95,12 +95,12 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="环境 Windows 10 x64 Visual Studio 2017 Qt 5.11  异常Qt Debug 时提示异常： 1qt not in executable format. file format not recognized">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/qt-not-in-executable-format-file-format-not-recognized.PNG">
-<meta property="og:updated_time" content="2018-10-13T06:38:07.873Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qt-not-in-executable-format-file-format-not-recognized.PNG">
+<meta property="og:updated_time" content="2018-11-07T09:56:47.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qt GDB 无法调试 MSVC 编译的程序而报错：file format not recognized">
 <meta name="twitter:description" content="环境 Windows 10 x64 Visual Studio 2017 Qt 5.11  异常Qt Debug 时提示异常： 1qt not in executable format. file format not recognized">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/qt-not-in-executable-format-file-format-not-recognized.PNG">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qt-not-in-executable-format-file-format-not-recognized.PNG">
 
 
 
@@ -414,7 +414,7 @@
 <h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><p>Qt Debug 时提示异常：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qt not in executable format. file format not recognized</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/qt-not-in-executable-format-file-format-not-recognized.PNG" alt="qt-not-in-executable-format-file-format-not-recognized"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qt-not-in-executable-format-file-format-not-recognized.PNG" alt="qt-not-in-executable-format-file-format-not-recognized"></p>
 <h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>编译器（Compiler）使用了 64 位版本的 MSVC，调试器（Debugger）却使用了 32 位的 MinGW 的 GDB，从而 GDB 不能调试 64 位程序而报错。</p>
 <h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ul>
 <li>在 Qt 的 <code>工具</code> - <code>选项</code> - <code>构建和运行</code> - <code>Debuggers</code> 选择 CDB（Debugging Tools for Windows），</li>

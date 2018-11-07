@@ -95,12 +95,12 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="报错123E:\Qt\Qt5.9.3\5.9.3\mingw53_32\include\QtCore\qglobal.h:738: error: static assertion failed: Type is not registered, please use the Q_DECLARE_METATYPE macro to make it known to Qt&amp;apos;s meta-obj">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/Q_DECLARE_METATYPE.png">
-<meta property="og:updated_time" content="2018-10-13T06:38:10.765Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Q_DECLARE_METATYPE.png">
+<meta property="og:updated_time" content="2018-11-07T09:56:47.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qt的QVaiant中使用非QMetaType类型缺少Q_DECLARE_METATYPE宏定义错误">
 <meta name="twitter:description" content="报错123E:\Qt\Qt5.9.3\5.9.3\mingw53_32\include\QtCore\qglobal.h:738: error: static assertion failed: Type is not registered, please use the Q_DECLARE_METATYPE macro to make it known to Qt&amp;apos;s meta-obj">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/Q_DECLARE_METATYPE.png">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Q_DECLARE_METATYPE.png">
 
 
 
@@ -408,7 +408,7 @@
       
         <h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">E:\Qt\Qt5.9.3\5.9.3\mingw53_32\include\QtCore\qglobal.h:738: error: static assertion failed: Type is not registered, please use the Q_DECLARE_METATYPE macro to make it known to Qt&apos;s meta-object system</span><br><span class="line"> #define Q_STATIC_ASSERT_X(Condition, Message) static_assert(bool(Condition), Message)</span><br><span class="line">                                               ^</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/Q_DECLARE_METATYPE.png" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Q_DECLARE_METATYPE.png" alt=""></p>
 <h2 id="报错代码"><a href="#报错代码" class="headerlink" title="报错代码"></a>报错代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const QCameraInfo &amp;cameraInfo</span><br><span class="line">...</span><br><span class="line">QVariant::fromValue(cameraInfo)</span><br></pre></td></tr></table></figure>
 <h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>QVaiant 不能识别自定义类型和其他非 QMetaType 内置类型， 而 QCameraInfo 是非 QMetaType 内置类型，因此使用 <code>QVariant::fromValue(cameraInfo)</code> 之前，需要使用 <code>Q_DECLARE_METATYPE</code> 宏对 QCameraInfo 进行声明。</p>
 <h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>在代码中加个宏定义：</p>

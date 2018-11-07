@@ -59,7 +59,7 @@ CloudComapre是一个开源的3D点云和网格的处理软件，开可以处理
 
 现在`qSAF`里面有如下几个文件
 
-![qSAFFile.jpg](http://ojlsgreog.bkt.clouddn.com/qSAFFile.jpg)
+![qSAFFile.jpg](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFFile.jpg)
 
 我们需要做的是**把里面的`qDummyPlugin`及类似的名字改为自己的`qSAF`**。
 
@@ -112,7 +112,7 @@ CloudComapre是一个开源的3D点云和网格的处理软件，开可以处理
 
 修改后变成这样：
 
-![qSAFFile2](http://ojlsgreog.bkt.clouddn.com/qSAFFile2.jpg)
+![qSAFFile2](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFFile2.jpg)
 
 ### 使用qmake构建pro文件
 
@@ -129,7 +129,7 @@ CloudComapre是一个开源的3D点云和网格的处理软件，开可以处理
 
 在`CloudComapre-plugins-plugins.pro`中，加上自己的插件：
 
-![](http://ojlsgreog.bkt.clouddn.com/QTqSAFPluginsPro.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/QTqSAFPluginsPro.jpg)
 
 保存刷新后就会在项目上看到了。
 
@@ -153,7 +153,7 @@ pro文件的编写可以参考：
 
 选中点云，使用`qSAF`，会这样：
 
-![](http://ojlsgreog.bkt.clouddn.com/qSAFShoudNotBeUsedAsIs.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFShoudNotBeUsedAsIs.jpg)
 
 莫慌！这是正常现象，因为你的`qSAF`具体实现还没有写呢！
 
@@ -244,7 +244,7 @@ pro文件的编写可以参考：
 	
 结果如下：
 
-![](http://ojlsgreog.bkt.clouddn.com/qSAFStartFromError.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qSAFStartFromError.jpg)
 
 ## 插件框架完成
 

@@ -65,7 +65,7 @@ Rom无非官方Rom或者第三方Rom。
 效果图
 
 
-![OnePixel](http://ojlsgreog.bkt.clouddn.com/OnePixel.png)
+![OnePixel](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixel.png)
 
 ## 安装 TWRP
 
@@ -93,7 +93,7 @@ Rom无非官方Rom或者第三方Rom。
 
 #### 使用15秒ADB安装器安装
 
-![15 seconds ADB Installer](http://ojlsgreog.bkt.clouddn.com/15secondsADBInstaller.png)
+![15 seconds ADB Installer](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/15secondsADBInstaller.png)
 
 作者发的帖子: [[TOOL] [WINDOWS] ADB, Fastboot and Drivers - 15 seconds ADB Installer v1.4.3](https://forum.xda-developers.com/showthread.php?p=48915118#post48915118)
 
@@ -168,13 +168,13 @@ Rom无非官方Rom或者第三方Rom。
 
 进入系统后进行初始化设置
 
-![OnePixelInit](http://ojlsgreog.bkt.clouddn.com/OnePixelInit.png)
+![OnePixelInit](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixelInit.png)
 
 注意：WiFi/数据连接没代理不要连接，断网设置，不然会一直连接不上Google而卡在那里的。
 
 初始化好之后设置了些东西就是这样子啦
 
-![](http://ojlsgreog.bkt.clouddn.com/OnePixelInstalled.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OnePixelInstalled.jpg)
 
 ## Xposed框架
 
@@ -188,11 +188,11 @@ Rom无非官方Rom或者第三方Rom。
 
 安装 Material Design Xposed Installer 后在 UnOfficial 这栏选择适合自己手机型号的Xposed框架下载
 
-![XposedUnOfficial](http://ojlsgreog.bkt.clouddn.com/XposedUnOfficial.jpg)
+![XposedUnOfficial](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/XposedUnOfficial.jpg)
 
 装好Xposed框架后，下载Xposed模块
 
-![XposedModuleDownload](http://ojlsgreog.bkt.clouddn.com/XposedModuleDownload.jpg)
+![XposedModuleDownload](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/XposedModuleDownload.jpg)
 
 知乎上有些好的Xposed模块推荐
 
@@ -212,6 +212,6 @@ Magisk的介绍、下载、安装
 
 我因为OnePixel Rom自带Magisk，也就顺便装了个`Pixel Launcher transparent dock`，让pixel luncher底栏的颜色变透明。
 
-![PixelLauncherTransparentDock](http://ojlsgreog.bkt.clouddn.com/PixelLauncherTransparentDock.jpg)
+![PixelLauncherTransparentDock](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/PixelLauncherTransparentDock.jpg)
 
 效果如上面初始化设置那里的截图。

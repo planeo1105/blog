@@ -21,7 +21,7 @@ categories:
 
 <!-- more -->
 
-![Hackintosh-High-Sierra-10.13.6](http://ojlsgreog.bkt.clouddn.com/Hackintosh-High-Sierra-10.13.6.jpeg)
+![Hackintosh-High-Sierra-10.13.6](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Hackintosh-High-Sierra-10.13.6.jpeg)
 
 ## 配置
 
@@ -59,7 +59,7 @@ categories:
 
 准备一个8G以上的U盘，使用 Etcher 刻录上面下载的镜像（带有 Clover EFI 分区）：`macOS High Sierra 10.13.6(17G2112) Installer with Clover 4606.dmg`
 
-![etcher-create-hackintosh](http://ojlsgreog.bkt.clouddn.com/etcher-create-hackintosh.png)
+![etcher-create-hackintosh](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/etcher-create-hackintosh.png)
 
 ## 设置 BIOS
 
@@ -79,11 +79,11 @@ categories:
 
 重启进入刻录好的U盘，选择 `Boot macOS Install from Install macOS High Sierra`
 
-![Clover](http://ojlsgreog.bkt.clouddn.com/IMG_20181007_204929.jpg)
+![Clover](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/IMG_20181007_204929.jpg)
 
 唠叨模式滚代码的时候出错：please go to https://panic.apple.com to report this panic
 
-![please go to https://panic.apple.com to report this panic](http://ojlsgreog.bkt.clouddn.com/IMG_20181007_211514.jpg)
+![please go to https://panic.apple.com to report this panic](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/IMG_20181007_211514.jpg)
 
 ## 重新刻录
 
@@ -176,7 +176,7 @@ sudo mount -t msdos /dev/disk3s1 /Volumes/efiusb
 
 使用 MultiBeast 安装驱动，使用 Nvidia WebDriver 安装显卡驱动（MultiBeast 的 WebDriver 不能驱动我的 1080）。
 
-![MultiBeast-config](http://ojlsgreog.bkt.clouddn.com/Jietu20181007-221705.jpg)
+![MultiBeast-config](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181007-221705.jpg)
 
 装好 Nvidia WebDriver 后 1080 能驱动，不过 i7-8700K 的八代 CPU 还是不能识别，先不管，在 AppStore 更新 10.13.6。
 
@@ -193,7 +193,7 @@ sudo mount -t msdos /dev/disk3s1 /Volumes/efiusb
 
 使用适用于 10.13.6 的 WebDriver-387.10.10.10.40.105.pkg，装好重启后就 OK 了
 
-![](http://ojlsgreog.bkt.clouddn.com/Hackintosh-gpu.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Hackintosh-gpu.jpg)
 
 ### 修复 CPU 识别
 
@@ -203,17 +203,17 @@ sudo mount -t msdos /dev/disk3s1 /Volumes/efiusb
 
 在 CPU 页面的 Type 中填入 Unknown，保存。
 
-![](http://ojlsgreog.bkt.clouddn.com/Jietu20181007-232553.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181007-232553.jpg)
 
 使用文本编辑器（如 BBEdit）打开 `/System/Library/PrivateFrameworks/AppleSystemInfo.framework/Versions/A/Resources/zh_CN.lproj/AppleSystemInfo.strings` 文件
 
 修改 `UnknownCPUKind` 的值为 `3.7 GHz Intel Core i7-8700K`
 
-![3.7 GHz Intel Core i7-8700K](http://ojlsgreog.bkt.clouddn.com/Jietu20181007-233544.jpg)
+![3.7 GHz Intel Core i7-8700K](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181007-233544.jpg)
 
 保存重启即可。
 
-![](http://ojlsgreog.bkt.clouddn.com/Hackintosh-system-information.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Hackintosh-system-information.jpg)
 
 ### 修复声卡驱动
 
@@ -223,14 +223,14 @@ sudo mount -t msdos /dev/disk3s1 /Volumes/efiusb
 
 在 [acidanthera/AppleALC/releases](https://github.com/acidanthera/AppleALC/releases) 下载最新的 AppleALC 的 RELEASE 版 `AppleALC.kext`，使用 Kext Wizard 注入这个内核，如下图
 
-![Kext Wizard AppleALC.kext](http://ojlsgreog.bkt.clouddn.com/Jietu20181007-225717.jpg)
-![Kext Wizard AppleALC.kext](http://ojlsgreog.bkt.clouddn.com/Jietu20181007-225733.jpg)
+![Kext Wizard AppleALC.kext](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181007-225717.jpg)
+![Kext Wizard AppleALC.kext](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181007-225733.jpg)
 
 然后挂载磁盘 EFI 分区（操作如上），把 `AppleALC.kext` 放入磁盘 EFI 分区的 `EFI/CLOVER/kexts/Other/`目录中。
 
 然后在 [acidanthera/AppleALC/Resources](https://github.com/acidanthera/AppleALC/tree/master/Resources) 找到你的声卡型号的文件夹，进入（如我的是 `ALC1220`）。
 
-![ALC1220](http://ojlsgreog.bkt.clouddn.com/Jietu20181007-230207.jpg)
+![ALC1220](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181007-230207.jpg)
 
 我的声卡型号看到有 `layout1.xml`、`layout2.xml`、`layout5.xml`、`layout7.xml`、`layout11.xml`、`layout13.xml`
 
@@ -238,11 +238,11 @@ sudo mount -t msdos /dev/disk3s1 /Volumes/efiusb
 
 使用文本编辑器打开磁盘 EFI 分区的 `EFI/CLOVER/config.plist` 文件，搜索 `<key>Audio</key>`，把它的 `integer` 改为刚刚取的那个数（如 `1`）。
 
-![Audio](http://ojlsgreog.bkt.clouddn.com/Jietu20181007-231402.jpg)
+![Audio](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181007-231402.jpg)
 
 保存重启即可。
 
-![](http://ojlsgreog.bkt.clouddn.com/Hackintosh-audio.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Hackintosh-audio.jpg)
 
 ### 修复 USB3.0
 
@@ -260,15 +260,15 @@ sudo mount -t msdos /dev/disk3s1 /Volumes/efiusb
 * Comment: USB 10.13.6+ by PMHeart
 * MatchOS: 10.13.x
 
-![Clover Configurator USB3.0](http://ojlsgreog.bkt.clouddn.com/Jietu20181007-223654.jpg)
+![Clover Configurator USB3.0](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181007-223654.jpg)
 
 保存重启即可。
 
-![](http://ojlsgreog.bkt.clouddn.com/hackintosh-usb3.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/hackintosh-usb3.jpg)
 
 ### 蓝牙免驱
 
-![](http://ojlsgreog.bkt.clouddn.com/Hackintosh-bluetooth.jpg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Hackintosh-bluetooth.jpg)
 
 ### iMessage、序列号问题
 
@@ -288,7 +288,7 @@ Clover主题可以到官方仓库下载：
 
 只需下载下来，放到 `/EFI/CLOVER/themes` 文件夹下，然后使用 Clover Configurator 打开 `/EFI/CLOVER/config.plist` 更换到这个主题就好啦。
 
-![更换Clover主题](http://ojlsgreog.bkt.clouddn.com/Jietu20181013-001702.jpg)
+![更换Clover主题](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Jietu20181013-001702.jpg)
 
 另外这个显示启动盘的标签的 `Label` 建议勾上，这样才知道选择的是哪个盘，保存重启即可。
 

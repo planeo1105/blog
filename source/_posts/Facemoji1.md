@@ -24,7 +24,7 @@ categories:
 
 ## 预览
 
-![Facemoji效果图_cn](http://ojlsgreog.bkt.clouddn.com/Facemoji%E6%95%88%E6%9E%9C%E5%9B%BE_cn.png)
+![Facemoji效果图_cn](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Facemoji%E6%95%88%E6%9E%9C%E5%9B%BE_cn.png)
 
 ## 源码
 
@@ -57,7 +57,7 @@ categories:
 5. 把 `shape_predictor_68_face_landmarks.dat` 复制到 `Facemoji/Assets/StreamingAssets/`
 
 6. 导入 `Facemoji_Plugins_Assets_1.5.0.unitypackage`。导入后的文件结构如下：  
-    ![FacemojiDirectoryStructure1.5.0.png](http://ojlsgreog.bkt.clouddn.com/FacemojiDirectoryStructure1.5.0.png)
+    ![FacemojiDirectoryStructure1.5.0.png](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/FacemojiDirectoryStructure1.5.0.png)
 
 7. 转换平台到 Android（其他平台未适配）
 
@@ -102,7 +102,7 @@ categories:
 
 ## Gif演示
 
-![GifCapture-201802072218435427.gif](http://ojlsgreog.bkt.clouddn.com/GifCapture-201802072218435427.gif)    
+![GifCapture-201802072218435427.gif](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GifCapture-201802072218435427.gif)    
 
 ## 异常问题
 

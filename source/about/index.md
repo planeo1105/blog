@@ -37,12 +37,12 @@ layout: about
 
 ## 关注我
 
-<div class="about-div"><a class="about-a" href="https://blog.huihut.com"><img class="about-img" src="http://ojlsgreog.bkt.clouddn.com/blog.png"/></a><a class="about-a" href="http://blog.csdn.net/huihut"><img class="about-img" src="http://ojlsgreog.bkt.clouddn.com/csdn.png"/></a><a class="about-a" href="https://github.com/huihut"><img class="about-img" src="http://ojlsgreog.bkt.clouddn.com/github.png"/></a><a class="about-a" href="https://www.zhihu.com/people/huihut"><img class="about-img" src="http://ojlsgreog.bkt.clouddn.com/zhihu.png"/></a><a class="about-a" href="mailto:huihut@outlook.com"><img class="about-img" src="http://ojlsgreog.bkt.clouddn.com/mail.png"/></a></div>
+<div class="about-div"><a class="about-a" href="https://blog.huihut.com"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/blog.png"/></a><a class="about-a" href="http://blog.csdn.net/huihut"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/csdn.png"/></a><a class="about-a" href="https://github.com/huihut"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/github.png"/></a><a class="about-a" href="https://www.zhihu.com/people/huihut"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/zhihu.png"/></a><a class="about-a" href="mailto:huihut@outlook.com"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/mail.png"/></a></div>
 
 <div class="about-div">
 
 微信公众号：huihut_com
 
-![微信公众号HuiHut](http://ojlsgreog.bkt.clouddn.com/qrcode_wechat_huihut_8cm.jpg)
+![微信公众号HuiHut](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qrcode_wechat_huihut_8cm.jpg)
 
 </div>

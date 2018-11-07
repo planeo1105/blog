@@ -105,7 +105,7 @@ CMake 自行安装，Qt 和 MinGW 可以直接使用`qt-opensource-windows-x86-5
 
 点击 Generate 生成 Makefile
 
-![OpenCVCMakeGenerate](http://ojlsgreog.bkt.clouddn.com/OpenCVCMakeGenerate.png)
+![OpenCVCMakeGenerate](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVCMakeGenerate.png)
 
 ## 编译 OpenCV
 
@@ -133,7 +133,7 @@ Makefile:161: recipe for target 'all' failed
 mingw32-make: *** [all] Error 2
 ```
 
-![MakeOpenCV_cap_dshow](http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_cap_dshow.png)
+![MakeOpenCV_cap_dshow](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_cap_dshow.png)
 
 #### 解决
 
@@ -162,7 +162,7 @@ extension if not specified.  A single file name is an input file.
 No input-file is stdin, default rc.  No output-file is stdout, default rc.
 ```
 
-![MakeOpenCVRCError](http://ojlsgreog.bkt.clouddn.com/MakeOpenCVRCError.png)
+![MakeOpenCVRCError](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCVRCError.png)
 
 #### 解决
 
@@ -188,7 +188,7 @@ Makefile:161: recipe for target 'all' failed
 mingw32-make: *** [all] Error 2
 ```
 
-![MakeOpenCV_cap_dshow](http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_cap_dshow.png)
+![MakeOpenCV_cap_dshow](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_cap_dshow.png)
 
 #### 解决
 
@@ -221,7 +221,7 @@ Makefile:161: recipe for target 'all' failed
 mingw32-make: *** [all] Error 2
 ```
 
-![MakeOpenCV_nullptr_Error](http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_nullptr_Error.png)
+![MakeOpenCV_nullptr_Error](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_nullptr_Error.png)
 
 #### 解决
 
@@ -266,7 +266,7 @@ LIBS += -LE:\OpenCV_3.3.1\opencv-build\install\x86\mingw\bin \
 }
 }
 ```
-![OpenCVMinGWBin](http://ojlsgreog.bkt.clouddn.com/OpenCVMinGWBin.png)
+![OpenCVMinGWBin](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVMinGWBin.png)
 
 然后在 MainWindow 中如下：
 
@@ -299,7 +299,7 @@ MainWindow::~MainWindow()
 
 最后运行起来了，效果如图：
 
-![OpenCVQtDemo](http://ojlsgreog.bkt.clouddn.com/OpenCVQtDemo.png)
+![OpenCVQtDemo](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVQtDemo.png)
 
 ## 官方教程
 

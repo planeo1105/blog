@@ -17,7 +17,7 @@ categories:
 <!-- more -->
 
 
-![](http://ojlsgreog.bkt.clouddn.com/pymysqlError.jpg)  
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/pymysqlError.jpg)  
 
 ## 解决方案：  
 

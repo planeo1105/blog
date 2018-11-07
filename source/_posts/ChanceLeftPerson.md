@@ -21,7 +21,7 @@ categories:
 
 <!-- more -->
 
-![](http://ojlsgreog.bkt.clouddn.com/GDUT.jpeg)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GDUT.jpeg)
 
 ## 裁缝，我没准备
 

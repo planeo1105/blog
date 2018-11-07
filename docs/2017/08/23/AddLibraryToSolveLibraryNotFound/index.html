@@ -95,13 +95,13 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="前言本文基本上能完美解决这种库文件无法找到问题。 文中以IceUtil库为例子，你可以推广到其他库，方法相同。 问题描述在 Mac 下用 Homebrew 安装 ZeroC Ice 这个中间件后发现 IceUtil 库缺失，IDE 报了个链接错误，如下图：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/LibraryNoFoundForIIceUtil.jpg">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/MakeLibIceUtil.jpg">
-<meta property="og:updated_time" content="2017-08-23T02:57:43.000Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/LibraryNoFoundForIIceUtil.jpg">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeLibIceUtil.jpg">
+<meta property="og:updated_time" content="2018-11-07T09:57:34.228Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通过直接添加或者手动编译添加库，解决 library not found for -lxxx 等的问题">
 <meta name="twitter:description" content="前言本文基本上能完美解决这种库文件无法找到问题。 文中以IceUtil库为例子，你可以推广到其他库，方法相同。 问题描述在 Mac 下用 Homebrew 安装 ZeroC Ice 这个中间件后发现 IceUtil 库缺失，IDE 报了个链接错误，如下图：">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/LibraryNoFoundForIIceUtil.jpg">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/LibraryNoFoundForIIceUtil.jpg">
 
 
 
@@ -411,7 +411,7 @@
 <p>文中以<code>IceUtil</code>库为例子，你可以推广到其他库，方法相同。</p>
 <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在 Mac 下用 Homebrew 安装 ZeroC Ice 这个中间件后发现 IceUtil 库缺失，IDE 报了个链接错误，如下图：</p>
 <a id="more"></a>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/LibraryNoFoundForIIceUtil.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/LibraryNoFoundForIIceUtil.jpg" alt=""></p>
 <h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>这个问题是说链接器在链接的时候找不到 IceUtil 这个库，那我们就告诉它（添加库的路径），让它找到就好啦！</p>
 <p>扩展：</p>
 <ul>
@@ -492,7 +492,7 @@ cd ice/cpp
 #直接编译
 make
 </code></pre><p>编译好后就能找到这个库了：<code>cpp/lib/libIceUtil.a</code></p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/MakeLibIceUtil.jpg" alt=""></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeLibIceUtil.jpg" alt=""></p>
 <p>其他库请参考官方的编译安装教程</p>
 <p>附：<a href="https://github.com/zeroc-ice/ice/blob/master/cpp/BuildInstructionsMacOS.md" target="_blank" rel="noopener">Building Ice for C++ on macOS</a></p>
 <h4 id="第三步，拷贝库到安装后的文件夹"><a href="#第三步，拷贝库到安装后的文件夹" class="headerlink" title="第三步，拷贝库到安装后的文件夹"></a>第三步，拷贝库到安装后的文件夹</h4><p>到<code>ice/cpp/lib</code>目录下：</p>

@@ -95,18 +95,18 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="前言本篇博文是使用 32 位的 MinGW 在 Windows 下编译 OpenCV 生成 32 位的 dll。 关于使用 64 位的 MinGW 编译 OpenCV 生成 64 位的 dll，见：OpenCV使用CMake和MinGW-w64的编译安装 编译好的 OpenCV（MinGW 版）：Github . huihut/OpenCV-MinGW-Build">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/OpenCVCMakeGenerate.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_cap_dshow.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/MakeOpenCVRCError.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_cap_dshow.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_nullptr_Error.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/OpenCVMinGWBin.png">
-<meta property="og:image" content="http://ojlsgreog.bkt.clouddn.com/OpenCVQtDemo.png">
-<meta property="og:updated_time" content="2018-10-13T06:37:24.724Z">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVCMakeGenerate.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_cap_dshow.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCVRCError.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_cap_dshow.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_nullptr_Error.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVMinGWBin.png">
+<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVQtDemo.png">
+<meta property="og:updated_time" content="2018-11-07T09:57:44.002Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenCV使用CMake和MinGW的编译安装及其在Qt配置运行">
 <meta name="twitter:description" content="前言本篇博文是使用 32 位的 MinGW 在 Windows 下编译 OpenCV 生成 32 位的 dll。 关于使用 64 位的 MinGW 编译 OpenCV 生成 64 位的 dll，见：OpenCV使用CMake和MinGW-w64的编译安装 编译好的 OpenCV（MinGW 版）：Github . huihut/OpenCV-MinGW-Build">
-<meta name="twitter:image" content="http://ojlsgreog.bkt.clouddn.com/OpenCVCMakeGenerate.png">
+<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVCMakeGenerate.png">
 
 
 
@@ -472,20 +472,20 @@
 <li>设置 <code>CMAKE_BUILD_TYPE</code> 为 <code>Release</code> 或者 <code>RelWithDebInfo</code></li>
 </ul>
 <p>点击 Generate 生成 Makefile</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/OpenCVCMakeGenerate.png" alt="OpenCVCMakeGenerate"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVCMakeGenerate.png" alt="OpenCVCMakeGenerate"></p>
 <h2 id="编译-OpenCV"><a href="#编译-OpenCV" class="headerlink" title="编译 OpenCV"></a>编译 OpenCV</h2><p>打开终端进行编译：（<code>-j</code> 是使用 <code>8</code> 个线程进行编译，请根据你的计算机配置合理设置线程数）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">E:</span><br><span class="line">cd E:\OpenCV_3.3.1\opencv-build</span><br><span class="line">mingw32-make -j 8</span><br><span class="line">mingw32-make install</span><br></pre></td></tr></table></figure>
 <p>如果 <code>mingw32-make -j 8</code> 遇到错误，请看下面的  <strong>编译 OpenCV 常见错误</strong>，否则执行 <code>mingw32-make install</code>，完成安装。</p>
 <h2 id="编译-OpenCV-常见错误"><a href="#编译-OpenCV-常见错误" class="headerlink" title="编译 OpenCV 常见错误"></a>编译 OpenCV 常见错误</h2><h3 id="0-多线程编译错误信息不明确"><a href="#0-多线程编译错误信息不明确" class="headerlink" title="0. 多线程编译错误信息不明确"></a>0. 多线程编译错误信息不明确</h3><h4 id="表现"><a href="#表现" class="headerlink" title="表现"></a>表现</h4><p>如果使用了多线程编译，导致错误，但是错误信息不明确，如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Makefile:161: recipe for target &apos;all&apos; failed</span><br><span class="line">mingw32-make: *** [all] Error 2</span><br></pre></td></tr></table></figure>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_cap_dshow.png" alt="MakeOpenCV_cap_dshow"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_cap_dshow.png" alt="MakeOpenCV_cap_dshow"></p>
 <h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>使用单线程编译：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mingw32-make</span><br></pre></td></tr></table></figure>
 <p>以查看详细的错误提示，再根据具体情况解决。</p>
 <h3 id="1-RC-错误"><a href="#1-RC-错误" class="headerlink" title="1. RC 错误"></a>1. RC 错误</h3><h4 id="表现-1"><a href="#表现-1" class="headerlink" title="表现"></a>表现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">... windres.exe: unknown option -- W ...</span><br></pre></td></tr></table></figure>
 <p>或者</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">FORMAT is one of rc, res, or coff, and is deduced from the file name</span><br><span class="line">extension if not specified.  A single file name is an input file.</span><br><span class="line">No input-file is stdin, default rc.  No output-file is stdout, default rc.</span><br></pre></td></tr></table></figure>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/MakeOpenCVRCError.png" alt="MakeOpenCVRCError"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCVRCError.png" alt="MakeOpenCVRCError"></p>
 <h4 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h4><p>在 cmake-gui 编译配置中：</p>
 <ul>
 <li>不勾选 <code>ENABLE_PRECOMPILED_HEADERS</code></li>
@@ -494,12 +494,12 @@
 <h3 id="2-sprintf-instead-use-StringCbPrintfA-or-StringCchPrintfA-错误"><a href="#2-sprintf-instead-use-StringCbPrintfA-or-StringCchPrintfA-错误" class="headerlink" title="2. sprintf_instead_use_StringCbPrintfA_or_StringCchPrintfA 错误"></a>2. sprintf_instead_use_StringCbPrintfA_or_StringCchPrintfA 错误</h3><h4 id="表现-2"><a href="#表现-2" class="headerlink" title="表现"></a>表现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">...opencv/sources/modules/videoio/src/cap_dshow.cpp...</span><br><span class="line">... &apos;sprintf_instead_use_StringCbPrintfA_or_StringCchPrintfA&apos; was not declared in this scope ...</span><br></pre></td></tr></table></figure>
 <p>或者</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Makefile:161: recipe for target &apos;all&apos; failed</span><br><span class="line">mingw32-make: *** [all] Error 2</span><br></pre></td></tr></table></figure>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_cap_dshow.png" alt="MakeOpenCV_cap_dshow"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_cap_dshow.png" alt="MakeOpenCV_cap_dshow"></p>
 <h4 id="解决-2"><a href="#解决-2" class="headerlink" title="解决"></a>解决</h4><p>修改<code>E:\OpenCV_3.3.1\opencv\sources\modules\videoio\src\cap_dshow.cpp</code>文件，在<code>#include &quot;DShow.h&quot;</code>这行的上面加一行<code>#define NO_DSHOW_STRSAFE</code>，如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#define NO_DSHOW_STRSAFE</span><br><span class="line">#include &quot;DShow.h&quot;</span><br></pre></td></tr></table></figure>
 <p>然后重新<code>Configure</code>-<code>Generate</code>-<code>mingw32-make</code></p>
 <h3 id="3-identifier-‘nullptr’-is-a-keyword-in-C-11-错误【2018年3月2日编译OpenCV-3-4-1时遇到并解决】"><a href="#3-identifier-‘nullptr’-is-a-keyword-in-C-11-错误【2018年3月2日编译OpenCV-3-4-1时遇到并解决】" class="headerlink" title="3. identifier ‘nullptr’ is a keyword in C++11 错误【2018年3月2日编译OpenCV 3.4.1时遇到并解决】"></a>3. identifier ‘nullptr’ is a keyword in C++11 错误【2018年3月2日编译OpenCV 3.4.1时遇到并解决】</h3><h4 id="表现-3"><a href="#表现-3" class="headerlink" title="表现"></a>表现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">D:\opencv-3.4.1\opencv-3.4.1\3rdparty\protobuf\src\google\protobuf\stubs\io_win32.cc:94:3: warning: identifier &apos;nullptr&apos; is a keyword in C++11 [-Wc++0x-compat]</span><br><span class="line">   return s == nullptr || *s == 0;</span><br><span class="line">   ^</span><br><span class="line">D:\opencv-3.4.1\opencv-3.4.1\3rdparty\protobuf\src\google\protobuf\stubs\io_win32.cc: In function &apos;bool google::protobuf::internal::win32::&#123;anonymous&#125;::null_or_empty(const char_type*)&apos;:</span><br><span class="line">D:\opencv-3.4.1\opencv-3.4.1\3rdparty\protobuf\src\google\protobuf\stubs\io_win32.cc:94:15: error: &apos;nullptr&apos; was not declared in this scope</span><br><span class="line">   return s == nullptr || *s == 0;</span><br><span class="line">               ^</span><br><span class="line">3rdparty\protobuf\CMakeFiles\libprotobuf.dir\build.make:412: recipe for target &apos;3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/io_win32.cc.obj&apos; failed</span><br><span class="line">mingw32-make[2]: *** [3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/io_win32.cc.obj] Error 1</span><br><span class="line">CMakeFiles\Makefile2:710: recipe for target &apos;3rdparty/protobuf/CMakeFiles/libprotobuf.dir/all&apos; failed</span><br><span class="line">mingw32-make[1]: *** [3rdparty/protobuf/CMakeFiles/libprotobuf.dir/all] Error 2</span><br><span class="line">Makefile:161: recipe for target &apos;all&apos; failed</span><br><span class="line">mingw32-make: *** [all] Error 2</span><br></pre></td></tr></table></figure>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/MakeOpenCV_nullptr_Error.png" alt="MakeOpenCV_nullptr_Error"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MakeOpenCV_nullptr_Error.png" alt="MakeOpenCV_nullptr_Error"></p>
 <h4 id="解决-3"><a href="#解决-3" class="headerlink" title="解决"></a>解决</h4><p>在 cmake-gui 编译配置中：</p>
 <ul>
 <li>勾选 <code>ENABLE_CXX11</code></li>
@@ -512,11 +512,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">win32 &#123;</span><br><span class="line">INCLUDEPATH += E:\OpenCV_3.3.1\opencv-build\install\include</span><br><span class="line">LIBS += E:\OpenCV_3.3.1\opencv-build\install\x86\mingw\bin\libopencv_*.dll</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>或者：（区分 debug 和 release 是因为 OpenCV 对其两者有不同的库，你需要把路径改为你自己的，我编译 MinGW 的 OpenCV 只有 release 库）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">win32 &#123;</span><br><span class="line">INCLUDEPATH += E:\OpenCV_3.3.1\opencv-build\install\include</span><br><span class="line">CONFIG(debug, debug|release): &#123;</span><br><span class="line">LIBS += E:\OpenCV_3.3.1\opencv-build\install\x86\mingw\bin\libopencv_*d.dll</span><br><span class="line">&#125; else:CONFIG(release, debug|release): &#123;</span><br><span class="line">LIBS += -LE:\OpenCV_3.3.1\opencv-build\install\x86\mingw\bin \</span><br><span class="line">    -llibopencv_core331 \</span><br><span class="line">    -llibopencv_highgui331 \</span><br><span class="line">    -llibopencv_imgcodecs331 \</span><br><span class="line">    -llibopencv_imgproc331 \</span><br><span class="line">    -llibopencv_features2d331 \</span><br><span class="line">    -llibopencv_calib3d331</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/OpenCVMinGWBin.png" alt="OpenCVMinGWBin"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVMinGWBin.png" alt="OpenCVMinGWBin"></p>
 <p>然后在 MainWindow 中如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;mainwindow.h&quot;</span><br><span class="line">#include &quot;ui_mainwindow.h&quot;</span><br><span class="line"></span><br><span class="line">#include &lt;opencv2/core/core.hpp&gt;</span><br><span class="line">#include &lt;opencv2/highgui/highgui.hpp&gt;</span><br><span class="line"></span><br><span class="line">MainWindow::MainWindow(QWidget *parent) :</span><br><span class="line">    QMainWindow(parent),</span><br><span class="line">    ui(new Ui::MainWindow)</span><br><span class="line">&#123;</span><br><span class="line">    ui-&gt;setupUi(this);</span><br><span class="line"></span><br><span class="line">    // read an image</span><br><span class="line">    cv::Mat image = cv::imread(&quot;E:/Pictures/H_white.png&quot;, 1);</span><br><span class="line">    // create image window named &quot;My Image&quot;</span><br><span class="line">    cv::namedWindow(&quot;My Image&quot;);</span><br><span class="line">    // show the image on window</span><br><span class="line">    cv::imshow(&quot;My Image&quot;, image);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">MainWindow::~MainWindow()</span><br><span class="line">&#123;</span><br><span class="line">    delete ui;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>最后运行起来了，效果如图：</p>
-<p><img src="http://ojlsgreog.bkt.clouddn.com/OpenCVQtDemo.png" alt="OpenCVQtDemo"></p>
+<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/OpenCVQtDemo.png" alt="OpenCVQtDemo"></p>
 <h2 id="官方教程"><a href="#官方教程" class="headerlink" title="官方教程"></a>官方教程</h2><ul>
 <li><a href="https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows" target="_blank" rel="noopener">How to setup Qt and openCV on Windows</a></li>
 </ul>

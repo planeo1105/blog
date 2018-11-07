@@ -15,7 +15,7 @@ categories:
 
 构建情况如下图：
 
-![](http://ojlsgreog.bkt.clouddn.com/ganningZHexoNoIndex)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/ganningZHexoNoIndex.png)
 
 但是一些文件没有生成，如 `index.html` 文件。
 
@@ -30,7 +30,7 @@ categories:
 
 **npm ERR! missing npm ERR! missing hexo-generator-archive...**
 
-![](http://ojlsgreog.bkt.clouddn.com/ganningZHexoNPMls.png)
+![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/ganningZHexoNPMls.png)
 
 ## 解决
 

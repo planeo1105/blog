@@ -132,7 +132,7 @@ Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地
 <h3 id="MarkdownHeader">标题</h3>
 
 
-![标题](http://ojlsgreog.bkt.clouddn.com/header.jpg)
+![标题](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/header.jpg)
 
 Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
@@ -152,7 +152,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h3 id="bolditalic">粗体和斜体</h3>
 
-![bolditalic](http://ojlsgreog.bkt.clouddn.com/bolditalic.jpg)
+![bolditalic](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/bolditalic.jpg)
 
 * 粗体
 
@@ -169,7 +169,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h3 id="paragraph">段落和换行</h3>
 
-![paragraph](http://ojlsgreog.bkt.clouddn.com/paragraph.jpg)
+![paragraph](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/paragraph.jpg)
 
 * 第一种写法（上图的`这是第一段`），直接敲两个回车键即可
 	
@@ -191,7 +191,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h3 id="hr">分隔线</h3>
 
-![hr](http://ojlsgreog.bkt.clouddn.com/hr.jpg)
+![hr](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/hr.jpg)
 
 可以在一行中用三个及以上的星号、减号、等于号、底线来建立分隔线，行内不能有除空格外的其他东西，注意莫被打脸。 (≖ ‿ ≖)✧
 	
@@ -204,7 +204,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 	
 <h3 id="blockquote">引言</h3>
 
-![blockquote](http://ojlsgreog.bkt.clouddn.com/blockquote.jpg)
+![blockquote](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/blockquote.jpg)
 
 	> 我想只用一个 “>” 号来写一个多行的引用，所以在扯鸡巴蛋地码字占空间，好像差不多了吧，嗯嗯~
 
@@ -222,7 +222,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h4 id="disorderlist">无序列表</h4>
 
-![disorderlist](http://ojlsgreog.bkt.clouddn.com/disorderlist.jpg)
+![disorderlist](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/disorderlist.jpg)
 
 无序列表可以在每行开头用星号、加号、减号来表示，也可以三者混合一起，推荐使用相同的字符，避免混乱。
 
@@ -232,7 +232,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h4 id="sorderlist">有序列表</h4>
 
-![orderlist](http://ojlsgreog.bkt.clouddn.com/orderlist.jpg)
+![orderlist](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/orderlist.jpg)
 
 有序列表用数字接着一个英文句点来表示，数字可无序，但还是推荐使用`1. `、`2. `，避免混乱。
 
@@ -245,7 +245,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h4 id="linecode">行内代码块</h4>
 
-![linecode](http://ojlsgreog.bkt.clouddn.com/linecode.jpg)
+![linecode](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/linecode.jpg)
 
 	
 	I am a `code`
@@ -254,7 +254,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h4 id="paragraphcode">段落代码块</h4>
 
-![paragraphcode](http://ojlsgreog.bkt.clouddn.com/paragraphcode.jpg)
+![paragraphcode](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/paragraphcode.jpg)
 
 	#### 第一种
 	
@@ -266,7 +266,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 	
 另外，可以用三个反引号和语言名，作为标记代码所使用的语言
 
-![paragraphcode2](http://ojlsgreog.bkt.clouddn.com/paragraphcode2.jpg)
+![paragraphcode2](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/paragraphcode2.jpg)
 
 我的 Mou 编辑器不能识别 (ノ▼Д▼)ノ
 
@@ -275,7 +275,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h4 id="urllink">网址链接</h4>
 
-![urllink](http://ojlsgreog.bkt.clouddn.com/urllink.jpg)  
+![urllink](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/urllink.jpg)  
 
 网址链接有两种形式：**行内式**、**参考式**。
 
@@ -322,13 +322,13 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
     	
 <h4 id="picturelink">图片链接</h4>
 
-![picturelink](http://ojlsgreog.bkt.clouddn.com/picturelink.jpg) 
+![picturelink](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/picturelink.jpg) 
 
 图片链接与上面的网址链接类似，同样有两种形式：行内式和参考式，只不过图片链接在前面加上一个感叹号`!`，在此不做累述。
 
 * 行内式
 
-		![huihut](http://ojlsgreog.bkt.clouddn.com/H_ya.png)
+		![huihut](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/H_ya.png)
 
 * 参考式
 
@@ -359,18 +359,18 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 * [七牛图床](https://www.qiniu.com/) 
 
-	<img src="http://ojlsgreog.bkt.clouddn.com/qiniutuchuang.jpg" width = "90%" height = "90%"/>
+	<img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qiniutuchuang.jpg" width = "90%" height = "90%"/>
 
 * [极简图床](https://yotuku.cn/)
 
-	<img src="http://ojlsgreog.bkt.clouddn.com/jijiantuchuang.jpg" width = "90%" height = "90%"/>
+	<img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/jijiantuchuang.jpg" width = "90%" height = "90%"/>
 
 
 <h2 id="Advanced">进阶语法</h2>
 
 <h3 id="label">标签</h3>
 
-![label](http://ojlsgreog.bkt.clouddn.com/label.jpg)
+![label](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/label.jpg)
 
 * 方法一
 
@@ -397,7 +397,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 * 方法一
 
-	![](http://ojlsgreog.bkt.clouddn.com/content.jpg)
+	![](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/content.jpg)
 
 	这种目录其实是用 **HTML** 加 **Markdown的链接** 实现，分为两个部分，**目录部分**和**标题部分**。
 
@@ -412,7 +412,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 	
 * 方法二
 	
-	![content2](http://ojlsgreog.bkt.clouddn.com/content2.jpg)
+	![content2](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/content2.jpg)
 		
 	这种方法非常简单，就是直接添加 `[TOC]`，标题1~6样式的内容会被提取出来作为目录，然而有些编辑器不能使用这功能，如 Mou 不能使用。我是在有道云笔记的 Markdown 中截图的。
 	
@@ -431,7 +431,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h3 id="table">表格</h3>
 
-![table](http://ojlsgreog.bkt.clouddn.com/table.jpg)
+![table](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/table.jpg)
 
 * 表格一般这样子写，这应该是最简单的写法了
 
@@ -452,7 +452,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h3 id="footnote">脚注</h3>
 
-![footnote](http://ojlsgreog.bkt.clouddn.com/footnote.jpg)
+![footnote](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/footnote.jpg)
 
 	这是脚注一[^1]
 	
@@ -461,7 +461,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h3 id="formula">公式</h3>
 
-![formula](http://ojlsgreog.bkt.clouddn.com/formula.jpg)
+![formula](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/formula.jpg)
 
 * 方法一：使用Google Chart
 
@@ -488,7 +488,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 像流程图这种复杂的功能不推荐在 Markdown 中使用，因为很多编辑器都不支持，我使用了几个编辑器都不能生成流程图，所以上图是在为知笔记官方 Markdown 新手指南中找到的。
 
-![flowsheetcode](http://ojlsgreog.bkt.clouddn.com/flowsheetcode.jpg)
+![flowsheetcode](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/flowsheetcode.jpg)
 
 	```flow
 	st=>start: Start
@@ -511,7 +511,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 ![sequencemap](http://cdn2.wiz.cn/wp-content/uploads/2015/11/QQ20151123-1.png)
 
-![sequencemapcode](http://ojlsgreog.bkt.clouddn.com/sequencemapcode.jpg)
+![sequencemapcode](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/sequencemapcode.jpg)
 	
 	```sequence
 	Alice->Bob: Hello Bob, how are you?
@@ -528,7 +528,7 @@ Markdown 支持两种标题的语法，类 Atx 和类 Setext 形式。
 
 <h3 id="html">兼容HTML</h3>
 
-![html](http://ojlsgreog.bkt.clouddn.com/html.jpg)
+![html](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/html.jpg)
 
 Markdown 可以和 HTML 混编，甚至可以完全用 HTML 语法来写。要注意在 HTML 标签中的 Markdown 代码是不起作用的。
 
@@ -577,7 +577,7 @@ Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的�
 
 <h3 id="autolink">自动链接</h3>
     
-![autolink](http://ojlsgreog.bkt.clouddn.com/autolink.jpg)
+![autolink](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/autolink.jpg)
 
 * 网址自动链接
 
