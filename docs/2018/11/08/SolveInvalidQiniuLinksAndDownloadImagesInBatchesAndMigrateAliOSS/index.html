@@ -69,7 +69,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="QT," />
+  <meta name="keywords" content="C/C++ - OSS," />
 
 
 
@@ -87,20 +87,21 @@
 
 
 
-<meta name="description" content="报错123E:\Qt\Qt5.9.3\5.9.3\mingw53_32\include\QtCore\qglobal.h:738: error: static assertion failed: Type is not registered, please use the Q_DECLARE_METATYPE macro to make it known to Qt&amp;apos;s meta-obj">
-<meta name="keywords" content="QT">
+<meta name="description" content="起因七牛云对测试域名进行回收，而我博文中图片用的链接仍然是测试域名的链接，因此导致部分链接失效，浏览器返回如下错误： 1&amp;#123;&amp;quot;error&amp;quot;:&amp;quot;no such domain&amp;quot;&amp;#125;">
+<meta name="keywords" content="C&#x2F;C++ - OSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Qt的QVaiant中使用非QMetaType类型缺少Q_DECLARE_METATYPE宏定义错误">
-<meta property="og:url" content="https://blog.huihut.com/2017/12/05/QVaiantQ_DECLARE_METATYPE/index.html">
+<meta property="og:title" content="解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS">
+<meta property="og:url" content="https://blog.huihut.com/2018/11/08/SolveInvalidQiniuLinksAndDownloadImagesInBatchesAndMigrateAliOSS/index.html">
 <meta property="og:site_name" content="HuiHut">
-<meta property="og:description" content="报错123E:\Qt\Qt5.9.3\5.9.3\mingw53_32\include\QtCore\qglobal.h:738: error: static assertion failed: Type is not registered, please use the Q_DECLARE_METATYPE macro to make it known to Qt&amp;apos;s meta-obj">
+<meta property="og:description" content="起因七牛云对测试域名进行回收，而我博文中图片用的链接仍然是测试域名的链接，因此导致部分链接失效，浏览器返回如下错误： 1&amp;#123;&amp;quot;error&amp;quot;:&amp;quot;no such domain&amp;quot;&amp;#125;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Q_DECLARE_METATYPE.png">
-<meta property="og:updated_time" content="2018-11-07T09:56:47.251Z">
+<meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/QiniuStorageSpaceTbody.png">
+<meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/QiniuQrsctlDownload.png">
+<meta property="og:updated_time" content="2018-11-08T07:04:52.397Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Qt的QVaiant中使用非QMetaType类型缺少Q_DECLARE_METATYPE宏定义错误">
-<meta name="twitter:description" content="报错123E:\Qt\Qt5.9.3\5.9.3\mingw53_32\include\QtCore\qglobal.h:738: error: static assertion failed: Type is not registered, please use the Q_DECLARE_METATYPE macro to make it known to Qt&amp;apos;s meta-obj">
-<meta name="twitter:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Q_DECLARE_METATYPE.png">
+<meta name="twitter:title" content="解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS">
+<meta name="twitter:description" content="起因七牛云对测试域名进行回收，而我博文中图片用的链接仍然是测试域名的链接，因此导致部分链接失效，浏览器返回如下错误： 1&amp;#123;&amp;quot;error&amp;quot;:&amp;quot;no such domain&amp;quot;&amp;#125;">
+<meta name="twitter:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/QiniuStorageSpaceTbody.png">
 
 
 
@@ -128,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://blog.huihut.com/2017/12/05/QVaiantQ_DECLARE_METATYPE/"/>
+  <link rel="canonical" href="https://blog.huihut.com/2018/11/08/SolveInvalidQiniuLinksAndDownloadImagesInBatchesAndMigrateAliOSS/"/>
 
 
 
 
 
-  <title> Qt的QVaiant中使用非QMetaType类型缺少Q_DECLARE_METATYPE宏定义错误 | HuiHut </title>
+  <title> 解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS | HuiHut </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -312,7 +313,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2017/12/05/QVaiantQ_DECLARE_METATYPE/">
+    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2018/11/08/SolveInvalidQiniuLinksAndDownloadImagesInBatchesAndMigrateAliOSS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="修电脑的裁缝酱">
@@ -333,7 +334,7 @@
             
             
               
-                Qt的QVaiant中使用非QMetaType类型缺少Q_DECLARE_METATYPE宏定义错误
+                解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS
               
             
           </h1>
@@ -348,8 +349,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-05T18:08:47+08:00">
-                2017-12-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-08T14:28:00+08:00">
+                2018-11-08
               </time>
             
 
@@ -406,30 +407,49 @@
       
 
       
-        <h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">E:\Qt\Qt5.9.3\5.9.3\mingw53_32\include\QtCore\qglobal.h:738: error: static assertion failed: Type is not registered, please use the Q_DECLARE_METATYPE macro to make it known to Qt&apos;s meta-object system</span><br><span class="line"> #define Q_STATIC_ASSERT_X(Condition, Message) static_assert(bool(Condition), Message)</span><br><span class="line">                                               ^</span><br></pre></td></tr></table></figure>
+        <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>七牛云对测试域名进行回收，而我博文中图片用的链接仍然是测试域名的链接，因此导致部分链接失效，浏览器返回如下错误：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;error&quot;:&quot;no such domain&quot;&#125;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Q_DECLARE_METATYPE.png" alt=""></p>
-<h2 id="报错代码"><a href="#报错代码" class="headerlink" title="报错代码"></a>报错代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const QCameraInfo &amp;cameraInfo</span><br><span class="line">...</span><br><span class="line">QVariant::fromValue(cameraInfo)</span><br></pre></td></tr></table></figure>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>QVaiant 不能识别自定义类型和其他非 QMetaType 内置类型， 而 QCameraInfo 是非 QMetaType 内置类型，因此使用 <code>QVariant::fromValue(cameraInfo)</code> 之前，需要使用 <code>Q_DECLARE_METATYPE</code> 宏对 QCameraInfo 进行声明。</p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>在代码中加个宏定义：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q_DECLARE_METATYPE(QCameraInfo)</span><br></pre></td></tr></table></figure>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>Q_DECLARE_METATYPE<ul>
-<li>如果要使自定义类型或其他非 QMetaType 内置类型在 QVaiant 中使用，必须使用该宏</li>
-<li>该类型必须有公有的 构造、析构、复制构造 函数</li>
-</ul>
+<h2 id="找回图片对象"><a href="#找回图片对象" class="headerlink" title="找回图片对象"></a>找回图片对象</h2><p>经过提交工单与七牛云工程师协商，知道了失效的图片并没有丢失，可通过某些方法找回，解决办法如下：</p>
+<ol>
+<li>绑定自定义域名：<a href="https://developer.qiniu.com/kodo/kb/5158/how-to-transition-from-test-domain-name-to-a-custom-domain-name" target="_blank" rel="noopener">如何从测试域名过渡到自定义域名</a>（绑定后则可用自定义域名访问失效的图片）</li>
+<li><p>下载单个图片：<a href="https://developer.qiniu.com/kodo/tools/1300/qrsctl" target="_blank" rel="noopener">命令行辅助工具(qrsctl)</a>（使用 qrsctl 工具的 get 下载），如下：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.\qrsctl.exe login huihut@outlook.com 123   # 假设密码为 123</span><br><span class="line">.\qrsctl.exe get temp H.png ./H.png         # 下载 temp 存储空间的 H.png 文件，保存到当前目录下</span><br></pre></td></tr></table></figure>
 </li>
-<li>qRegisterMetaType 必须使用该函数的两种情况<ul>
-<li>如果非 QMetaType 内置类型要在 Qt 的属性系统中使用</li>
-<li>如果非 QMetaType 内置类型要在 queued 信号与槽 中使用</li>
-</ul>
+<li><p>下载多个对象</p>
+<ol>
+<li>先新建一个同区域存储空间，会分配一个新的测试域名到新空间</li>
+<li>通过 qshell batchcopy 到有域名的同区域空间然后再进行 qdownload 下载操作：<a href="https://developer.qiniu.com/kodo/tools/1302/qshell" target="_blank" rel="noopener">命令行工具(qshell)</a><ol>
+<li>qshell listbucket 原 bucket 名 list.txt （list 出全部文件，<a href="https://github.com/qiniu/qshell/blob/master/docs/listbucket.md" target="_blank" rel="noopener">https://github.com/qiniu/qshell/blob/master/docs/listbucket.md</a>）</li>
+<li>cat list.txt | awk ‘{print $1}’ &gt;list_final.txt （ 用awk获取list结果的第一列）</li>
+<li>qshell batchcopy 原bucket名 新bucket名 list_final.txt （复制到新bucket的文件和原bucket文件名一致，<a href="https://github.com/qiniu/qshell/blob/master/docs/batchcopy.md" target="_blank" rel="noopener">https://github.com/qiniu/qshell/blob/master/docs/batchcopy.md</a>）</li>
+<li>qshell qdownload newfilelist.txt （newfilelist.txt 为下载的配置文档，<a href="https://github.com/qiniu/qshell/blob/master/docs/qdownload.md" target="_blank" rel="noopener">https://github.com/qiniu/qshell/blob/master/docs/qdownload.md</a>）</li>
+</ol>
 </li>
-</ul>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="http://blog.sina.com.cn/s/blog_640531380100yfei.html" target="_blank" rel="noopener">Q_DECLARE_METATYPE与qRegisterMetaType学习</a></li>
-<li><a href="https://stackoverflow.com/questions/34278017/how-to-use-qvariantfromvalue-with-qstring" target="_blank" rel="noopener">How to use QVariant::fromValue with QString?</a></li>
-<li><a href="http://doc.qt.io/qt-5/qmetatype.html#Q_DECLARE_METATYPE" target="_blank" rel="noopener">QMetaType Class - Q_DECLARE_METATYPE(Type)</a></li>
-</ul>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p><a href="https://developer.qiniu.com/kodo/kb/3858/video-of-how-to-use-qrs-tools" target="_blank" rel="noopener">视频教程 – qshell qrsctl qfetch 命令行工具使用</a></p>
+</blockquote>
+<h2 id="准备迁移阿里云-OSS"><a href="#准备迁移阿里云-OSS" class="headerlink" title="准备迁移阿里云 OSS"></a>准备迁移阿里云 OSS</h2><p>上面的解决方法中，要想继续使用七牛云存储作为图床，必须要有个实名认证的域名（解决方法一），然后绑定之</p>
+<p>而我并没有，因此我打算把我的图片对象迁移到 <a href="https://cn.aliyun.com/product/oss" target="_blank" rel="noopener">阿里云 OSS 存储</a></p>
+<p>上们的解决方法二、三都可以，但是二非常麻烦，三需要两个存储空间，也就需要对七牛账号进行实名认证</p>
+<p>而我又不想另外实名认证（<del>瞎折腾</del>），因此我用了第二种方法：下载单个图片！[捂脸]</p>
+<h2 id="C-程序下载七牛存储的对象"><a href="#C-程序下载七牛存储的对象" class="headerlink" title="C++ 程序下载七牛存储的对象"></a>C++ 程序下载七牛存储的对象</h2><p>使用 qrsctl 工具只能单个文件下载，为了避免重复的工作，我写了个 C++ 程序解决。</p>
+<h3 id="获取包含所有对象名的-html-文件"><a href="#获取包含所有对象名的-html-文件" class="headerlink" title="获取包含所有对象名的 html 文件"></a>获取包含所有对象名的 html 文件</h3><p>首先进入七牛云要下载的 bucket（存储空间）的 web 界面，把内容管理列表中全部对象显示出来（点底部加载更多直到全部显示），在 Chrome 浏览器 <code>右键</code> - <code>检查</code>，如下图，选中 <code>tbody</code> - <code>右键</code> - <code>Copy</code> - <code>Copy element</code></p>
+<p><img src="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/QiniuStorageSpaceTbody.png" alt="QiniuStorageSpaceTbody"></p>
+<p>然后把复制到的内容保存成 <code>html.html</code> 文件，放到一个目录下，如我的 <code>D:\code\test\</code>（一下均以此目录为工程目录）</p>
+<h3 id="下载并登录-qrsctl"><a href="#下载并登录-qrsctl" class="headerlink" title="下载并登录 qrsctl"></a>下载并登录 qrsctl</h3><p>下载 <a href="https://developer.qiniu.com/kodo/tools/1300/qrsctl" target="_blank" rel="noopener">命令行辅助工具(qrsctl)</a>，保存到 <code>D:\code\test\</code> 目录，并重命名为 <code>qrsctl.exe</code></p>
+<p>在 <code>D:\code\test\</code> 目录的 CMD 或 PowerShell 中输入如下命令登录你的七牛账号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\qrsctl.exe login huihut@outlook.com 123   # 假设密码为 123</span><br></pre></td></tr></table></figure>
+<h3 id="编写批量下载程序"><a href="#编写批量下载程序" class="headerlink" title="编写批量下载程序"></a>编写批量下载程序</h3><p>在 <code>D:\code\test\</code> 下创建个 <code>QrsctlGet.cpp</code>，把下面 C++ 代码保存到刚创建的文件，修改存储空间名为你的存储空间名的名字（本文为 <code>temp</code>），用 <code>VS Code</code> 或其他工具编译运行，七牛存储的文件即会下载到同目录下。</p>
+<p>Github 仓库：<a href="https://github.com/huihut/QrsctlGet" target="_blank" rel="noopener">huihut/QrsctlGet</a>（有 <code>QrsctlGet.Cpp</code>、<code>qrsctl.exe</code>、<code>.vscode环境</code>）</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//==============================================================</span></span><br><span class="line"><span class="comment">//  作者：huihut</span></span><br><span class="line"><span class="comment">//  邮箱：huihut@outlook.com</span></span><br><span class="line"><span class="comment">//  时间：2018-11-08 14:28:00</span></span><br><span class="line"><span class="comment">//  说明：匹配 HTML 的七牛云存储的文件名，并使用 qrsctl 下载文件</span></span><br><span class="line"><span class="comment">//==============================================================</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sstream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;regex&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 存储空间名【需要修改为你的存储空间名】</span></span><br><span class="line">	<span class="built_in">string</span> bucket = <span class="string">"temp"</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 打开 html 文件</span></span><br><span class="line">	ifstream fhtml;</span><br><span class="line">	fhtml.open(<span class="string">"html.html"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 统计下载的文件对象数</span></span><br><span class="line">	<span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (fhtml)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">// tbody 里面符合 reg 的奇数为文件对象，偶数是文件类型，因此只取奇数匹配项</span></span><br><span class="line">		<span class="keyword">bool</span> isObj = <span class="literal">true</span>;</span><br><span class="line">		<span class="built_in">std</span>::<span class="built_in">stringstream</span> buffer;</span><br><span class="line">		buffer &lt;&lt; fhtml.rdbuf();</span><br><span class="line">		<span class="built_in">std</span>::<span class="function"><span class="built_in">string</span> <span class="title">contents</span><span class="params">(buffer.str())</span></span>;</span><br><span class="line">		<span class="built_in">std</span>::smatch match;</span><br><span class="line">		<span class="built_in">std</span>::<span class="function">regex <span class="title">reg</span><span class="params">(<span class="string">"\\b(edit-word ng-binding\"&gt;)([^&lt;]*)"</span>)</span></span>;</span><br><span class="line">		<span class="keyword">while</span> (<span class="built_in">std</span>::regex_search(contents, match, reg)) &#123;</span><br><span class="line">			<span class="keyword">if</span> (isObj)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="comment">// 匹配到的文件对象</span></span><br><span class="line">				<span class="built_in">string</span> objfile = match.format(<span class="string">"$2"</span>);</span><br><span class="line">				<span class="built_in">cout</span> &lt;&lt; <span class="string">"Matched "</span> + objfile &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">				<span class="comment">// 合成下载命令</span></span><br><span class="line">				<span class="built_in">string</span> command = <span class="string">"qrsctl.exe get "</span> + bucket + <span class="string">" "</span> + objfile + <span class="string">" ./"</span> + objfile;</span><br><span class="line"></span><br><span class="line">				<span class="comment">// 下载文件</span></span><br><span class="line">				<span class="built_in">cout</span> &lt;&lt; <span class="string">"Download "</span> + objfile + <span class="string">"..."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">				system(command.c_str());</span><br><span class="line"></span><br><span class="line">				<span class="comment">// 文件个数加一</span></span><br><span class="line">				num++;</span><br><span class="line"></span><br><span class="line">				<span class="comment">// 下一个非文件对象</span></span><br><span class="line">				isObj = <span class="literal">false</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				<span class="comment">// 下一个是文件对象</span></span><br><span class="line">				isObj = <span class="literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			contents = match.suffix().str();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cerr</span> &lt;&lt; <span class="string">"Failed to read html file!"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		system(<span class="string">"pause"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"Downloaded "</span> + to_string(num) + <span class="string">" files."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/QiniuQrsctlDownload.png" alt="QiniuQrsctlDownload"></p>
+<h2 id="迁移阿里云-OSS"><a href="#迁移阿里云-OSS" class="headerlink" title="迁移阿里云 OSS"></a>迁移阿里云 OSS</h2><p>在 <a href="https://cn.aliyun.com/product/oss" target="_blank" rel="noopener">阿里云 OSS 存储</a> 创建阿里云账号，并在 OSS 中新建 Bucket，其中读写权限选中公共读（public-read），以便能在博文中读取</p>
+<p>把上面下载的图片上传到阿里云 OSS，可以使用客户端上传下载：<a href="https://github.com/aliyun/oss-browser" target="_blank" rel="noopener">aliyun/oss-browser</a></p>
+<p>然后获取外链，批量修改我的博文，把所有七牛云链接改为阿里云就好了</p>
 
       
     </div>
@@ -463,7 +483,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://blog.huihut.com/2017/12/05/QVaiantQ_DECLARE_METATYPE/" title="Qt的QVaiant中使用非QMetaType类型缺少Q_DECLARE_METATYPE宏定义错误">https://blog.huihut.com/2017/12/05/QVaiantQ_DECLARE_METATYPE/</a>
+      <a href="https://blog.huihut.com/2018/11/08/SolveInvalidQiniuLinksAndDownloadImagesInBatchesAndMigrateAliOSS/" title="解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS">https://blog.huihut.com/2018/11/08/SolveInvalidQiniuLinksAndDownloadImagesInBatchesAndMigrateAliOSS/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -479,7 +499,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/QT/" rel="tag"># QT</a>
+            <a href="/tags/C-C-OSS/" rel="tag"># C/C++ - OSS</a>
           
         </div>
       
@@ -492,8 +512,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/03/CompiledOpenCVRunInQt/" rel="next" title="OpenCV使用CMake和MinGW的编译安装及其在Qt配置运行">
-                <i class="fa fa-chevron-left"></i> OpenCV使用CMake和MinGW的编译安装及其在Qt配置运行
+              <a href="/2018/11/07/CSharpUnzipAnd7zLibraryMissingError/" rel="next" title="C# 解压压缩包及 7z 库缺失导致 Can not load 7-zip library or internal COM error!">
+                <i class="fa fa-chevron-left"></i> C# 解压压缩包及 7z 库缺失导致 Can not load 7-zip library or internal COM error!
               </a>
             
           </div>
@@ -501,10 +521,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/08/Facemoji1/" rel="prev" title="一个可以模仿你的表情的语音聊天机器人 —— Facemoji 废萌（OpenCV+Dlib+Live2D+图灵机器人+讯飞IAT语音听写+讯飞TTS语音合成）">
-                一个可以模仿你的表情的语音聊天机器人 —— Facemoji 废萌（OpenCV+Dlib+Live2D+图灵机器人+讯飞IAT语音听写+讯飞TTS语音合成） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -689,7 +705,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#报错"><span class="nav-number">1.</span> <span class="nav-text">报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#报错代码"><span class="nav-number">2.</span> <span class="nav-text">报错代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原因"><span class="nav-number">3.</span> <span class="nav-text">原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决"><span class="nav-number">4.</span> <span class="nav-text">解决</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#起因"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#找回图片对象"><span class="nav-number">2.</span> <span class="nav-text">找回图片对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备迁移阿里云-OSS"><span class="nav-number">3.</span> <span class="nav-text">准备迁移阿里云 OSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-程序下载七牛存储的对象"><span class="nav-number">4.</span> <span class="nav-text">C++ 程序下载七牛存储的对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#获取包含所有对象名的-html-文件"><span class="nav-number">4.1.</span> <span class="nav-text">获取包含所有对象名的 html 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载并登录-qrsctl"><span class="nav-number">4.2.</span> <span class="nav-text">下载并登录 qrsctl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写批量下载程序"><span class="nav-number">4.3.</span> <span class="nav-text">编写批量下载程序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迁移阿里云-OSS"><span class="nav-number">5.</span> <span class="nav-text">迁移阿里云 OSS</span></a></li></ol></div>
             
 
           </div>

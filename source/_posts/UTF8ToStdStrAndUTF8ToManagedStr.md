@@ -5,7 +5,7 @@ subtitle: WinRT(C++/CX) UTF8类型转换为std::string和Platform::String^的Uni
 date: 2018-08-23 23:44:50
 author: 修电脑的裁缝酱
 tags:
-	- C++
+	- C/C++
 categories: 
 	- CS
 	
