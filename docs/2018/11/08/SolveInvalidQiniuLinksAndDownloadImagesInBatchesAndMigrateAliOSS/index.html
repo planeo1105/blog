@@ -97,7 +97,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/QiniuStorageSpaceTbody.png">
 <meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/QiniuQrsctlDownload.png">
-<meta property="og:updated_time" content="2018-11-08T08:28:36.937Z">
+<meta property="og:updated_time" content="2018-11-09T03:18:30.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS">
 <meta name="twitter:description" content="起因七牛云对测试域名进行回收，而我博文中图片用的链接仍然是测试域名的链接，因此导致部分链接失效，浏览器返回如下错误： 1&amp;#123;&amp;quot;error&amp;quot;:&amp;quot;no such domain&amp;quot;&amp;#125;">
@@ -439,7 +439,7 @@
 <h2 id="C-程序下载七牛存储的对象"><a href="#C-程序下载七牛存储的对象" class="headerlink" title="C++ 程序下载七牛存储的对象"></a>C++ 程序下载七牛存储的对象</h2><p>使用 qrsctl 工具只能单个文件下载，为了避免重复的工作，我写了个 C++ 程序解决。</p>
 <h3 id="获取包含所有对象名的-html-文件"><a href="#获取包含所有对象名的-html-文件" class="headerlink" title="获取包含所有对象名的 html 文件"></a>获取包含所有对象名的 html 文件</h3><p>首先进入七牛云要下载的 bucket（存储空间）的 web 界面，把内容管理列表中全部对象显示出来（点底部加载更多直到全部显示），在 Chrome 浏览器 <code>右键</code> - <code>检查</code>，如下图，选中 <code>tbody</code> - <code>右键</code> - <code>Copy</code> - <code>Copy element</code></p>
 <p><img src="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/QiniuStorageSpaceTbody.png" alt="QiniuStorageSpaceTbody"></p>
-<p>然后把复制到的内容保存成 <code>html.html</code> 文件，放到一个目录下，如我的 <code>D:\code\test\</code>（一下均以此目录为工程目录）</p>
+<p>然后把复制到的内容保存成 <code>html.html</code> 文件，放到一个目录下，如我的 <code>D:\code\test\</code>（以下均以此目录为工程目录）</p>
 <h3 id="下载并登录-qrsctl"><a href="#下载并登录-qrsctl" class="headerlink" title="下载并登录 qrsctl"></a>下载并登录 qrsctl</h3><p>下载 <a href="https://developer.qiniu.com/kodo/tools/1300/qrsctl" target="_blank" rel="noopener">命令行辅助工具(qrsctl)</a>，保存到 <code>D:\code\test\</code> 目录，并重命名为 <code>qrsctl.exe</code></p>
 <p>在 <code>D:\code\test\</code> 目录的 CMD 或 PowerShell 中输入如下命令登录你的七牛账号</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\qrsctl.exe login huihut@outlook.com 123   # 假设密码为 123</span><br></pre></td></tr></table></figure>
