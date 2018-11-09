@@ -17,7 +17,7 @@ categories:
 
 七牛云对测试域名进行回收，而我博文中图片用的链接仍然是测试域名的链接，因此导致部分链接失效，浏览器返回如下错误：
 
-```
+```json
 {"error":"no such domain"}
 ```
 
@@ -36,10 +36,13 @@ categories:
 3. 下载多个对象
     1. 先新建一个同区域存储空间，会分配一个新的测试域名到新空间
     2. 通过 qshell batchcopy 到有域名的同区域空间然后再进行 qdownload 下载操作：[命令行工具(qshell)](https://developer.qiniu.com/kodo/tools/1302/qshell)
-        1. qshell listbucket 原 bucket 名 list.txt （list 出全部文件，<https://github.com/qiniu/qshell/blob/master/docs/listbucket.md>）
-        2. cat list.txt | awk '{print $1}' >list_final.txt （ 用awk获取list结果的第一列）
-        3. qshell batchcopy 原bucket名 新bucket名 list_final.txt （复制到新bucket的文件和原bucket文件名一致，<https://github.com/qiniu/qshell/blob/master/docs/batchcopy.md>）
-        4. qshell qdownload newfilelist.txt （newfilelist.txt 为下载的配置文档，<https://github.com/qiniu/qshell/blob/master/docs/qdownload.md>）
+        1. `qshell listbucket <原bucket名> list.txt` （list 出全部文件）  
+			<https://github.com/qiniu/qshell/blob/master/docs/listbucket.md>
+        2. `cat list.txt | awk '{print $1}' >list_final.txt` （ 用awk获取list结果的第一列）
+        3. `qshell batchcopy <原bucket名> <新bucket名> list_final.txt` （复制到新bucket的文件和原bucket文件名一致）  
+			<https://github.com/qiniu/qshell/blob/master/docs/batchcopy.md>
+        4. `qshell qdownload newfilelist.txt` （newfilelist.txt 为下载的配置文档）  
+			<https://github.com/qiniu/qshell/blob/master/docs/qdownload.md>
 
 > [视频教程 -- qshell qrsctl qfetch 命令行工具使用](https://developer.qiniu.com/kodo/kb/3858/video-of-how-to-use-qrs-tools)
 
