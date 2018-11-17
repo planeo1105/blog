@@ -369,7 +369,7 @@ mingw32-make: *** [all] Error 2
 
 #### 解决
 
-* 在最新的 master 分支已经解决了这个问题，见我的 pull ：[M_PI changed to CV_PI](https://github.com/opencv/opencv/pull/12645)
+* 在最新的 master 分支已经解决了这个问题，见我的 PR ：[M_PI changed to CV_PI](https://github.com/opencv/opencv/pull/12645)
 
 * 如果你是在 [官网](https://opencv.org/releases.html) 或者 [github.com/opencv/opencv/releases](https://github.com/opencv/opencv/releases) 中下的 `OpenCV 4.0.0-alpha`，可能还会有这个问题，那么你需要把 `chessboard.cpp`、`chessboard.hpp`、`test_chesscorners.cpp` 文件中的 `M_PI` 全部改为 `CV_PI`，如我的 commit 所示：[M_PI changed to CV_PI (#12645)](https://github.com/opencv/opencv/commit/f0d277e45246762866daea036558e2c391b39ace)
 

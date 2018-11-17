@@ -99,7 +99,7 @@
 <meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/20180925220634.png">
 <meta property="og:image" content="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/20180925221908.png">
 <meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2018-11-17_174118.png">
-<meta property="og:updated_time" content="2018-11-17T17:36:42.982Z">
+<meta property="og:updated_time" content="2018-11-17T17:43:13.391Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenCV使用CMake和MinGW-w64的编译安装">
 <meta name="twitter:description" content="前言之前写过的一篇博文：OpenCV使用CMake和MinGW的编译安装及其在Qt配置运行 是使用 32 位的 MinGW 在 Windows 下编译 OpenCV 生成 32 位的 dll。 而这篇博文是使用 64 位的 MinGW 编译 OpenCV 生成 64 位的 dll。 因为博主没有 64 位 qmake，所以没勾选 WITH_QT 编译好的 OpenCV（MinGW 版）：Githu">
@@ -468,7 +468,7 @@
 <p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/20180925221908.png" alt=""></p>
 <h4 id="原因-1"><a href="#原因-1" class="headerlink" title="原因"></a>原因</h4><p>因为 OpenCV 在 <code>chessboard.cpp</code>、<code>chessboard.hpp</code>、<code>test_chesscorners.cpp</code> 这些代码中有 BUG，使用的应该是 <code>CV_PI</code> 而不是 <code>M_PI</code> 导致的。具体见我提的 Issue：<a href="https://github.com/opencv/opencv/issues/12642" target="_blank" rel="noopener">Failed to compile opencv-4.0.0-alpha using mingw-w64</a></p>
 <h4 id="解决-2"><a href="#解决-2" class="headerlink" title="解决"></a>解决</h4><ul>
-<li><p>在最新的 master 分支已经解决了这个问题，见我的 pull ：<a href="https://github.com/opencv/opencv/pull/12645" target="_blank" rel="noopener">M_PI changed to CV_PI</a></p>
+<li><p>在最新的 master 分支已经解决了这个问题，见我的 PR ：<a href="https://github.com/opencv/opencv/pull/12645" target="_blank" rel="noopener">M_PI changed to CV_PI</a></p>
 </li>
 <li><p>如果你是在 <a href="https://opencv.org/releases.html" target="_blank" rel="noopener">官网</a> 或者 <a href="https://github.com/opencv/opencv/releases" target="_blank" rel="noopener">github.com/opencv/opencv/releases</a> 中下的 <code>OpenCV 4.0.0-alpha</code>，可能还会有这个问题，那么你需要把 <code>chessboard.cpp</code>、<code>chessboard.hpp</code>、<code>test_chesscorners.cpp</code> 文件中的 <code>M_PI</code> 全部改为 <code>CV_PI</code>，如我的 commit 所示：<a href="https://github.com/opencv/opencv/commit/f0d277e45246762866daea036558e2c391b39ace" target="_blank" rel="noopener">M_PI changed to CV_PI (#12645)</a></p>
 </li>
