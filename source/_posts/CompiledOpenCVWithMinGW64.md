@@ -19,8 +19,6 @@ categories:
 
 因为博主没有 64 位 qmake，所以没勾选 `WITH_QT`
 
-> 2018年10月13日为 OpenCV-4.0.0-alpha 而修改，主要改了 “编译 OpenCV 常见错误”
-
 ## 编译好的 OpenCV（MinGW 版）：
 
 [Github . huihut/OpenCV-MinGW-Build](https://github.com/huihut/OpenCV-MinGW-Build)
@@ -32,11 +30,13 @@ categories:
 * Windows-10-64bit
 * [MinGW-x64-4.8.1-release-posix-seh-rev5](http://sourceforge.net/projects/mingwbuilds/files/host-windows/releases/4.8.1/64-bit/threads-posix/seh/x64-4.8.1-release-posix-seh-rev5.7z/download)
 * [CMake-3.12.0](https://cmake.org/download/)
-* [OpenCV-3.4.1](https://opencv.org/releases.html) | [OpenCV-4.0.0-alpha](https://opencv.org/releases.html)（适用）
+* [OpenCV-3.4.1](https://opencv.org/releases.html) | [OpenCV-4.0.0-alpha](https://opencv.org/releases.html) | [OpenCV-4.0.0-rc](https://opencv.org/releases.html)
 
 ## 安装 MinGW-w64 并配置环境变量
 
 下载安装：[MinGW-x64-4.8.1-release-posix-seh-rev5](http://sourceforge.net/projects/mingwbuilds/files/host-windows/releases/4.8.1/64-bit/threads-posix/seh/x64-4.8.1-release-posix-seh-rev5.7z/download)
+
+（博文使用 MinGW-x64-4.8.1 为例，但建议使用最新 MinGW：[MinGW-w64 - for 32 and 64 bit Windows](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/)）
 
 为系统（用户）变量 `Path` 添加 `E:\MinGW-w64\x64-4.8.1-release-posix-seh-rev5\mingw64\bin`
 
@@ -286,7 +286,6 @@ mingw32-make: *** [all] Error 2
 
 然后重新 `Configure`-`Generate`-`mingw32-make`
 
-
 ### 3. 'M_PI' was not declared in this scope 错误【2018年10月13日修改，因编译 OpenCV-4.0.0-alpha 时遇到并解决】
 
 #### 表现
@@ -368,12 +367,38 @@ mingw32-make: *** [all] Error 2
 
 因为 OpenCV 在 `chessboard.cpp`、`chessboard.hpp`、`test_chesscorners.cpp` 这些代码中有 BUG，使用的应该是 `CV_PI` 而不是 `M_PI` 导致的。具体见我提的 Issue：[Failed to compile opencv-4.0.0-alpha using mingw-w64](https://github.com/opencv/opencv/issues/12642)
 
-
 #### 解决
 
 * 在最新的 master 分支已经解决了这个问题，见我的 pull ：[M_PI changed to CV_PI](https://github.com/opencv/opencv/pull/12645)
 
 * 如果你是在 [官网](https://opencv.org/releases.html) 或者 [github.com/opencv/opencv/releases](https://github.com/opencv/opencv/releases) 中下的 `OpenCV 4.0.0-alpha`，可能还会有这个问题，那么你需要把 `chessboard.cpp`、`chessboard.hpp`、`test_chesscorners.cpp` 文件中的 `M_PI` 全部改为 `CV_PI`，如我的 commit 所示：[M_PI changed to CV_PI (#12645)](https://github.com/opencv/opencv/commit/f0d277e45246762866daea036558e2c391b39ace)
+
+然后重新 `Configure`-`Generate`-`mingw32-make`
+
+### 4. 'posix_memalign' was not declared in this scope 错误【2018年11月17日修改，因编译 OpenCV-4.0.0-rc 时遇到并解决】
+
+#### 表现
+
+```
+[ 28%] Building CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1c/sources/ade/source/alloc.cpp.obj
+E:\opencv-4.0.0-rc\opencv-4.0.0-rc-build\3rdparty\ade\ade-0.1.1c\sources\ade\source\alloc.cpp: In function 'void* ade::aligned_alloc(std::size_t, std::size_t)':
+E:\opencv-4.0.0-rc\opencv-4.0.0-rc-build\3rdparty\ade\ade-0.1.1c\sources\ade\source\alloc.cpp:31:16: error: 'posix_memalign' was not declared in this scope
+     auto res = posix_memalign(&ret, std::max(sizeof(void*), alignment), size);
+                ^~~~~~~~~~~~~~
+mingw32-make[2]: *** [modules\CMakeFiles\ade.dir\build.make:63: modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1c/sources/ade/source/alloc.cpp.obj] Error 1
+mingw32-make[1]: *** [CMakeFiles\Makefile2:884: modules/CMakeFiles/ade.dir/all] Error 2
+mingw32-make: *** [Makefile:162: all] Error 2
+```
+
+![2018-11-17_174118.png](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2018-11-17_174118.png)
+
+#### 原因
+
+因为我使用了 `MinGW-w64-8.1.0` 编译，而新的编译器在 Windows 下不再定义 `WIN32`，而定义成 `_WIN32`，如这个 Issue 的问题：[error: 'posix_memalign' was not declared in this scope #12831](https://github.com/opencv/opencv/issues/12831)
+
+#### 解决
+
+把 `opencv-4.0.0-rc-build\3rdparty\ade\ade-0.1.1c\sources\ade\source\alloc.cpp` 文件的所有 `WIN32` 改为 `_WIN32`，如这个 PR 所做的修改：[fix check for win32 #6](https://github.com/opencv/ade/pull/6/files)
 
 然后重新 `Configure`-`Generate`-`mingw32-make`
 
@@ -383,3 +408,8 @@ mingw32-make: *** [all] Error 2
 
 * [编译 32位 OpenCV 博文的常见错误](https://blog.huihut.com/2017/12/03/CompiledOpenCVRunInQt/)
 * [Tutorial: Installation from source for Windows with Mingw-w64](http://visp-doc.inria.fr/doxygen/visp-daily/tutorial-install-win10-mingw64.html)
+
+## 更新日志
+
+1. 2018年10月13日为 OpenCV-4.0.0-alpha 而修改，主要改了 “编译 OpenCV 常见错误”
+2. 2018年11月17日为 OpenCV-4.0.0-rc 而修改，主要改了 “编译 OpenCV 常见错误”
