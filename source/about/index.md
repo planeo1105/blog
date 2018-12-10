@@ -32,7 +32,6 @@ layout: about
 * [qSAF](https://github.com/huihut/qSAF)：一个扫描角度过滤的 CloudCompare 插件
 * [TuringRobot](https://github.com/huihut/TuringRobot)：图灵机器人的 Unity 脚本
 * [BPNN-Face-Recognition-For-Qt](https://github.com/PAC-P2P/BPNN-Face-Recognition-For-Qt)：基于 BP 神经网络的人脸识别系统
-* [stuManager](https://github.com/huihut/stuManager)：学生信息管理系统
 * [OpenCV-MinGW-Build](https://github.com/huihut/OpenCV-MinGW-Build)：为 Windows 下 MinGW 编译的 OpenCV
 * [更多](https://github.com/huihut?tab=repositories)
 
