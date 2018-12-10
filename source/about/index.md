@@ -39,7 +39,7 @@ layout: about
 
 <div class="about-div">
 
-微信公众号：huihut_com
+请不要关注这个孤独的微信公众号：huihut_com
 
 ![微信公众号HuiHut](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qrcode_wechat_huihut_8cm.jpg)
 
