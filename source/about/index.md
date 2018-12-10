@@ -10,7 +10,7 @@ layout: about
 <style>
 .about-img{display:inline-block;}
 .about-a{border:0; margin: 0 5px}
-.about-div{text-align:center; margin:0 auto; margin-top: 15px}
+.about-div{text-align:center; margin:0 auto; margin-top: 15px; display:block;}
 </style>
 
 
@@ -40,6 +40,6 @@ layout: about
 
 <div class="about-div"><a class="about-a" href="https://blog.huihut.com"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/blog.png"/></a><a class="about-a" href="http://blog.csdn.net/huihut"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/csdn.png"/></a><a class="about-a" href="https://github.com/huihut"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/github.png"/></a><a class="about-a" href="https://www.zhihu.com/people/huihut"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/zhihu.png"/></a><a class="about-a" href="mailto:huihut@outlook.com"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/mail.png"/></a></div>
 
-<div class="about-div"><img class="about-img" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qrcode_wechat_huihut_8cm.jpg"/></div>
+<div class="about-div"><img style="display:block; margin:auto;" src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qrcode_wechat_huihut_8cm.jpg"/></div>
 
 <div class="about-div">请不要关注这个孤独的微信公众号：huihut_com</div>
