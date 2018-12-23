@@ -3,7 +3,7 @@
 title: 一个可以模仿你的表情的语音聊天机器人 —— Facemoji 废萌（OpenCV+Dlib+Live2D+图灵机器人+讯飞IAT语音听写+讯飞TTS语音合成）
 subtitle: 一个可以模仿你的表情的语音聊天机器人 —— Facemoji 废萌（OpenCV+Dlib+Live2D+图灵机器人+讯飞IAT语音听写+讯飞TTS语音合成）
 date: 2018-02-08 00:11:00
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Unity
 categories: 

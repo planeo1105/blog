@@ -3,7 +3,7 @@
 title: Flutter beta 版尝鲜（在 Windows + Android Studio 与 MacOS + VS Code 的安装配置）
 subtitle: Flutter beta 版尝鲜（在 Windows + Android Studio 与 MacOS + VS Code 的安装配置）
 date: 2018-03-13 19:06:43
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 - Flutter
 categories: 

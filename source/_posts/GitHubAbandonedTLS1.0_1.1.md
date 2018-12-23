@@ -3,7 +3,7 @@
 title: GitHub 弃用 TLS 1.0、1.1 导致 push 异常 SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version
 subtitle: GitHub 弃用 TLS 1.0、1.1 导致 push 异常 SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version
 date: 2018-02-28 19:13:09
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- 版本控制
 categories: 

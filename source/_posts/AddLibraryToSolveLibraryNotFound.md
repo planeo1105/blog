@@ -3,7 +3,7 @@
 title: 通过直接添加或者手动编译添加库，解决 library not found for -lxxx 等的问题
 subtitle: 通过手动编译添加库，解决 library not found for -lxxx 的问题
 date: 2017-08-23 10:48:26
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- 链接装载库
 categories: 

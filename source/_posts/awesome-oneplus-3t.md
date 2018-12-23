@@ -3,7 +3,7 @@
 title: 一加 3T ROM、内核、固件、Recovery、框架、软件（APP）总结
 subtitle: awesome-oneplus-3t | 一加 3T ROM、内核、固件、Recovery、框架、软件（APP）总结
 date: 2018-05-11 22:13:59
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 - 刷机
 categories: 

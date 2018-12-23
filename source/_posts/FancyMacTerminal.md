@@ -3,7 +3,7 @@
 title: iTerm2 + OhMyZsh + agnoster + Powerline + solarized = 漂亮的Mac终端
 subtitle: 用iTerm2、 Oh My Zsh、 agnoster、 Powerline、 solarized， 打造漂亮的Mac终端
 date: 2017-03-11 14:59:45
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Mac
 categories: 

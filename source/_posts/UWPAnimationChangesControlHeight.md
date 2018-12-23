@@ -3,7 +3,7 @@
 title: UWP 动画改变控件大小（高度）
 subtitle: UWP 动画改变控件大小（高度）
 date: 2018-07-18 23:09:46
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Dotnet
 	- UWP

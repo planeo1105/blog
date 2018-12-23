@@ -3,7 +3,7 @@
 title: Qt GDB 无法调试 MSVC 编译的程序而报错：file format not recognized
 subtitle: 
 date: 2018-06-02 13:11:56
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- QT
 categories: 

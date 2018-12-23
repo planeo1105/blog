@@ -3,7 +3,7 @@
 title: 解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题
 subtitle: 解决源码编译 ZeroC Ice 缺失 mcpp、bzip2、expat 库的问题
 date: 2017-09-06 23:50:18
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- 链接装载库
 	- ZeroC-Ice

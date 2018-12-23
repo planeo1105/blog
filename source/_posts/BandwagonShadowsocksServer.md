@@ -3,7 +3,7 @@
 title: 搬瓦工Shadowsocks安装及配置多用户(服务端)
 subtitle: 搬瓦工VPS搭建服务端Shadowsocks，外加多用户配置、优化
 date: 2016-12-3 14:44:21
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Shadowsocks
 categories: 

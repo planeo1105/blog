@@ -3,7 +3,7 @@
 title: 解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS
 subtitle: 解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS
 date: 2018-11-08 14:28:00
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- C/C++
 	- OSS

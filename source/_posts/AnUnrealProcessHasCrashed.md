@@ -3,7 +3,7 @@
 title: Launcher 启动 UE4 引擎出现 An Unreal process has crashed 的问题
 subtitle: Launcher 启动 UE4 引擎出现 An Unreal process has crashed 的问题
 date: 2017-07-28 09:19:47
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Unreal
 categories: 

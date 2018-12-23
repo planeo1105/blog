@@ -3,7 +3,7 @@
 title: 技嘉Z370 HD3P + i7-8700K + GTX1080 装黑苹果 High Sierra 10.13.6
 subtitle: 技嘉Z370 HD3P + i7-8700K + GTX1080 装黑苹果 High Sierra 10.13.6
 date: 2018-10-13 13:00:00
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Mac
 categories: 

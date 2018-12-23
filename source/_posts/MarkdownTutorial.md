@@ -3,7 +3,7 @@
 title: Markdown 简易入门教程
 subtitle: 自己整理的 Markdown 简介、编辑器推荐、语法、特征等，是 Markdown 的简易入门教程
 date: 2017-01-25 1:45:50
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Markdown
 categories: 

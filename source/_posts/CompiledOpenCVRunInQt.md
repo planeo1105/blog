@@ -3,7 +3,7 @@
 title: OpenCV使用CMake和MinGW的编译安装及其在Qt配置运行
 subtitle: OpenCV使用CMake和MinGW的编译安装及其在Qt配置运行
 date: 2017-12-03 15:27:22
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- 链接装载库
 	- QT

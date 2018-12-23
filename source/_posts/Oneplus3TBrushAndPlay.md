@@ -3,7 +3,7 @@
 title: 一加3T的刷机流程及玩机一些事
 subtitle: 一加3T的刷机流程及玩机一些事
 date: 2017-08-27 13:54:57
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- 刷机
 categories: 

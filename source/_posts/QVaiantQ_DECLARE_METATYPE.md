@@ -3,7 +3,7 @@
 title: Qt的QVaiant中使用非QMetaType类型缺少Q_DECLARE_METATYPE宏定义错误
 subtitle: OpenCV使用CMake和MinGW的编译安装及其在Qt配置运行
 date: 2017-12-05 18:08:47
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- QT
 categories: 

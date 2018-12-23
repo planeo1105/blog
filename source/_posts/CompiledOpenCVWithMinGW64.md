@@ -3,7 +3,7 @@
 title: OpenCV使用CMake和MinGW-w64的编译安装
 subtitle: OpenCV使用CMake和MinGW-w64的编译安装
 date: 2018-07-31 22:19:45
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- 链接装载库
 categories: 

@@ -3,7 +3,7 @@
 title: Linux安装配置Shadowsocks客户端及开机自动启动
 subtitle: Linux安装配置Shadowsocks客户端及开机自动启动
 date: 2017-08-25 09:17:40
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Shadowsocks
 categories: 

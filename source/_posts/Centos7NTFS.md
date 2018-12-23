@@ -3,7 +3,7 @@
 title: Centos 7 挂载 NTFS 分区
 subtitle: Centos 7 挂载 NTFS 分区
 date: 2017-03-29 20:02:35
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Linux
 categories: 

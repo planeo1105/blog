@@ -3,7 +3,7 @@
 title: CloudCompare插件编写三（算法实现）
 subtitle: CloudComapre插件的编写，理解CloudComapre插件编写及点云数据结构，实现qSAF插件
 date: 2017-04-27 10:35:43
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- QT
 	- CloudCompare

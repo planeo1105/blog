@@ -3,7 +3,7 @@
 title: Makefile 问题及解决
 subtitle: Makefile遇到的问题及解决方案
 date: 2017-03-13 05:59:10
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Makefile
 categories: 

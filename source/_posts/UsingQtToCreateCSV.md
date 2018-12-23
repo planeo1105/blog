@@ -3,7 +3,7 @@
 title: C++ 使用 Qt 生成带标签数据集的 CSV 文件
 subtitle: C++ 使用 Qt 生成 CSV 文件，可用于生成带标签的数据集 CSV 文件，标签为图片上一级的文件夹名字。
 date: 2018-06-12 21:25:51
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
     - QT 
     - ML 

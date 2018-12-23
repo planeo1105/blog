@@ -3,7 +3,7 @@
 title: C++ 调用 Python 模块
 subtitle: C++ 调用 Python 模块
 date: 2018-06-12 21:28:57
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Python 
 	- C/C++  

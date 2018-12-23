@@ -3,7 +3,7 @@
 title: WinRT(C++/CX) UTF8类型转换为std::string和Platform::String^的Unicode字符串
 subtitle: WinRT(C++/CX) UTF8类型转换为std::string和Platform::String^的Unicode字符串
 date: 2018-08-23 23:44:50
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- C/C++
 categories: 

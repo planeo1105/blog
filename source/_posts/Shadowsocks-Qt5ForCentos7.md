@@ -3,7 +3,7 @@
 title: Shadowsocks-Qt5 For Centos 7
 subtitle: Shadowsocks-Qt5 installation and Proxy in Centos 7
 date: 2017-03-25 10:41:40
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Shadowsocks
 categories: 

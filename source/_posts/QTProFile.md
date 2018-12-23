@@ -3,7 +3,7 @@
 title: QT的pro文件编写
 subtitle: Qt的.pro文件编写
 date: 2017-04-26 18:48:31
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- QT
 categories: 

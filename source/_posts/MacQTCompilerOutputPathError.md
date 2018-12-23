@@ -3,7 +3,7 @@
 title: Mac下QT编译输出路径错误：ld unknown option ...
 subtitle: Mac下QT编译输出路径错误
 date: 2017-03-26 02:30:47
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- 链接装载库
 	- QT

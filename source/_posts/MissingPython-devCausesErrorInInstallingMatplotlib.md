@@ -3,7 +3,7 @@
 title: python-dev 库缺失导致安装 matplotlib 出错
 subtitle: python-dev 库缺失导致安装 matplotlib 出错
 date: 2018-10-13 11:00:00
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Python
 categories: 

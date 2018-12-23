@@ -3,7 +3,7 @@
 title: WinRT(C++/CX) Platform::String^ 与 std::string 的类型转换
 subtitle: WinRT(C++/CX) Platform::String^ 与 std::string 的类型转换
 date: 2018-08-23 23:43:00
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- C/C++
 categories: 

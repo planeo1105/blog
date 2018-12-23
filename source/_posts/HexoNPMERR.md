@@ -3,7 +3,7 @@
 title: hexo 构建静态文件无法生成 index.html 等文件
 subtitle: hexo 构建静态文件无法生成 index.html 等文件的问题及其原因和解决办法
 date: 2017-05-13 20:28:58
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Hexo
 categories: 

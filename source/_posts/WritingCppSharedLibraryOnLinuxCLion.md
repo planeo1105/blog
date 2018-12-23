@@ -3,7 +3,7 @@
 title: Linux 下 CLion 编写调用 C++ 共享库
 subtitle: Linux 下 CLion 编写调用 C++ 共享库
 date: 2018-07-20 22:35:10
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- C/C++  
 categories: 

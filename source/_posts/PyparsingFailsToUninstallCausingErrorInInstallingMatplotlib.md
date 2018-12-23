@@ -3,7 +3,7 @@
 title: pyparsing 无法卸载导致安装 matplotlib 出错
 subtitle: pyparsing 无法卸载导致安装 matplotlib 出错
 date: 2018-10-13 11:02:00
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Python
 categories: 

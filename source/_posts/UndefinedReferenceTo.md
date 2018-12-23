@@ -3,7 +3,7 @@
 title: gcc/mpicc 编译器 undefined reference to ... 问题的解决
 subtitle: gcc/mpicc 编译器 undefined reference to ... 问题的解决
 date: 2017-07-18 09:03:48
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- 链接装载库
 	- C/C++

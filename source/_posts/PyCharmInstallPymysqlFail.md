@@ -3,7 +3,7 @@
 title: PyCharm自动安装pymysql包失败
 subtitle: PyCharm自动安装pymysql包失败。问题描述：在PyCharm中新建Web2Py项目后提示没有pymysql，自动安装失败
 date: 2017-01-21 21:41:07
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Python
 categories: 

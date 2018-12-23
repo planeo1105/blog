@@ -3,7 +3,7 @@
 title: C++ IO 库条件状态及EOF
 subtitle: C++ 文件结束符 EOF
 date: 2017-04-15 12:12:24
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- C/C++
 categories: 

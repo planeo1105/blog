@@ -3,7 +3,7 @@
 title: VSCode 的 C/C++ 调试环境的 launch.json、 tasks.json 文件
 subtitle: VSCode 的 C/C++ 调试环境的 launch.json、 tasks.json 文件
 date: 2018-06-12 21:32:13
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- C/C++
 categories: 

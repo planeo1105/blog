@@ -3,7 +3,7 @@
 title: C# 解压压缩包及 7z 库缺失导致 Can not load 7-zip library or internal COM error!
 subtitle: C# 解压压缩包及 7z 库缺失导致 Can not load 7-zip library or internal COM error!
 date: 2018-11-07 00:20:00
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- Dotnet
 	- C#

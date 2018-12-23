@@ -3,7 +3,7 @@
 title: QT QDialog 中模态与非模态对话框的研究
 subtitle: QT构建错误 error expected at end of declaration list
 date: 2017-06-29 20:05:27
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- QT
 categories: 

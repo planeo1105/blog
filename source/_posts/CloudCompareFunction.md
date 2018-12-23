@@ -3,7 +3,7 @@
 title: CloudCompare功能概要
 subtitle: CloudCompare功能概要
 date: 2017-03-21 19:28:31
-author: 修电脑的裁缝酱
+author: 辉哈
 tags:
 	- CloudCompare
 categories: 
