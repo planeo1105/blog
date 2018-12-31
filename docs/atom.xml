@@ -41,29 +41,6 @@
   </entry>
   
   <entry>
-    <title>软件工具分享</title>
-    <link href="https://blog.huihut.com/2018/12/25/SharingSoftwareTools/"/>
-    <id>https://blog.huihut.com/2018/12/25/SharingSoftwareTools/</id>
-    <published>2018-12-24T16:30:35.000Z</published>
-    <updated>2018-12-24T17:23:43.420Z</updated>
-    
-    <content type="html"><![CDATA[<p>工欲善其事，必先利其器。</p><p>一款好的软件或工具能让你工作事半功倍、娱乐方便优雅，下面分享下各平台个人喜欢或者常用的软件和工具，可供大家参考。</p><a id="more"></a><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><ul><li><a href="https://www.google.com/intl/zh-CN_ALL/chrome/" target="_blank" rel="noopener">Google Chrome</a>：Google Chrome 浏览器作为世界上最受欢迎的浏览器，有着速度快、可靠性高、插件丰富等优势，博主一般装好系统第一件事就是用 IE 下载 Chrome（笑~）</li><li><p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>：微软的开源代码编辑器，支持开发、调试、测试，比 Sublime 开源，比 Atom 更快，比 Webstorm 更轻，顺便一提，博主的 Markdown 博文都是在 VSCode 写的</p></li><li><p><a href="">Adobe Photoshop</a></p></li><li><a href="">AirDroid</a></li><li><a href="">DiskGenius</a></li><li><a href="">Etcher</a></li><li><a href="">Faststone Capture</a></li><li><a href="">Shadowsocks</a></li><li><a href="">Steam</a></li><li><a href="">TeamViewer</a></li><li><a href="">TrafficMonitor</a></li><li><a href="">TranslucentTB</a></li><li><a href="">UltraISO</a></li><li><a href="">VMware</a></li></ul><h2 id="MacOS"><a href="#MacOS" class="headerlink" title="MacOS"></a>MacOS</h2><h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><h2 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;工欲善其事，必先利其器。&lt;/p&gt;
-&lt;p&gt;一款好的软件或工具能让你工作事半功倍、娱乐方便优雅，下面分享下各平台个人喜欢或者常用的软件和工具，可供大家参考。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="CS" scheme="https://blog.huihut.com/categories/CS/"/>
-    
-    
-      <category term="软件工具" scheme="https://blog.huihut.com/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【福利】JetBrains 教育版激活码 ？！！</title>
     <link href="https://blog.huihut.com/2018/12/23/JetBrainsKey/"/>
     <id>https://blog.huihut.com/2018/12/23/JetBrainsKey/</id>
@@ -516,6 +493,29 @@
     
     
       <category term="Flutter" scheme="https://blog.huihut.com/tags/Flutter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub 弃用 TLS 1.0、1.1 导致 push 异常 SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version</title>
+    <link href="https://blog.huihut.com/2018/02/28/GitHubAbandonedTLS1.0_1.1/"/>
+    <id>https://blog.huihut.com/2018/02/28/GitHubAbandonedTLS1.0_1.1/</id>
+    <published>2018-02-28T11:13:09.000Z</published>
+    <updated>2018-12-23T14:46:23.573Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><p>git push 到 Github 的时候出现异常：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access &apos;https://github.com/huihut/interview.git/&apos;: error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version</span><br><span class="line">Pushing to https://github.com/huihut/interview.git</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在 2018年2月22日19:00 UTC（太平洋标准时间上午11:00），GitHub 停止了对加密弱 TLS 1.0 和 1.1 协议的支持，并且仅支持与 TLS 1.2 协议的连接。</p><p>官方声明：</p><p><a href="https://githubengineering.com/crypto-removal-notice/" target="_blank" rel="noopener">Github . Weak cryptographic standards removal notice</a></p><p>因此，如果你的 git 连接方式仍然是 TLS 1.0 或 1.1，则会报错。</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>①  查看你的 TLS 版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --list</span><br></pre></td></tr></table></figure><p>②  如果仍然是 TLS 1.0 或 1.1，则下载更新 Git 最新版：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p><p>③  安装好最新版 Git 后，更新 TLS</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.sslVersion</span><br><span class="line">git config --global --add http.sslVersion tlsv1.2</span><br></pre></td></tr></table></figure><p>④  现在则可以使用 TLS 1.2 传输，并解决了此问题</p><p>操作如下图：</p><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/gitconfighttp.sslVersion.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;报错&quot;&gt;&lt;a href=&quot;#报错&quot; class=&quot;headerlink&quot; title=&quot;报错&quot;&gt;&lt;/a&gt;报错&lt;/h2&gt;&lt;p&gt;git push 到 Github 的时候出现异常：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;fatal: unable to access &amp;apos;https://github.com/huihut/interview.git/&amp;apos;: error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Pushing to https://github.com/huihut/interview.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="CS" scheme="https://blog.huihut.com/categories/CS/"/>
+    
+    
+      <category term="版本控制" scheme="https://blog.huihut.com/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
   </entry>
   

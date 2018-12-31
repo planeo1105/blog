@@ -1,5 +1,6 @@
 # HuiHut 的博客 - [blog.huihut.com](https://blog.huihut.com)
 
+* [2018 年终总结 —— 选择](source/_posts/2018YearEndSummary.md)
 * [【福利】JetBrains 教育版激活码 ？！！](source/_posts/JetBrainsKey.md)
 * [解决七牛云链接失效以及批量下载图片并迁移阿里云 OSS](source/_posts/SolveInvalidQiniuLinksAndDownloadImagesInBatchesAndMigrateAliOSS.md)
 * [C# 解压压缩包及 7z 库缺失导致 Can not load 7-zip library or internal COM error!](source/_posts/CSharpUnzipAnd7zLibraryMissingError.md)
