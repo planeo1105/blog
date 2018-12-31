@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="https://blog.huihut.com/"/>
-  <updated>2018-12-23T14:54:58.517Z</updated>
+  <updated>2018-12-31T15:43:10.577Z</updated>
   <id>https://blog.huihut.com/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018 年终总结 —— 选择</title>
+    <link href="https://blog.huihut.com/2018/12/31/2018YearEndSummary/"/>
+    <id>https://blog.huihut.com/2018/12/31/2018YearEndSummary/</id>
+    <published>2018-12-31T15:42:35.000Z</published>
+    <updated>2018-12-31T15:43:10.577Z</updated>
+    
+    <content type="html"><![CDATA[<p>“我想要什么？要过怎样的生活？” 2018 年时常困扰我的问题是<code>选择</code>。</p><p>offer 的选择、技术栈的选择、感情的选择、生活方式的选择……</p><p>如何选择呢？我的选择真的是我想要的吗？</p><a id="more"></a><p>我时常用保尔·柯察金的一句话来作为选择的参考：<code>人的一生应当这样度过：当他回首往事时，不因虚度年华而悔恨，也不因碌碌无为而羞耻。</code></p><p><code>无悔？是我衡量选择正确与否的相对标尺。</code></p><p>但是，这把标尺常常会遇到<code>信息不足</code>、<code>精度不够</code>、<code>候选不佳</code>等的障碍。</p><ul><li><code>信息不足</code>让我无法判断最终是否无悔，只能依据当前缺失的信息做信息不对称的选择。</li><li><code>精度不够</code>使得我无论做何选择都可能后悔亦可能无悔。</li><li><code>候选不佳</code>是真正想选的不在候选范围，无论做何选择，都会后悔。</li></ul><p>无悔？难，难，难，难胜上青天。</p><p>未来有太多的不可测，人们只能根据当前现状做相对合适的选择，而选择的正确与否？或者说今后是否会因为这个选择而后悔？人们不能绝对左右。或无悔地推动你的成长，或后悔地鞭策你的成长。</p><p>然，这把标尺如此之不精确，为何我一直使用它？</p><p>有如下原因：</p><ul><li>无悔？一般是你<code>内心所向</code>，follow your heart 吧！</li><li><code>当把时间拉长到老年再回首这次选择</code>，能够提升正确率。</li><li>对于选择困难症的天秤座来说，<code>聊胜于无</code>。</li></ul><p>而它也不负厚望，左右了我许多重要且无悔的选择：</p><ul><li>填报自愿遇到选择好学校还是好专业的时候</li><li>在服工选择自学还是读好本专业的时候</li><li>是否去转专业申报与考核的时候</li><li>是否自荐进入工作室的时候</li></ul><p><code>人生总是充满了选择，选择意味着要放弃什么，放弃的事物就是后悔的根源，而这些所有的一切迫使你成长。不管是好的还是坏的，不管是无悔的或者后悔的，不管是想要的抑或厌恶的，都是成长必须经历与承受的。</code></p><p>2017 年，忙。忙着上课，忙着考试，忙着技术，忙着工作室。</p><p>2018 年，茫。茫于复习，茫于面试，茫于实习，茫于选择。</p><p>2019 年，你好，请多指教！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;“我想要什么？要过怎样的生活？” 2018 年时常困扰我的问题是&lt;code&gt;选择&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;offer 的选择、技术栈的选择、感情的选择、生活方式的选择……&lt;/p&gt;
+&lt;p&gt;如何选择呢？我的选择真的是我想要的吗？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="https://blog.huihut.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活是一首诗" scheme="https://blog.huihut.com/tags/%E7%94%9F%E6%B4%BB%E6%98%AF%E4%B8%80%E9%A6%96%E8%AF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件工具分享</title>
+    <link href="https://blog.huihut.com/2018/12/25/SharingSoftwareTools/"/>
+    <id>https://blog.huihut.com/2018/12/25/SharingSoftwareTools/</id>
+    <published>2018-12-24T16:30:35.000Z</published>
+    <updated>2018-12-24T17:23:43.420Z</updated>
+    
+    <content type="html"><![CDATA[<p>工欲善其事，必先利其器。</p><p>一款好的软件或工具能让你工作事半功倍、娱乐方便优雅，下面分享下各平台个人喜欢或者常用的软件和工具，可供大家参考。</p><a id="more"></a><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><ul><li><a href="https://www.google.com/intl/zh-CN_ALL/chrome/" target="_blank" rel="noopener">Google Chrome</a>：Google Chrome 浏览器作为世界上最受欢迎的浏览器，有着速度快、可靠性高、插件丰富等优势，博主一般装好系统第一件事就是用 IE 下载 Chrome（笑~）</li><li><p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>：微软的开源代码编辑器，支持开发、调试、测试，比 Sublime 开源，比 Atom 更快，比 Webstorm 更轻，顺便一提，博主的 Markdown 博文都是在 VSCode 写的</p></li><li><p><a href="">Adobe Photoshop</a></p></li><li><a href="">AirDroid</a></li><li><a href="">DiskGenius</a></li><li><a href="">Etcher</a></li><li><a href="">Faststone Capture</a></li><li><a href="">Shadowsocks</a></li><li><a href="">Steam</a></li><li><a href="">TeamViewer</a></li><li><a href="">TrafficMonitor</a></li><li><a href="">TranslucentTB</a></li><li><a href="">UltraISO</a></li><li><a href="">VMware</a></li></ul><h2 id="MacOS"><a href="#MacOS" class="headerlink" title="MacOS"></a>MacOS</h2><h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><h2 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;工欲善其事，必先利其器。&lt;/p&gt;
+&lt;p&gt;一款好的软件或工具能让你工作事半功倍、娱乐方便优雅，下面分享下各平台个人喜欢或者常用的软件和工具，可供大家参考。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="CS" scheme="https://blog.huihut.com/categories/CS/"/>
+    
+    
+      <category term="软件工具" scheme="https://blog.huihut.com/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>【福利】JetBrains 教育版激活码 ？！！</title>
@@ -469,56 +516,6 @@
     
     
       <category term="Flutter" scheme="https://blog.huihut.com/tags/Flutter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub 弃用 TLS 1.0、1.1 导致 push 异常 SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version</title>
-    <link href="https://blog.huihut.com/2018/02/28/GitHubAbandonedTLS1.0_1.1/"/>
-    <id>https://blog.huihut.com/2018/02/28/GitHubAbandonedTLS1.0_1.1/</id>
-    <published>2018-02-28T11:13:09.000Z</published>
-    <updated>2018-12-23T14:46:23.573Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><p>git push 到 Github 的时候出现异常：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access &apos;https://github.com/huihut/interview.git/&apos;: error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version</span><br><span class="line">Pushing to https://github.com/huihut/interview.git</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在 2018年2月22日19:00 UTC（太平洋标准时间上午11:00），GitHub 停止了对加密弱 TLS 1.0 和 1.1 协议的支持，并且仅支持与 TLS 1.2 协议的连接。</p><p>官方声明：</p><p><a href="https://githubengineering.com/crypto-removal-notice/" target="_blank" rel="noopener">Github . Weak cryptographic standards removal notice</a></p><p>因此，如果你的 git 连接方式仍然是 TLS 1.0 或 1.1，则会报错。</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>①  查看你的 TLS 版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --list</span><br></pre></td></tr></table></figure><p>②  如果仍然是 TLS 1.0 或 1.1，则下载更新 Git 最新版：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p><p>③  安装好最新版 Git 后，更新 TLS</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.sslVersion</span><br><span class="line">git config --global --add http.sslVersion tlsv1.2</span><br></pre></td></tr></table></figure><p>④  现在则可以使用 TLS 1.2 传输，并解决了此问题</p><p>操作如下图：</p><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/gitconfighttp.sslVersion.png" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;报错&quot;&gt;&lt;a href=&quot;#报错&quot; class=&quot;headerlink&quot; title=&quot;报错&quot;&gt;&lt;/a&gt;报错&lt;/h2&gt;&lt;p&gt;git push 到 Github 的时候出现异常：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;fatal: unable to access &amp;apos;https://github.com/huihut/interview.git/&amp;apos;: error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Pushing to https://github.com/huihut/interview.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="CS" scheme="https://blog.huihut.com/categories/CS/"/>
-    
-    
-      <category term="版本控制" scheme="https://blog.huihut.com/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个可以模仿你的表情的语音聊天机器人 —— Facemoji 废萌（OpenCV+Dlib+Live2D+图灵机器人+讯飞IAT语音听写+讯飞TTS语音合成）</title>
-    <link href="https://blog.huihut.com/2018/02/08/Facemoji1/"/>
-    <id>https://blog.huihut.com/2018/02/08/Facemoji1/</id>
-    <published>2018-02-07T16:11:00.000Z</published>
-    <updated>2018-12-23T14:46:09.730Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文介绍一个可以模仿你的表情的语音聊天机器人 —— Facemoji 废萌</p><p>这是个 Unity 项目，其暂时有两个模块 ：</p><ul><li>【模块一】是实时人脸卡通化（FaceTracking），使用 <a href="https://enoxsoftware.com/opencvforunity/" target="_blank" rel="noopener">OpenCV</a> 和 <a href="https://enoxsoftware.com/dlibfacelandmarkdetector/" target="_blank" rel="noopener">Dlib</a> 检测面部表情，并实时转化为 <a href="http://sites.cybernoids.jp/cubism-sdk2_e/unity_2-1" target="_blank" rel="noopener">Live2D</a> 模型，然后可 <a href="https://github.com/Chman/Moments" target="_blank" rel="noopener">录制</a> 成 gif 图；</li><li>【模块二】是人工智能（AI）使用 <a href="http://www.tuling123.com/" target="_blank" rel="noopener">图灵机器人</a>、<a href="http://www.xfyun.cn/services/voicedictation" target="_blank" rel="noopener">讯飞IAT语音听写</a>、<a href="http://www.xfyun.cn/services/online_tts" target="_blank" rel="noopener">讯飞TTS语音合成</a> 进行语音聊天。</li></ul><a id="more"></a><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/Facemoji%E6%95%88%E6%9E%9C%E5%9B%BE_cn.png" alt="Facemoji效果图_cn"></p><h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>源码：<a href="https://github.com/huihut/Facemoji" target="_blank" rel="noopener">Github . huihut/Facemoji</a></p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><ul><li><a href="https://www.coolapk.com/apk/192260" target="_blank" rel="noopener">酷安 . Facemoji 废萌</a></li><li><a href="https://play.google.com/store/apps/details?id=com.huihut.facemoji" target="_blank" rel="noopener">Google Play (需要梯子)</a></li><li><a href="https://github.com/huihut/Facemoji/releases" target="_blank" rel="noopener">Github . Facemoji/releases</a></li><li><a href="https://drive.google.com/open?id=1ofJMFIdzXCdYYO3qO5hvrTQPJUumgSY-" target="_blank" rel="noopener">Google云盘 . Facemoji/Platform</a></li><li><a href="https://pan.baidu.com/s/1U08B_wPY67Zh1RTwFhrihA" target="_blank" rel="noopener">Baidu网盘 . Facemoji/Platform</a></li></ul><h2 id="为什么叫废萌（Facemoji）"><a href="#为什么叫废萌（Facemoji）" class="headerlink" title="为什么叫废萌（Facemoji）"></a>为什么叫废萌（Facemoji）</h2><p>首先，为什么叫废萌（Facemoji）？…emmm…这个项目其实是由 Animoji 启发的，由于当时 Animoji 没有开放 api，所以想开发个跨平台（Unity）的类似的项目，就叫 Facemoji。</p><p>至于中文名废萌嘛？…emmm…总觉得她除了卖萌没什么作用，所以就叫废（Face）萌（Moji）了。</p><h2 id="制作"><a href="#制作" class="headerlink" title="制作"></a>制作</h2><ol><li><p>从 <a href="https://drive.google.com/open?id=1ofJMFIdzXCdYYO3qO5hvrTQPJUumgSY-" target="_blank" rel="noopener">Google云盘</a> 或者 <a href="https://pan.baidu.com/s/1U08B_wPY67Zh1RTwFhrihA" target="_blank" rel="noopener">Baidu网盘</a>下载<code>shape_predictor_68_face_landmarks.dat</code>（已训练好的人脸检测模型）和 <code>Facemoji_Plugins_Assets_1.5.0.unitypackage</code>（精简的 OpenCV, Dlib, Live2D 和 Iflytek 库）</p></li><li><p>克隆下源码：<code>git clone git@github.com:huihut/Facemoji.git</code></p></li><li><p>创建一个新的 Unity 项目，命名为 Facemoji</p></li><li><p>把 <code>Facemoji-master</code> 文件夹中的 <code>Assets</code> 和 <code>ProjectSettings</code> 替换 <code>Facemoji</code> 的同名文件夹</p></li><li><p>把 <code>shape_predictor_68_face_landmarks.dat</code> 复制到 <code>Facemoji/Assets/StreamingAssets/</code></p></li><li><p>导入 <code>Facemoji_Plugins_Assets_1.5.0.unitypackage</code>。导入后的文件结构如下：<br> <img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/FacemojiDirectoryStructure1.5.0.png" alt="FacemojiDirectoryStructure1.5.0.png"></p></li><li><p>转换平台到 Android（其他平台未适配）</p></li><li><p>Build &amp; Run</p></li></ol><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="实时人脸卡通化（FaceTracking）"><a href="#实时人脸卡通化（FaceTracking）" class="headerlink" title="实时人脸卡通化（FaceTracking）"></a>实时人脸卡通化（FaceTracking）</h3><p>使用 OpenCV 和 Dlib 检测面部表情，并实时转化为 Live2D 模型；</p><p>她可以跟着你的头部表情动，试着摇头看看吧。</p><h3 id="录制-gif-图"><a href="#录制-gif-图" class="headerlink" title="录制 gif 图"></a>录制 gif 图</h3><p>点击顶部中间的录制键可以录制 3 秒的 gif；</p><p>录制状态为：Recording（准备录制）、PreProcessing（正在录制）、Paused（正在压缩成gif图）</p><p>生成的 gif 存储在 <code>Application.dataPath</code>，Android 平台的话在<br><code>/storage/emulated/0/Android/data/com.huihut.facemoji/files/</code></p><h3 id="语音和文字聊天（聊天机器人？-她说她是-AI，不是机器人！-hhhh…）"><a href="#语音和文字聊天（聊天机器人？-她说她是-AI，不是机器人！-hhhh…）" class="headerlink" title="语音和文字聊天（聊天机器人？ 她说她是 AI，不是机器人！ hhhh…）"></a>语音和文字聊天（<del>聊天机器人？</del> 她说她是 AI，不是机器人！ hhhh…）</h3><p>使用 <strong>图灵机器人</strong>、<strong>讯飞 IAT 语音听写</strong>、<strong>讯飞 TTS 语音合成</strong></p><p>她很智能（<del>zhizhang</del>），可以：</p><ul><li>聊天对话</li><li>生活百科</li><li>数学计算</li><li>故事大全</li><li>笑话大全</li><li>成语接龙</li><li>星座运势</li><li>天气查询</li><li>…</li></ul><p>但是由于她是个中国 AI（<del>机器人</del>），图灵机器人只支持中文，所以她只能进行中文聊天，和她讲英文她只会翻译。</p><p>不过她以后会学习英文的（<del>换个会讲英文的</del>）。</p><h2 id="Gif演示"><a href="#Gif演示" class="headerlink" title="Gif演示"></a>Gif演示</h2><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/GifCapture-201802072218435427.gif" alt="GifCapture-201802072218435427.gif">    </p><h2 id="异常问题"><a href="#异常问题" class="headerlink" title="异常问题"></a>异常问题</h2><h3 id="人不动时模型抖动问题（特别是眼睛眉毛）Facemoji-issues-1"><a href="#人不动时模型抖动问题（特别是眼睛眉毛）Facemoji-issues-1" class="headerlink" title="人不动时模型抖动问题（特别是眼睛眉毛）Facemoji/issues/1"></a>人不动时模型抖动问题（特别是眼睛眉毛）<a href="https://github.com/huihut/Facemoji/issues/1" target="_blank" rel="noopener">Facemoji/issues/1</a></h3><h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><ul><li>手/眼/眉等的轻微抖动</li><li>Dlib 检测到的每一帧人脸特征点的位置会有轻微差距</li></ul><h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><ul><li><p>调整模型参数</p><p>  如果人眼睛小的话，可以修改 <code>FaceTracking.cs</code> 中 <a href="https://github.com/huihut/Facemoji/blob/v1.4.1/Assets/Scripts/FaceTracking.cs#L294" target="_blank" rel="noopener">live2DModelUpdate</a> 方法，把睁开眼的区间改大一点，如下：</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// eye_open_L                               // 左眼</span><br><span class="line">float eyeOpen_L = getRaitoOfEyeOpen_L (points);</span><br><span class="line">if (eyeOpen_L &gt; 0.4f &amp;&amp; eyeOpen_L &lt; 1.0f)</span><br><span class="line">    eyeOpen_L = 1;                          // 睁开眼</span><br><span class="line">else if (eyeOpen_L &gt;= 1.0f)</span><br><span class="line">    eyeOpen_L = 2;                          // 睁大眼</span><br><span class="line">else if (eyeOpen_L &lt;= 0.4f)</span><br><span class="line">    eyeOpen_L = 0;                          // 闭上眼</span><br><span class="line">live2DModel.PARAM_EYE_L_OPEN = eyeOpen_L;</span><br></pre></td></tr></table></figure><ul><li>考虑使用卡尔曼滤波器或者其他滤波器过滤（未尝试）</li></ul><h2 id="修改说明"><a href="#修改说明" class="headerlink" title="修改说明"></a>修改说明</h2><blockquote><p>2018年03月23日因项目更新 v1.5.0 版本而对此博文做了修改。因博文内容不常改动，项目部署、文档等以Github为准。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;本文介绍一个可以模仿你的表情的语音聊天机器人 —— Facemoji 废萌&lt;/p&gt;
-&lt;p&gt;这是个 Unity 项目，其暂时有两个模块 ：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;【模块一】是实时人脸卡通化（FaceTracking），使用 &lt;a href=&quot;https://enoxsoftware.com/opencvforunity/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OpenCV&lt;/a&gt; 和 &lt;a href=&quot;https://enoxsoftware.com/dlibfacelandmarkdetector/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Dlib&lt;/a&gt; 检测面部表情，并实时转化为 &lt;a href=&quot;http://sites.cybernoids.jp/cubism-sdk2_e/unity_2-1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Live2D&lt;/a&gt; 模型，然后可 &lt;a href=&quot;https://github.com/Chman/Moments&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;录制&lt;/a&gt; 成 gif 图；&lt;/li&gt;
-&lt;li&gt;【模块二】是人工智能（AI）使用 &lt;a href=&quot;http://www.tuling123.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;图灵机器人&lt;/a&gt;、&lt;a href=&quot;http://www.xfyun.cn/services/voicedictation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;讯飞IAT语音听写&lt;/a&gt;、&lt;a href=&quot;http://www.xfyun.cn/services/online_tts&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;讯飞TTS语音合成&lt;/a&gt; 进行语音聊天。&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS" scheme="https://blog.huihut.com/categories/CS/"/>
-    
-    
-      <category term="Unity" scheme="https://blog.huihut.com/tags/Unity/"/>
     
   </entry>
   
