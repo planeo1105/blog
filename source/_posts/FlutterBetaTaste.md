@@ -170,7 +170,7 @@ flutter doctor
 
 ![FlutterOfficialSiteXcode](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/FlutterOfficialSiteXcode.jpg)
 
-对此，我特意把我的 Xcode 从 7.1 更新到 7.2，结果还是说需要 9.0.0+，看来是官网教程没更新了。
+对此，我特意把我的 Xcode 从 7.1 更新到 7.2，结果还是说需要 9.0.0+，看来是官网教程没更新了。
 
 ![MacFlutterDoctorRequiresXcode9](http://huihut-img.oss-cn-shenzhen.aliyuncs.com/MacFlutterDoctorRequiresXcode9.0.jpg)
 
