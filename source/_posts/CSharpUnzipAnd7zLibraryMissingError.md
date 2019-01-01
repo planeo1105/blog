@@ -28,6 +28,12 @@ Can not load 7-zip library or internal COM error! Message: DLL file does not exi
 
 ## 解决
 
+### 方法一：使用 NuGet 包管理器下载安装
+
+选择 Visual Studio 某个项目 - 右键引用 - 管理 NuGet 程序包 - 浏览 - 搜索 `7z`，选择一个 `7z` 包，如 `7z.Libs` 安装即可。
+
+### 方法二：手动下载安装
+
 在官网 [Download 7-Zip ](https://www.7-zip.org/download.html) 下载下面的 7z 库
 
 Link|Type|Windows|Description
@@ -53,7 +59,8 @@ private bool UncompressFile(string file_path, string save_path)
         {
             System.IO.Directory.Delete(save_path, true);
         }
-        SevenZip.SevenZipExtractor.SetLibraryPath(@"C:\Program Files\7-Zip\7za.dll");
+        // 若手动安装，需要指定路径
+        //SevenZip.SevenZipExtractor.SetLibraryPath(@"C:\Program Files\7-Zip\7za.dll");
         SevenZip.SevenZipExtractor extractor = new SevenZip.SevenZipExtractor(file_path);
         extractor.ExtractArchive(save_path);
         extractor.Dispose();
