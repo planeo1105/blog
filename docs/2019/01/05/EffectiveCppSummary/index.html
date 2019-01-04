@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="本文是 huihut . C/C++面试基础知识总结 仓库的一部分，定位链接：Effective C++  Effective C++ 视 C++ 为一个语言联邦（C、Object-Oriented C++、Template C++、STL） 宁可以编译器替换预处理器（尽量以 const、enum、inline 替换 #define） 尽可能使用 const 确定对象被使用前已先被初始化（构造时">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-04T14:45:20.931Z">
+<meta property="og:updated_time" content="2019-01-04T16:11:46.149Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Effective C++ 概要">
 <meta name="twitter:description" content="本文是 huihut . C/C++面试基础知识总结 仓库的一部分，定位链接：Effective C++  Effective C++ 视 C++ 为一个语言联邦（C、Object-Oriented C++、Template C++、STL） 宁可以编译器替换预处理器（尽量以 const、enum、inline 替换 #define） 尽可能使用 const 确定对象被使用前已先被初始化（构造时">
@@ -417,7 +417,7 @@
 <li>为多态基类声明 virtual 析构函数（如果 class 带有任何 virtual 函数，它就应该拥有一个 virtual 析构函数）</li>
 <li>别让异常逃离析构函数（析构函数应该吞下不传播异常，或者结束程序，而不是吐出异常；如果要处理异常应该在非析构的普通函数处理）</li>
 <li>绝不在构造和析构过程中调用 virtual 函数（因为这类调用从不下降至 derived class）</li>
-<li>令 <code>operator=</code> 返回一个 <code>reference to *this</code> （用于连锁赋值）</li>
+<li>令 <code>operator=</code> 返回一个 <code>reference to *this</code> （用于连锁赋值）<a id="more"></a></li>
 <li>在 <code>operator=</code> 中处理 “自我赋值”</li>
 <li>赋值对象时应确保复制 “对象内的所有成员变量” 及 “所有 base class 成分”（调用基类复制构造函数）</li>
 <li>以对象管理资源（资源在构造函数获得，在析构函数释放，建议使用智能指针，资源取得时机便是初始化时机（Resource Acquisition Is Initialization，RAII））</li>
@@ -464,7 +464,7 @@
 <li>让自己熟悉包括 TR1 在内的标准程序库（TR1，C++ Technical Report 1，C++11 标准的草稿文件）</li>
 <li>让自己熟悉 Boost（准标准库）</li>
 </ol>
-<a id="more"></a>
+
       
     </div>
 

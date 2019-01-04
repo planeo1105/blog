@@ -25,6 +25,7 @@ categories:
 8. 别让异常逃离析构函数（析构函数应该吞下不传播异常，或者结束程序，而不是吐出异常；如果要处理异常应该在非析构的普通函数处理）
 9. 绝不在构造和析构过程中调用 virtual 函数（因为这类调用从不下降至 derived class）
 10. 令 `operator=` 返回一个 `reference to *this` （用于连锁赋值）
+<!-- more -->
 11. 在 `operator=` 中处理 “自我赋值”
 12. 赋值对象时应确保复制 “对象内的所有成员变量” 及 “所有 base class 成分”（调用基类复制构造函数）
 13. 以对象管理资源（资源在构造函数获得，在析构函数释放，建议使用智能指针，资源取得时机便是初始化时机（Resource Acquisition Is Initialization，RAII））
@@ -70,5 +71,3 @@ categories:
 53. 不要轻忽编译器的警告
 54. 让自己熟悉包括 TR1 在内的标准程序库（TR1，C++ Technical Report 1，C++11 标准的草稿文件）
 55. 让自己熟悉 Boost（准标准库）
-
-<!-- more -->
