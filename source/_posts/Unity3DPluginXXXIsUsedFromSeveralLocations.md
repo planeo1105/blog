@@ -32,7 +32,7 @@ UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()
 
 ## 解决
 
-* 为 x86 取消 x86_64，只勾选 x86，Apply
-* 为 x86_64 取消 x86，只勾选 x86_64，Apply
+* 为 x86 的 `opencvforunity.dll` 取消 x86_64 平台，只勾选 x86 平台，Apply
+* 为 x86_64 的 `opencvforunity.dll` 取消 x86 平台，只勾选 x86_64 平台，Apply
 
 ![Unity3DOpencvforunity.dll](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/Unity3DOpencvforunity.dll.png)
