@@ -98,10 +98,10 @@
 <meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/20181229012607.png">
 <meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2018-12-29_015957.png">
 <meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2018-12-29_020403.png">
-<meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602(1">
+<meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602.jpg">
 <meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_213217.png">
 <meta property="og:image" content="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_212959.png">
-<meta property="og:updated_time" content="2019-01-12T18:44:11.449Z">
+<meta property="og:updated_time" content="2019-01-12T18:47:21.096Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows 下源码编译 eos 人脸模型拟合库过程遇到的坑坑坑">
 <meta name="twitter:description" content="eos 是一个用现代 C++11/14 编写的轻量级三维形变人脸模型拟合库，下面介绍下编译它的步骤和遇到的一些坑坑坑坑！  博文的前半部分是用手动安装的 opencv 和 boost 构建和编译的，一路是坑，最终没有编译成功； 博文的后半部分是用 vcpkg 构建系统安装的 opencv 和 boost 然后构建和编译的，最终编译成功，但是运行失败。  至今为止，关于运行失败的 issue 作者也">
@@ -513,7 +513,7 @@
 <p>根据墨菲定律，必定没这么顺利，果然……</p>
 <p>一连跳几个框，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">由于找不到 opencv_core343.dll、opencv_imgcodecs343.dll、boost_filesystem-vc141-mt-x32-1_68.dll、jpeg62.dll、zlib1.dll 等，无法继续执行代码。重新安装重新可能会解决此问题。</span><br></pre></td></tr></table></figure>
-<p><img src="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602(1" alt="">.jpg)</p>
+<p><img src="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602.jpg" alt=""></p>
 <p>既然缺少动态库，那就去 vcpkg 安装路径下找，如果没有则用 vcpkg 安装，然后把这些 dll 放到 <code>fit-model.exe</code> 同级目录下。</p>
 <p><img src="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_213217.png" alt=""></p>
 <p>然后就……</p>

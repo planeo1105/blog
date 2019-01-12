@@ -290,7 +290,7 @@ cmake ../eos -DOpenCV_DIR=D:\\code\\git\\vcpkg\\buildtrees\\opencv\\x86-windows-
 由于找不到 opencv_core343.dll、opencv_imgcodecs343.dll、boost_filesystem-vc141-mt-x32-1_68.dll、jpeg62.dll、zlib1.dll 等，无法继续执行代码。重新安装重新可能会解决此问题。
 ```
 
-![](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602(1).jpg)
+![](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602.jpg)
 
 既然缺少动态库，那就去 vcpkg 安装路径下找，如果没有则用 vcpkg 安装，然后把这些 dll 放到 `fit-model.exe` 同级目录下。
 
