@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="HuiHut">
 <meta property="og:description" content="eos 是一个用现代 C++11/14 编写的轻量级三维形变人脸模型拟合库，下面介绍下编译它的步骤和遇到的一些坑坑坑坑！  博文的前半部分是用手动安装的 opencv 和 boost 构建和编译的，一路是坑，最终没有编译成功； 博文的后半部分是用 vcpkg 构建系统安装的 opencv 和 boost 然后构建和编译的，最终编译成功，但是运行失败。  至今为止，关于运行失败的 issue 作者也">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-12T18:13:59.599Z">
+<meta property="og:updated_time" content="2019-01-12T18:26:48.585Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows 下源码编译 eos 人脸模型拟合库过程遇到的坑坑坑">
 <meta name="twitter:description" content="eos 是一个用现代 C++11/14 编写的轻量级三维形变人脸模型拟合库，下面介绍下编译它的步骤和遇到的一些坑坑坑坑！  博文的前半部分是用手动安装的 opencv 和 boost 构建和编译的，一路是坑，最终没有编译成功； 博文的后半部分是用 vcpkg 构建系统安装的 opencv 和 boost 然后构建和编译的，最终编译成功，但是运行失败。  至今为止，关于运行失败的 issue 作者也">
@@ -485,8 +485,10 @@
 <li>vcpkg 2018.11.23-nohash</li>
 </ul>
 <h2 id="vcpkg-配置安装"><a href="#vcpkg-配置安装" class="headerlink" title="vcpkg 配置安装"></a>vcpkg 配置安装</h2><p>安装 vcpkg、opencv、boost<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/Microsoft/vcpkg.git</span><br><span class="line">cd vcpkg</span><br><span class="line">.\bootstrap-vcpkg.bat</span><br><span class="line">.\vcpkg install opencv boost</span><br></pre></td></tr></table></figure></p>
-<p>安装完成后，在 <code>eos</code> 同级目录下创建 build 文件夹 <code>eos_vcpkg_build</code>，并 cmake 构建工程。</p>
+<p>安装完成后，在 <code>eos</code> 同级目录下创建 build 文件夹 <code>eos_vcpkg_build</code>，如下目录结构：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- eos</span><br><span class="line">  - CMakeLists.txt</span><br><span class="line">  - ...</span><br><span class="line">- eos_vcpkg_build</span><br><span class="line">  - install</span><br><span class="line">  - eos.sln</span><br><span class="line">  - ...</span><br></pre></td></tr></table></figure>
+<p>然后执行下面的命令构建工程：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir eos_vcpkg_build</span><br><span class="line">cd eos_vcpkg_build</span><br><span class="line">cmake ../eos -DOpenCV_DIR=D:\\code\\git\\vcpkg\\buildtrees\\opencv\\x86-windows-rel -DBOOST_ROOT=D:\\code\\git\\vcpkg\\installed\\x86-windows\\bin -DBOOST_LIBRARYDIR=D:\\code\\git\\vcpkg\\installed\\x86-windows\\bin -DBOOST_INCLUDEDIR=D:\\code\\git\\vcpkg\\installed\\x86-windows\\include -DCMAKE_INSTALL_PREFIX=install/</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>OpenCV_DIR</code> 设为 vcpkg 安装的 <code>opencv 路径</code></li>
 <li><code>BOOST_ROOT</code> 设为 vcpkg 安装的 <code>boost 路径</code></li>
@@ -494,7 +496,6 @@
 <li><code>BOOST_INCLUDEDIR</code> 设为 vcpkg 安装的 <code>boost 头文件路径</code></li>
 <li><code>CMAKE_INSTALL_PREFIX</code> 即为 <code>make install 的路径</code></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir eos_vcpkg_build</span><br><span class="line">cd eos_vcpkg_build</span><br><span class="line">cmake ../eos -DOpenCV_DIR=D:\\code\\git\\vcpkg\\buildtrees\\opencv\\x86-windows-rel -DBOOST_ROOT=D:\\code\\git\\vcpkg\\installed\\x86-windows\\bin -DBOOST_LIBRARYDIR=D:\\code\\git\\vcpkg\\installed\\x86-windows\\bin -DBOOST_INCLUDEDIR=D:\\code\\git\\vcpkg\\installed\\x86-windows\\include -DCMAKE_INSTALL_PREFIX=install/</span><br></pre></td></tr></table></figure>
 <p>构建好后，用 VS 打开，右键 <code>解决方案 eos</code> - <code>生成解决方案</code></p>
 <p>然后选择 <code>INSTALL</code> 工程 - 右键 <code>设为启动项目</code> - 右键 <code>生成</code></p>
 <p>居然成功编译并安装好了（喜极而泣）！</p>
@@ -503,12 +504,9 @@
 <p>（具体错误截图见 <a href="https://github.com/patrikhuber/eos/issues/245#issuecomment-451143760" target="_blank" rel="noopener">issue</a>）</p>
 <p>一连跳几个框，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">由于找不到 opencv_core343.dll、opencv_imgcodecs343.dll、boost_filesystem-vc141-mt-x32-1_68.dll、jpeg62.dll、zlib1.dll 等，无法继续执行代码。重新安装重新可能会解决此问题。</span><br></pre></td></tr></table></figure>
-<p><a href="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602(1" target="_blank" rel="noopener"></a>.jpg)</p>
 <p>既然缺少动态库，那就去 vcpkg 安装路径下找，如果没有则用 vcpkg 安装，然后把这些 dll 放到 <code>fit-model.exe</code> 同级目录下。</p>
-<p><a href="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_213217.png" target="_blank" rel="noopener"></a></p>
 <p>然后就……</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">应用程序无法正常启动(0xc000007b)。请点击“确定”关闭应用程序。</span><br></pre></td></tr></table></figure>
-<p><a href="https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_212959.png" target="_blank" rel="noopener"></a></p>
 <p>我：emmm……mmp</p>
 <p>这个问题我再次开了 <a href="https://github.com/patrikhuber/eos/issues/245#issuecomment-451143760" target="_blank" rel="noopener">issue</a>，但是作者不再回应了。</p>
 <p>所以，在 Windows 上，只是编译成功库，但是示例都无法运行。</p>

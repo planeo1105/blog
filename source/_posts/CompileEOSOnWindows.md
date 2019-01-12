@@ -240,7 +240,7 @@ cd vcpkg
 .\vcpkg install opencv boost
 ```
 
-安装完成后，在 `eos` 同级目录下创建 build 文件夹 `eos_vcpkg_build`，并 cmake 构建工程。
+安装完成后，在 `eos` 同级目录下创建 build 文件夹 `eos_vcpkg_build`，如下目录结构：
 
 ```
 - eos
@@ -252,17 +252,19 @@ cd vcpkg
   - ...
 ```
 
-* `OpenCV_DIR` 设为 vcpkg 安装的 `opencv 路径`
-* `BOOST_ROOT` 设为 vcpkg 安装的 `boost 路径`
-* `BOOST_LIBRARYDIR` 设为 vcpkg 安装的 `boost 库文件路径`
-* `BOOST_INCLUDEDIR` 设为 vcpkg 安装的 `boost 头文件路径`
-* `CMAKE_INSTALL_PREFIX` 即为 `make install 的路径`
+然后执行下面的命令构建工程：
 
 ```
 mkdir eos_vcpkg_build
 cd eos_vcpkg_build
 cmake ../eos -DOpenCV_DIR=D:\\code\\git\\vcpkg\\buildtrees\\opencv\\x86-windows-rel -DBOOST_ROOT=D:\\code\\git\\vcpkg\\installed\\x86-windows\\bin -DBOOST_LIBRARYDIR=D:\\code\\git\\vcpkg\\installed\\x86-windows\\bin -DBOOST_INCLUDEDIR=D:\\code\\git\\vcpkg\\installed\\x86-windows\\include -DCMAKE_INSTALL_PREFIX=install/
 ```
+
+* `OpenCV_DIR` 设为 vcpkg 安装的 `opencv 路径`
+* `BOOST_ROOT` 设为 vcpkg 安装的 `boost 路径`
+* `BOOST_LIBRARYDIR` 设为 vcpkg 安装的 `boost 库文件路径`
+* `BOOST_INCLUDEDIR` 设为 vcpkg 安装的 `boost 头文件路径`
+* `CMAKE_INSTALL_PREFIX` 即为 `make install 的路径`
 
 构建好后，用 VS 打开，右键 `解决方案 eos` - `生成解决方案`
 
@@ -284,19 +286,13 @@ cmake ../eos -DOpenCV_DIR=D:\\code\\git\\vcpkg\\buildtrees\\opencv\\x86-windows-
 由于找不到 opencv_core343.dll、opencv_imgcodecs343.dll、boost_filesystem-vc141-mt-x32-1_68.dll、jpeg62.dll、zlib1.dll 等，无法继续执行代码。重新安装重新可能会解决此问题。
 ```
 
-[](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602(1).jpg)
-
 既然缺少动态库，那就去 vcpkg 安装路径下找，如果没有则用 vcpkg 安装，然后把这些 dll 放到 `fit-model.exe` 同级目录下。
-
-[](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_213217.png)
 
 然后就......
 
 ```
 应用程序无法正常启动(0xc000007b)。请点击“确定”关闭应用程序。
 ```
-
-[](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_212959.png)
 
 我：emmm......mmp
 
