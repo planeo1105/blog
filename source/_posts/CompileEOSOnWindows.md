@@ -170,7 +170,7 @@ Configuring incomplete, errors occurred!
 
 ### 解决
 
-这个问题太坑了，最终是通过把 `E:\boost_1_66_0\stage\lib` 里面的那三个库（每个有四个相关库）的名字分别删掉 `lib`，如下对 `boost_system` 的修改：
+这个问题太坑了，最终是把 `E:\boost_1_66_0\stage\lib` 里面的那三个库（每个有四个相关库）的名字分别删掉 `lib`，如下对 `boost_system` 的修改：
 
 * `libboost_system-vc141-mt-x32-1_66.lib` 改为 `boost_system-vc141-mt-x32-1_66.lib`
 * `libboost_system-vc141-mt-gd-x32-1_66.lib` 改为 `boost_system-vc141-mt-gd-x32-1_66.lib`
