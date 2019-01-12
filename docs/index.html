@@ -310,6 +310,158 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2019/01/13/CompileEOSOnWindows/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="辉哈">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ojlsgreog.bkt.clouddn.com/H_white.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HuiHut">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/01/13/CompileEOSOnWindows/" itemprop="url">
+                  Windows 下源码编译 eos 人脸模型拟合库过程遇到的坑坑坑
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-13T02:09:21+08:00">
+                2019-01-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS/" itemprop="url" rel="index">
+                    <span itemprop="name">CS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><a href="https://github.com/patrikhuber/eos" target="_blank" rel="noopener">eos</a> 是一个用现代 C++11/14 编写的轻量级三维形变人脸模型拟合库，下面介绍下编译它的步骤和遇到的一些坑坑坑坑！</p>
+<ul>
+<li>博文的前半部分是用手动安装的 opencv 和 boost 构建和编译的，一路是坑，最终没有编译成功；</li>
+<li>博文的后半部分是用 <a href="https://github.com/Microsoft/vcpkg/" target="_blank" rel="noopener">vcpkg</a> 构建系统安装的 opencv 和 boost 然后构建和编译的，最终编译成功，但是运行失败。</li>
+</ul>
+<p>至今为止，关于运行失败的 <a href="https://github.com/patrikhuber/eos/issues/245" target="_blank" rel="noopener">issue</a> 作者也没有回复，希望有朝一日能填坑吧~</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/13/CompileEOSOnWindows/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2019/01/07/Unity3DPluginXXXIsUsedFromSeveralLocations/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1650,149 +1802,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://blog.huihut.com/2018/08/23/UTF8ToStdStrAndUTF8ToManagedStr/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="辉哈">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://ojlsgreog.bkt.clouddn.com/H_white.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HuiHut">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2018/08/23/UTF8ToStdStrAndUTF8ToManagedStr/" itemprop="url">
-                  WinRT(C++/CX) UTF8类型转换为std::string和Platform::String^的Unicode字符串
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-23T23:44:50+08:00">
-                2018-08-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CS/" itemprop="url" rel="index">
-                    <span itemprop="name">CS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Gist 仓库地址：<a href="https://gist.github.com/huihut/8f75e2332e05673ff7e1248ad5e85339" target="_blank" rel="noopener">https://gist.github.com/huihut/8f75e2332e05673ff7e1248ad5e85339</a></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Windows.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">string</span> <span class="title">UTF8_To_Std_Str</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp; str)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> nwLen = MultiByteToWideChar(CP_UTF8, <span class="number">0</span>, str.c_str(), <span class="number">-1</span>, <span class="literal">NULL</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">wchar_t</span>* pwBuf = <span class="keyword">new</span> <span class="keyword">wchar_t</span>[nwLen + <span class="number">1</span>];</span><br><span class="line">	<span class="built_in">memset</span>(pwBuf, <span class="number">0</span>, nwLen * <span class="number">2</span> + <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">	MultiByteToWideChar(CP_UTF8, <span class="number">0</span>, str.c_str(), str.length(), pwBuf, nwLen);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> nLen = WideCharToMultiByte(CP_ACP, <span class="number">0</span>, pwBuf, <span class="number">-1</span>, <span class="literal">NULL</span>, <span class="literal">NULL</span>, <span class="literal">NULL</span>, <span class="literal">NULL</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">char</span>* pBuf = <span class="keyword">new</span> <span class="keyword">char</span>[nLen + <span class="number">1</span>];</span><br><span class="line">	<span class="built_in">memset</span>(pBuf, <span class="number">0</span>, nLen + <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">	WideCharToMultiByte(CP_ACP, <span class="number">0</span>, pwBuf, nwLen, pBuf, nLen, <span class="literal">NULL</span>, <span class="literal">NULL</span>);</span><br><span class="line"></span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">string</span> retStr = pBuf;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">delete</span>[] pBuf;</span><br><span class="line">	<span class="keyword">delete</span>[] pwBuf;</span><br><span class="line"></span><br><span class="line">	pBuf = <span class="literal">NULL</span>;</span><br><span class="line">	pwBuf = <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> retStr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Platform::String^ UTF8_To_Managed_Str(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp; str)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">int</span> nwLen = MultiByteToWideChar(CP_UTF8, <span class="number">0</span>, str.c_str(), <span class="number">-1</span>, <span class="literal">NULL</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">wchar_t</span>* pwBuf = <span class="keyword">new</span> <span class="keyword">wchar_t</span>[nwLen + <span class="number">1</span>];</span><br><span class="line">	<span class="built_in">memset</span>(pwBuf, <span class="number">0</span>, nwLen * <span class="number">2</span> + <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">	MultiByteToWideChar(CP_UTF8, <span class="number">0</span>, str.c_str(), str.length(), pwBuf, nwLen);</span><br><span class="line"></span><br><span class="line">	Platform::String^ pStr = ref <span class="keyword">new</span> Platform::String(pwBuf);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">delete</span>[] pwBuf;</span><br><span class="line">	pwBuf = <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> pStr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1842,7 +1851,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-count">54</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
