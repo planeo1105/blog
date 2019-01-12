@@ -60,6 +60,8 @@ mkdir eos_build
   library.
 ```
 
+![20181229012607](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/20181229012607.png)
+
 ### 原因
 
 能找到 OpenCV 路径，但找不到兼容的二进制文件。
@@ -122,6 +124,8 @@ D:/code/VS/BabyCreator/eos/examples/Boost_INCLUDE_DIR
 Configuring incomplete, errors occurred!
 ```
 
+![2018-12-29_015957](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2018-12-29_015957.png)
+
 ### 原因
 
 没找到 Boost 库，原因是没配置好。
@@ -163,6 +167,8 @@ Call Stack (most recent call first):
 Boost found at E:/boost_1_66_0
 Configuring incomplete, errors occurred!
 ```
+
+![2018-12-29_020403](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2018-12-29_020403.png)
 
 ### 原因
 
@@ -278,15 +284,17 @@ cmake ../eos -DOpenCV_DIR=D:\\code\\git\\vcpkg\\buildtrees\\opencv\\x86-windows-
 
 根据墨菲定律，必定没这么顺利，果然......
 
-（具体错误截图见 [issue](https://github.com/patrikhuber/eos/issues/245#issuecomment-451143760)）
-
 一连跳几个框，
 
 ```
 由于找不到 opencv_core343.dll、opencv_imgcodecs343.dll、boost_filesystem-vc141-mt-x32-1_68.dll、jpeg62.dll、zlib1.dll 等，无法继续执行代码。重新安装重新可能会解决此问题。
 ```
 
+![](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/1546520602(1).jpg)
+
 既然缺少动态库，那就去 vcpkg 安装路径下找，如果没有则用 vcpkg 安装，然后把这些 dll 放到 `fit-model.exe` 同级目录下。
+
+![](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_213217.png)
 
 然后就......
 
@@ -294,9 +302,11 @@ cmake ../eos -DOpenCV_DIR=D:\\code\\git\\vcpkg\\buildtrees\\opencv\\x86-windows-
 应用程序无法正常启动(0xc000007b)。请点击“确定”关闭应用程序。
 ```
 
+![](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/2019-01-03_212959.png)
+
 我：emmm......mmp
 
-这个问题我再次开了 [issue](https://github.com/patrikhuber/eos/issues/245#issuecomment-451143760)，但是作者不再回应了。
+应该是动态库的链接错误，关于这个问题我再次开了 [issue](https://github.com/patrikhuber/eos/issues/245#issuecomment-451143760)，但是作者不再回应了。
 
 所以，在 Windows 上，只是编译成功库，但是示例都无法运行。
 
