@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="https://blog.huihut.com/"/>
-  <updated>2019-01-12T18:47:21.096Z</updated>
+  <updated>2019-01-20T18:23:34.745Z</updated>
   <id>https://blog.huihut.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python DeprecationWarning the imp module is deprecated in favour of importlib</title>
+    <link href="https://blog.huihut.com/2019/01/21/PythonDeprecationWarningTheImpModuleIsDeprecatedInFavourOfImportlib/"/>
+    <id>https://blog.huihut.com/2019/01/21/PythonDeprecationWarningTheImpModuleIsDeprecatedInFavourOfImportlib/</id>
+    <published>2019-01-20T18:21:18.000Z</published>
+    <updated>2019-01-20T18:23:34.745Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py:1: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module&apos;s documentation for alternative uses</span><br><span class="line">  import imp</span><br></pre></td></tr></table></figure><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>imp 从 Python 3.4 之后弃用了，建议使用 importlib 代替</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>打开 <code>E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py</code> 文件，做如下两步修改：</p><ol><li><p>在第一行，注释掉 <code>imp</code>，导入 <code>importlib</code></p> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import imp</span></span><br><span class="line"><span class="keyword">import</span> importlib</span><br></pre></td></tr></table></figure></li><li><p>在第 230 行的 <code>loadSource</code> 函数中，注释 <code>imp.load_source</code>，使用 <code>importlib.machinery.SourceFileLoader</code> 加载模块</p> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#module = imp.load_source(moduleName, fileName)</span></span><br><span class="line">module = importlib.machinery.SourceFileLoader(moduleName, fileName).load_module()</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;报错&quot;&gt;&lt;a href=&quot;#报错&quot; class=&quot;headerlink&quot; title=&quot;报错&quot;&gt;&lt;/a&gt;报错&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span 
+      
+    
+    </summary>
+    
+      <category term="CS" scheme="https://blog.huihut.com/categories/CS/"/>
+    
+    
+      <category term="Python" scheme="https://blog.huihut.com/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows 下源码编译 eos 人脸模型拟合库过程遇到的坑坑坑</title>
@@ -498,34 +523,6 @@
       <category term="QT" scheme="https://blog.huihut.com/tags/QT/"/>
     
       <category term="ML" scheme="https://blog.huihut.com/tags/ML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Qt GDB 无法调试 MSVC 编译的程序而报错：file format not recognized</title>
-    <link href="https://blog.huihut.com/2018/06/02/QtNotInExecutableFormat/"/>
-    <id>https://blog.huihut.com/2018/06/02/QtNotInExecutableFormat/</id>
-    <published>2018-06-02T05:11:56.000Z</published>
-    <updated>2018-12-23T14:47:18.493Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul><li>Windows 10 x64</li><li>Visual Studio 2017</li><li>Qt 5.11</li></ul><h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><p>Qt Debug 时提示异常：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qt not in executable format. file format not recognized</span><br></pre></td></tr></table></figure><a id="more"></a><p><img src="http://huihut-img.oss-cn-shenzhen.aliyuncs.com/qt-not-in-executable-format-file-format-not-recognized.PNG" alt="qt-not-in-executable-format-file-format-not-recognized"></p><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>编译器（Compiler）使用了 64 位版本的 MSVC，调试器（Debugger）却使用了 32 位的 MinGW 的 GDB，从而 GDB 不能调试 64 位程序而报错。</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ul><li>在 Qt 的 <code>工具</code> - <code>选项</code> - <code>构建和运行</code> - <code>Debuggers</code> 选择 CDB（Debugging Tools for Windows），</li><li>不能自动检测到则手动添加，如：<code>C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\cdb.exe</code>，</li><li>没有 cdb 则下载：<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk" target="_blank" rel="noopener">Windows Driver Kit (WDK)</a>（下载装好后重启 Qt 一般就可以自动检测到）</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Windows 10 x64&lt;/li&gt;
-&lt;li&gt;Visual Studio 2017&lt;/li&gt;
-&lt;li&gt;Qt 5.11&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;异常&quot;&gt;&lt;a href=&quot;#异常&quot; class=&quot;headerlink&quot; title=&quot;异常&quot;&gt;&lt;/a&gt;异常&lt;/h2&gt;&lt;p&gt;Qt Debug 时提示异常：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;qt not in executable format. file format not recognized&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="CS" scheme="https://blog.huihut.com/categories/CS/"/>
-    
-    
-      <category term="QT" scheme="https://blog.huihut.com/tags/QT/"/>
     
   </entry>
   
