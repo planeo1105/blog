@@ -23,6 +23,8 @@ E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py:1: DeprecationWarning: the imp 
 
 imp 从 Python 3.4 之后弃用了，建议使用 importlib 代替
 
+<!-- more -->
+
 ## 解决
 
 打开 `E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py` 文件，做如下两步修改：

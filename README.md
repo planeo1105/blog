@@ -1,5 +1,7 @@
 # HuiHut 的博客 - [blog.huihut.com](https://blog.huihut.com)
 
+* [Python DeprecationWarning the imp module is deprecated in favour of importlib](source/_posts/PythonDeprecationWarningTheImpModuleIsDeprecatedInFavourOfImportlib.md)
+* [Windows 下源码编译 eos 人脸模型拟合库过程遇到的坑坑坑](source/_posts/CompileEOSOnWindows.md)
 * [Unity3D Plugin xxx is used from several locations 错误](source/_posts/Unity3DPluginXXXIsUsedFromSeveralLocations.md)
 * [Effective C++ 概要](source/_posts/EffectiveCppSummary.md)
 * [2018 年终总结 —— 选择](source/_posts/2018YearEndSummary.md)

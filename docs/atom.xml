@@ -6,7 +6,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="https://blog.huihut.com/"/>
-  <updated>2019-01-20T18:23:34.745Z</updated>
+  <updated>2019-01-20T18:27:39.121Z</updated>
   <id>https://blog.huihut.com/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://blog.huihut.com/2019/01/21/PythonDeprecationWarningTheImpModuleIsDeprecatedInFavourOfImportlib/"/>
     <id>https://blog.huihut.com/2019/01/21/PythonDeprecationWarningTheImpModuleIsDeprecatedInFavourOfImportlib/</id>
     <published>2019-01-20T18:21:18.000Z</published>
-    <updated>2019-01-20T18:23:34.745Z</updated>
+    <updated>2019-01-20T18:27:39.121Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py:1: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module&apos;s documentation for alternative uses</span><br><span class="line">  import imp</span><br></pre></td></tr></table></figure><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>imp 从 Python 3.4 之后弃用了，建议使用 importlib 代替</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>打开 <code>E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py</code> 文件，做如下两步修改：</p><ol><li><p>在第一行，注释掉 <code>imp</code>，导入 <code>importlib</code></p> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import imp</span></span><br><span class="line"><span class="keyword">import</span> importlib</span><br></pre></td></tr></table></figure></li><li><p>在第 230 行的 <code>loadSource</code> 函数中，注释 <code>imp.load_source</code>，使用 <code>importlib.machinery.SourceFileLoader</code> 加载模块</p> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#module = imp.load_source(moduleName, fileName)</span></span><br><span class="line">module = importlib.machinery.SourceFileLoader(moduleName, fileName).load_module()</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py:1: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module&apos;s documentation for alternative uses</span><br><span class="line">  import imp</span><br></pre></td></tr></table></figure><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>imp 从 Python 3.4 之后弃用了，建议使用 importlib 代替</p><a id="more"></a><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>打开 <code>E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py</code> 文件，做如下两步修改：</p><ol><li><p>在第一行，注释掉 <code>imp</code>，导入 <code>importlib</code></p> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import imp</span></span><br><span class="line"><span class="keyword">import</span> importlib</span><br></pre></td></tr></table></figure></li><li><p>在第 230 行的 <code>loadSource</code> 函数中，注释 <code>imp.load_source</code>，使用 <code>importlib.machinery.SourceFileLoader</code> 加载模块</p> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#module = imp.load_source(moduleName, fileName)</span></span><br><span class="line">module = importlib.machinery.SourceFileLoader(moduleName, fileName).load_module()</span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;报错&quot;&gt;&lt;a href=&quot;#报错&quot; class=&quot;headerlink&quot; title=&quot;报错&quot;&gt;&lt;/a&gt;报错&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span 
-      
+      &lt;h2 id=&quot;报错&quot;&gt;&lt;a href=&quot;#报错&quot; class=&quot;headerlink&quot; title=&quot;报错&quot;&gt;&lt;/a&gt;报错&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;E:\PyCharm 2018.2.5\helpers\pycharm\docrunner.py:1: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module&amp;apos;s documentation for alternative uses&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  import imp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h2&gt;&lt;p&gt;imp 从 Python 3.4 之后弃用了，建议使用 importlib 代替&lt;/p&gt;
     
     </summary>
     
