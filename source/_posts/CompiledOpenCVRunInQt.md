@@ -29,7 +29,7 @@ categories:
 * [Qt-5.9.3](https://download.qt.io/archive/qt/)
 * [MinGW-5.3.0-32bit](https://sourceforge.net/projects/mingw/)
 * [CMake-3.9.2](https://cmake.org/download/)
-* [OpenCV-3.3.1 / 3.4.1(适用)](https://opencv.org/releases.html)
+* [OpenCV-3.3.1 / 3.4.1 / 3.4.5 (适用)](https://opencv.org/releases.html)
 
 ## OpenCV 的 MSVC 版及 MinGW 版
 
