@@ -38,7 +38,13 @@ categories:
 
 （博文使用 MinGW-x64-4.8.1 为例，但建议使用最新 MinGW：[MinGW-w64 - for 32 and 64 bit Windows](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/)）
 
-为系统（用户）变量 `Path` 添加 `E:\MinGW-w64\x64-4.8.1-release-posix-seh-rev5\mingw64\bin`
+为用户变量 `Path` 添加 `E:\MinGW-w64\x64-4.8.1-release-posix-seh-rev5\mingw64\bin`
+
+## 使环境变量生效
+
+打开命令提示符 CMD，运行 `set PATH=C:`，更改当前窗口任务的环境变量，关闭这个 CMD。
+
+再次打开另一个 CMD，运行 `echo %PATH%`，显示最新的环境变量，会发现刚刚添加的 MinGW 环境变量已经生效。
 
 ## 使用 CMake 生成 OpenCV 的 Makefile
 

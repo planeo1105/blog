@@ -64,26 +64,32 @@ CMake 自行安装，Qt 和 MinGW 可以直接使用`qt-opensource-windows-x86-5
 
 ### 配置 Qt、MinGW
 
-安装好后打开QtCreator，在`工具`-`选项`-`构建和运行`-`构建套件`，选中`Desktop Qt 5.9.3 MinGW 32bit`，设为默认，OK。
+安装好后打开 QtCreator，在`工具`-`选项`-`构建和运行`-`构建套件`，选中`Desktop Qt 5.9.3 MinGW 32bit`，设为默认，OK。
 
 ## 添加 MinGW 到环境变量
 
-为系统变量 `Path` 添加 `E:\Qt\Qt5.9.3\Tools\mingw530_32\bin`
+为用户变量 `Path` 添加 `E:\Qt\Qt5.9.3\Tools\mingw530_32\bin`
+
+## 使环境变量生效
+
+打开命令提示符 CMD，运行 `set PATH=C:`，更改当前窗口任务的环境变量，关闭这个 CMD。
+
+再次打开另一个 CMD，运行 `echo %PATH%`，显示最新的环境变量，会发现刚刚添加的 MinGW 环境变量已经生效。
 
 ## 使用 CMake 生成 OpenCV 的 Makefile
 
 打开 cmake-gui，设置源码和生成路径：
 
-* Where is the source code: E:/OpenCV_3.3.1/opencv/sources
-* Where to build the binaries: E:/OpenCV_3.3.1/opencv-build
+* Where is the source code: `E:/OpenCV_3.3.1/opencv/sources`
+* Where to build the binaries: `E:/OpenCV_3.3.1/opencv-build`
 
 点击 Configure，设置编译器
 
-* Specify the generator for this project: MinGW Makefiles
+* Specify the generator for this project: `MinGW Makefiles`
 * Specify native compilers
 * Next
-* Compilers C: E:\Qt\Qt5.9.3\Tools\mingw530_32\bin\gcc.exe
-* Compilers C++: E:\Qt\Qt5.9.3\Tools\mingw530_32\bin\g++.exe
+* Compilers C: `E:\Qt\Qt5.9.3\Tools\mingw530_32\bin\gcc.exe`
+* Compilers C++: `E:\Qt\Qt5.9.3\Tools\mingw530_32\bin\g++.exe`
 * Finish
 
 编译配置：
